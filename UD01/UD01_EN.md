@@ -195,7 +195,7 @@ The most widespread programming languages ​​corresponding to different field
 
 ### Characteristics of structured programming
 
-Structured programming was developed by the Dutch Edsger W. Dijkstra and is based on the so-called structure theorem. For this, it uses only three structures: sequence, selection and iteration, being unnecessary the use of the unconditional transfer instruction or instructions (GOTO, EXIT FUNCTION, EXIT SUB or multiple RETURN).
+Structured programming was developed by the Dutch Edsger W. Dijkstra and is based on the so-called structure theorem. For this, it uses only three structures: sequence, selection and iteration, being unnecessary the use of the unconditional transfer instruction or instructions (`GOTO`, `EXIT FUNCTION`, `EXIT SUB` or multiple `RETURN`).
 
 Thus, the characteristics of structured programming are clarity, the structure theorem, and top-down design.
 
@@ -214,7 +214,7 @@ graph LR
 C("...") --> A(SentenceA) --> B(SentenceB) --> D("...")
 ```
 
-- **Selection **: the conditional instruction with double alternative, with the form "if condition, then SentenceA, but SentenceB". 
+- **Selection **: the conditional instruction with double alternative, with the form "`if condition, then SentenceA, but SentenceB`". 
 
 ```mermaid
 graph TD
@@ -226,7 +226,7 @@ graph TD
     E --> F
 ```
 
-- **Iteration **: the conditional loop "while condition, do statements", which executes the statements repeatedly as long as the condition is met.
+- **Iteration **: the conditional loop "`while condition, do statements`", which executes the statements repeatedly as long as the condition is met.
 
 ``` mermaid
 graph TD
@@ -618,7 +618,7 @@ It is practically impossible that it can be used, since it requires knowing all 
 
 ```mermaid
 graph LR
-ANALYSIS --> DESIGN --> CODING --> TESTING --> MAINTENANCE
+ANALYSIS --> DESIGN --> CODING --> TESTING --> EXPLOITATION --> MAINTENANCE
 ```
 
 #### Waterfall with feedback
@@ -629,8 +629,8 @@ It is the perfect model if the project is rigid (few changes, little evolutionar
 
 ```mermaid
 graph LR
-ANALYSIS --> DESIGN --> CODING --> TESTING --> MAINTENANCE
-MAINTENANCE --> TESTING --> CODING --> DESIGN --> ANALYSIS
+ANALYSIS --> DESIGN --> CODING --> TESTING --> EXPLOITATION --> MAINTENANCE
+MAINTENANCE --> EXPLOITATION --> TESTING --> CODING --> DESIGN --> ANALYSIS
 ```
 
 #### V Model
