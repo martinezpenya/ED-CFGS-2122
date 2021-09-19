@@ -5,7 +5,7 @@ author: David Martínez Peña [www.martinezpenya.es]
 subject: Development environments
 keywords: [DE, 2021, Environment, Development]
 IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver: ${today}) 
+header: ${title} - ${subject} (ver. ${today}) 
 footer: ${author} - ${IES} - ${pageNo} / ${pageCount}
 ---
 
@@ -23,7 +23,7 @@ footer: ${author} - ${IES} - ${pageNo} / ${pageCount}
 
 6. Mark the true option of the following
 
-   to. The GPL license gives the right to use the program without the option to modify it.
+   a. The GPL license gives the right to use the program without the option to modify it.
 
    b. The GPL license requires modifying the program.
 
@@ -32,10 +32,10 @@ footer: ${author} - ${IES} - ${pageNo} / ${pageCount}
    d. They are all false.
 
 7. Mark the true option of the following
-   to. A program can be freeware and shareware at the same time.
-   to. A program cannot be shareware and adware at the same time.
-   b. A Softonic program is always adware.
-   c. Not all free software is freeware.
+   a. A program can be freeware and shareware at the same time.
+   b. A program cannot be shareware and adware at the same time.
+   c. A Softonic program is always adware.
+   d. Not all free software is freeware.
 
 8. What is a program?
 

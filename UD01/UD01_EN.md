@@ -5,7 +5,7 @@ author: David Martínez Peña [www.martinezpenya.es]
 subject: Development environments
 keywords: [DE, 2021, Environment, Development]
 IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver: ${today}) 
+header: ${title} - ${subject} (ver. ${today}) 
 footer: ${author} - ${IES} - ${pageNo} / ${pageCount}
 ---
 # Computer program
