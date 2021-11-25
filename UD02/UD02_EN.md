@@ -1,14 +1,14 @@
 ﻿---
 title: "UD02: Installing and using Development Environments"
-version: 20210822
 language: ES
 author: David Martínez Peña [www.martinezpenya.es]
 subject: Development Environments
-keywords: [EED, 2021, Development, Environments]
 IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (${version}) 
+keywords: [EED, 2021, Development, Environments]
+header: ${title} - ${subject} (ver. ${today})
 footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 ---
+
 # History
 
 In the previous unit we talked about the phases in the software development process.
@@ -130,7 +130,7 @@ In this link you can consult the different IDE's available according to the prog
 
 In order to correctly choose the IDE to work with, we need to know the characteristics we are looking for from it. We will see various criteria that are usually the most used when choosing the IDE, they are: license, platform, programming language and tools-availability.
 
-## According to your license
+## According to their license
 
 We can opt for **Free** IDE's, in which their license offers us the freedoms of free software. Or **Privative**, in which we do not have access to all the freedoms of the software. It must be remembered that this is independent of the economic cost, since we can find free proprietary IDE's.
 
@@ -154,7 +154,7 @@ A significant amount of time must be invested to thoroughly research and documen
 After checking the above criteria, the most restrictive aspect of availability is the price of the application; depending on our budget we can access different IDEs.
 If we do not have a budget, there are certain free solutions to have an IDE to work with that will meet most of the criteria we need.
 
-# JAVA
+# Java
 
 Each software and each development environment has specific characteristics and functionalities. This will also be reflected in the installation and configuration of the software. Depending on the platform, environment or operating system in which the software is to be installed, one installation package or another will be used, and some options or others must be taken into account in its configuration.
 The following shows how to install an integrated software development tool, such as Eclipse. But you will also be able to observe the procedures to install other necessary or recommended tools to work with the JAVA programming language, such as Tomcat or the Java Virtual Machine.
@@ -212,7 +212,7 @@ An alternative is to use https://adoptium.net/ formerly known as adoptOpenJDK, w
 > - `java --version` to see the versions available on our system.
 > - `sudo update-alternatives --config java` to choose which of the installed versions we want to use by default or even see the path of the different versions that we have installed.
 
-## Configurar las variable de entorno "JAVA_HOME" y "PATH"
+## Configure environment variables "JAVA_HOME" and "PATH"
 
 Once the JDK is downloaded and installed, you need to set some environment variables:
 
@@ -221,7 +221,7 @@ Once the JDK is downloaded and installed, you need to set some environment varia
 - The `PATH` variable. It should point to the directory that contains the executable of the virtual machine. It is usually the `bin` subfolder of the directory where we have installed the JDK.
 
 **CLASSPATH variable**
-Another variable that the JDK takes into account is the `CLASSPATH` variable. It points to the folders where the libraries of the application that you want to run are located with the java order. It is preferable, however, to indicate the location of these folders with the -cp option of the same java command, since each application can have different libraries and environment variables affect the entire system.
+Another variable that the JDK takes into account is the `CLASSPATH` variable. It points to the folders where the libraries of the application that you want to run are located with the java order. It is preferable, however, to indicate the location of these folders with the `-cp` option of the same java command, since each application can have different libraries and environment variables affect the entire system.
 Setting the `PATH` variable is essential for the operating system to find the JDK commands and be able to execute them.
 
 # Eclipse
@@ -233,8 +233,8 @@ If we will develop with Java, as is our case, we must have the JDK installed (re
 ## Installation
 
 Current versions of the Eclipse environment are installed with an installer. This, basically, is in charge of decompressing, solving some dependencies and creating the shortcuts.
-This installer can be obtained by downloading it directly from the official website of the Eclipse Project [www.eclipse.org] (www.eclipse.org). You can find the versions for the different operating systems and instructions for using it. They are not complex at all.
-In the case of GNU/Linux and MAC OS, the file is a compressed file. So you have to unzip it and then run the installer. This is the * eclipse-inst * file, inside the eclipse folder, which is a subfolder of the result of unzipping the previous file.
+This installer can be obtained by downloading it directly from the official website of the Eclipse Project [www.eclipse.org](www.eclipse.org). You can find the versions for the different operating systems and instructions for using it. They are not complex at all.
+In the case of GNU/Linux and MAC OS, the file is a compressed file. So you have to unzip it and then run the installer. This is the *eclipse-inst* file, inside the eclipse folder, which is a subfolder of the result of unzipping the previous file.
 If only the current user will use the IDE, the installation can be carried out without using administrator or root privileges and selecting, for the installation, a folder belonging to this user. If you want to share the installation between different users, you should indicate to the installer a folder on which all these users have read and execute permission.
 
 When we start the installer we will see a screen similar to this:

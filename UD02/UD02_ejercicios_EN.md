@@ -4,8 +4,8 @@ version: 20210823
 language: EN
 author: David Martínez Peña [www.martinezpenya.es]
 subject: Development Environments
-keywords: [EED, 2021, Development, Environments]
 IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+keywords: [EED, 2021, Development, Environments]
 header: ${title} - ${subject} (${version}) 
 footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 ---
@@ -77,7 +77,7 @@ footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 3. Install the Visual Studio Code editor. Take a screenshot once installed and running.
 4. Make a comparison of the functionality offered by Sublime text and that offered by Visual Studio Code regarding the following aspects:
    - integrated terminal
-   - emmet incorporado
+   - integrated emmet
    - icons for file types
    - keyboard shortcut for commenting (Ctrl + Shift + 7)
    - shortcut for search and select (Ctrl + D)
@@ -85,9 +85,7 @@ footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 6. Install the Netbeans integrated environment. Take a screenshot once installed and running.
 7. Install the Eclipse integrated environment. Take a screenshot once installed and running.
 8. Create a "Hello World" project in Java in Netbeans. Make its compilation and execution.
-9. What build system does Netbeans use to generate the "executable" files? Look in the root directory of the project and examine which buildfile it uses from those seen in the topic.
-10. Create a "Hello World" project in Java in Eclipse. Make its compilation and execution.
-11. What build system does Eclipse use to generate the "executable" files? Look in the root directory of the project and examine which buildfile it uses from those seen in the topic.
+9. Create a "Hello World" project in Java in Eclipse. Make its compilation and execution.
 
 
 # Information sources
