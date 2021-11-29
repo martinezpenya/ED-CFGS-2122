@@ -213,6 +213,40 @@ GitHub es el proveedor de alojamiento en la nube para repositorios gestionados c
 
 La principal ventaja de GitHub es que permite albergar un número ilimitado de repositorios tanto públicos como privados, y que además ofrece servicios de registro de errores, solicitud de nuevas funcionalidades, gestión de tareas, wikis o publicación de páginas web, para cada proyecto, incluso con el plan básico que es gratuito.
 
+## Configuración con clave publica/privada
+
+Seguir el manual de [github](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), que resumimos en estos puntos:
+
+### Generar la clave (Linux):
+
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+o:
+
+```sh
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+Después introducir la ubicación del archivo (o dejarlo por defecto) y introducir la `passphrase`.
+
+### Añadir la clave a nuestra cuenta github
+
+Siguiendo los pasos de la [documentación](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+### Configurar nuestro equipo linux.
+
+Algunas redes bloquean el acceso al puerto `22` (como por ejemplo la red del instituto), por ello `github` tiene habilitada la posibilidad de acceder a `ssh` a través del puerto `443` (típicamente `https`). Para configurar nuestro equipo y acceder a `github` mediante `ssh` con nuestro usuario y nuestra clave debemos configurar el archivo `~/.ssh/config` con el siguiente contenido:
+
+```sh
+Host github.com
+Hostname ssh.github.com
+Port 443
+User martinezpenya
+IdentityFile ~/.ssh/pubuntu_github_ssh_key
+```
+
 ## Añadir un repositorio remoto (`git remote add`)
 
 `git remote add <repositorio-remoto> <url>` crea un enlace con el nombre `<repositorio-remoto>` a un repositorio remoto ubicado en la dirección `<url>`.
