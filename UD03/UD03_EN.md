@@ -9,6 +9,7 @@ header: ${title} - ${subject} (ver:${today})
 footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 ---
 
+
 # Refactoring
 
 The term refactoring within the field of Software Engineering refers to modifying the code without changing its operation. It is used to create a clearer and simpler code, facilitating the subsequent reading or revision of a program. It could be understood as the maintenance of the code, to facilitate its understanding, but without adding or eliminating functionalities. **Refactoring code is about creating cleaner code.**
@@ -89,7 +90,7 @@ String[] nombres; //correcto
 String nombres[]; //incorrecto
 ```
 
-> Therefore the correct form of the arguments in the `main` should be:` String [] args` and NOT: ~~ `String args []` ~~
+> Therefore the correct form of the arguments in the `main` should be:` String[] args` and NOT: ~~`String args[]`~~
 
 ### Identifier names
 
@@ -137,8 +138,8 @@ else if (indice < filaInicial)
 ```
 
 - A single instruction per line.
-- The lines of code must not exceed 100 characters. If not, they must be ** broken ** before some operator.
-- If the method declaration is too long, or an arithmetic expression is too long, or in an * if * statement, I must break.
+- The lines of code must not exceed 100 characters. If not, they must be **broken** before some operator.
+- If the method declaration is too long, or an arithmetic expression is too long, or in an *if* statement, I must break.
 - If an arithmetic or logical operation is made up of different types of operations with different hierarchies, parentheses should be used to facilitate its readability.
 
 ```java
@@ -154,7 +155,7 @@ if ((condicion1 && condicion2)
 }
  
 longName1 = longName2 * (longName3 + longName4 - longName5)
-+ (4 * longname6);            //Siempre con el operador al principio de línea
+		+ (4 * longname6); //Siempre con el operador al principio de línea
 ```
 
 - Blanks improve readability. They must be placed between operators, after semicolons in for loops, after assignment operators, and so on.
@@ -177,7 +178,7 @@ We must be familiar with and put into practice the conventions included in one o
 
 ## Bad Smells
 
-It is known as **Bad Smell or Code Smell** ([bad smell] (https://es.wikipedia.org/wiki/Hediondez_del_c%C3%B3digo)) to some indicators or symptoms of the code that possibly hide another problem deep. The *bad smells* are not code errors, bugs, since they do not prevent the program from working correctly, but they are indicators of flaws in the design of the code that make it difficult to maintain it later and increase the risk of future errors. Some of these symptoms are:
+It is known as **Bad Smell or Code Smell** ([bad smell](https://es.wikipedia.org/wiki/Hediondez_del_c%C3%B3digo)) to some indicators or symptoms of the code that possibly hide another problem deep. The *bad smells* are not code errors, bugs, since they do not prevent the program from working correctly, but they are indicators of flaws in the design of the code that make it difficult to maintain it later and increase the risk of future errors. Some of these symptoms are:
 
 - **Duplicated code**. If identical or very similar blocks of code are detected in different parts of the program, it must be extracted by creating a method to unify it.
 
@@ -189,18 +190,18 @@ It is known as **Bad Smell or Code Smell** ([bad smell] (https://es.wikipedia.or
 
 - **Divergent change**. If a class needs to be modified often and for very different reasons, the class may be doing too many assignments. It could be eliminated and / or divided.
 
-- **Shotgun surgery**. If when modifying a class, other classes or elements outside of it need to be modified to make the change compatible. The opposite of * smell * above.
+- **Shotgun surgery**. If when modifying a class, other classes or elements outside of it need to be modified to make the change compatible. The opposite of *smell* above.
 
 - **Feature Envy**. It occurs when a class uses more methods from another class, or a method uses more data from another class, than its own.
 
 - **Legacy rejected**. When a subclass extends (inherits) from another class, and uses few features of the superclass, there may be an error in the class hierarchy.
 
-In the following [web page] (https://sourcemaking.com/refactoring) we have most of Bad Smells grouped into 5 types.
+In the following [web page](https://sourcemaking.com/refactoring) we have most of Bad Smells grouped into 5 types.
 
 ## Good practices
 
 - **Strings handling**: Strings are objects, so creating them is expensive. It is much faster to instantiate them with an assignment, than with the *new* operator.
-  - Concatenating `String` with the '+' operator also generates a lot of load, since it creates a new` String` in memory (`String` objects are [immutable] (https://curiotecnology.blogspot.com.es/2016 /10/because-string-is-inmutable-en-java.html)). You should always try to avoid concatenations (+) within a ** loop **, or use other classes in that case (eg `StringBuilder`)
+  - Concatenating `String` with the '+' operator also generates a lot of load, since it creates a new` String` in memory (`String` objects are [immutable](https://curiotecnology.blogspot.com.es/2016 /10/because-string-is-inmutable-en-java.html)). You should always try to avoid concatenations (+) within a **loop**, or use other classes in that case (eg `StringBuilder`)
 
 ```java
 //instanciación lenta
@@ -229,12 +230,34 @@ String y2 = new String("hola");
 System.out.println(x == y);    //TRUE 
 System.out.println(x1 == y1);  //FALSE, ya que son 2 objetos distintos
 System.out.println(x2 == y2);  //FALSE, ya que son 2 objetos distintos
+
+// These two have the same value
+new String("test").equals("test") // --> true 
+
+// ... but they are not the same object
+new String("test") == "test" // --> false 
+
+// ... neither are these
+new String("test") == new String("test") // --> false 
+
+// ... but these are because literals are interned by 
+// the compiler and thus refer to the same object
+"test" == "test" // --> true 
+
+// ... string literals are concatenated by the compiler
+// and the results are interned.
+"test" == "te" + "st" // --> true
+
+// ... but you should really just call Objects.equals()
+Objects.equals("test", new String("test")) // --> true
+Objects.equals(null, "test") // --> false
+Objects.equals(null, null) // --> true
 ```
 
+https://stackoverflow.com/questions/513832/how-do-i-compare-strings-in-java
+
 - **Attribute visibility**: The fields of a 'standard' class should never be declared as public, much less not indicate a visibility modifier. Its *setters and getters* are used for access.
-
 - **Always limit the scope of a local variable**. Create the local variable and initialize it as close to use as possible.
-
 - **Always use a variable for a single purpose**. Sometimes we are tempted to reuse a variable, but it complicates readability.
 
 ```java
@@ -243,9 +266,9 @@ int resultadoTotal = resultadoInicial - resultadoFinal;
 ...
 ```
 
-- **for loop**. Opt for the `for` whenever possible (in front of` while`, `do-while`). The advantages are that it gathers all the control of the loop in the same line (start, end, and increment), and the control variable ('`i`') is not accessible from outside of it. If you need to modify your control variable, use another loop.
+- **for loop**. Opt for the `for` whenever possible (in front of ` while`, `do-while`). The advantages are that it gathers all the control of the loop in the same line (start, end, and increment), and the control variable (`i`) is not accessible from outside of it. If you need to modify your control variable, use another loop.
 - **Constants**: Any literal value must be defined as constant, except 1, -1, 0 or 2 which are used by the for loop. 
-- ** Switch **: It should always have a `break` after each case, and also the * default * case that will help correct future increases in the number of cases.
+- **Switch**: It should always have a `break` after each case, and also the *default* case that will help correct future increases in the number of cases.
 - *Defensive copying* is saving. When we create a constructor that receives the same type of object from the class, we must be careful and create a new object from the received one.
 
 ## Eclipse and NetBeans refactoring

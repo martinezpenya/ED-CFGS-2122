@@ -26,6 +26,8 @@ En esta actividad deberás buscar información y explicar las 3 áreas de un pro
 En la actividad siguiente, vamos a crear un repositorio local, es decir en nuestro PC personal. 
 Luego añadiremos y modificaremos algunos archivos y registraremos los cambios. Trabajaremos desde el terminal de texto.
 
+> Debes recopilar la información y capturas necesarias para generar el documento final.
+
 Seguiremos el siguiente proceso:
 
 ## Creamos una carpeta para alojar el proyecto. 
@@ -60,7 +62,7 @@ ls  -la
 ## Creamos un archivo README.md
 
 ```sh
-nano  README.md
+nano README.md
 ```
 
 ## Añadimos una línea al archivo
@@ -77,9 +79,9 @@ Para ello deberemos realizar 2 pasos:
 
   2. Añadimos al repositorio:  
 
-    git  commit  -m  "Primer cambio registrado"
+    git  commit  -m  "Primer cambio registrado David"
 
-El primer comando (`git add`) añade el archivo README.md al área de preparación. Y el segundo comando (`git commit ...`) lo añade al repositorio local.
+El primer comando (`git add`) añade el archivo `README.md` al área de preparación. Y el segundo comando (`git commit ...`) lo añade al repositorio local.
 
 
 ## Volvemos a realizar los puntos 5, 6 y 7 dos veces más.

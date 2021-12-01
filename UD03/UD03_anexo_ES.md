@@ -5,7 +5,7 @@ author: David Martínez Peña [www.martinezpenya.es]
 subject: Entornos de desarrollo
 keywords: [EED, 2021, Entornos, Desarrollo]
 IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver:${today}) 
+header: ${title} - ${subject} (ver: ${today}) 
 footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 ---
 # Git
