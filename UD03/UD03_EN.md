@@ -323,11 +323,11 @@ A version, revision or edition of a product is the state in which said product i
 Version control is mainly done in the computer industry to control the different versions of the source code. However, the same concepts are applicable to other areas such as documents, images, websites, etc.
 
 Although a version control system can be done manually, it is highly advisable to have tools that facilitate this management
-(CVS(concurrent versions system), Subversion, SourceSafe, ClearCase, Darcs, Bazaar , Plastic SCM, Git, Mercurial, Perforce...).
+(CVS (concurrent versions system), Subversion, SourceSafe, ClearCase, Darcs, Bazaar , Plastic SCM, Git, Mercurial, Perforce...).
 
 ### What should you provide?
 
-A version control system should provide: 
+A version control system should provide: 
 
 - Storage mechanism for the elements to be managed (eg text files, images, documentation ...).
 - Possibility of making changes to the stored elements (eg partial modifications, adding, deleting, renaming or moving elements).
@@ -339,9 +339,7 @@ Although it is not strictly necessary, it is usually very useful to generate rep
 
 The main classification that can be established is based on the storage of the code:
 
-- **Centralized**: there is a centralized repository of all the code, for which a single user (or set of them) is responsible. Are facilitated
-   administrative tasks in exchange for reduced flexibility, as all strong decisions (such as creating a new branch) need approval
-   of the person in charge. Some examples are CVS and Subversion.
+- **Centralized**: there is a centralized repository of all the code, for which a single user (or set of them) is responsible. Are facilitated administrative tasks in exchange for reduced flexibility, as all strong decisions (such as creating a new branch) need approval of the person in charge. Some examples are CVS and Subversion.
 - **Distributed**: each user has their own repository. No need to make decisions centrally. Different repositories can exchange and mix reviews with each other. Examples: Git and Mercurial.
 
 ### Functioning
@@ -376,17 +374,17 @@ The terminology used may vary from system to system, but some commonly used term
 
 **Conflict**: A conflict occurs in the following circumstances:
 
-1. Users X and Y display versions of file A in which lines n1 through n2 are common.
+1. Users **Juanito** and **Ana** display versions of file `Clase.java` in which lines 10 through 20 are common.
 
-2. User X sends changes between lines n1 and n2 to file A.
+2. User **Juanito** sends changes between lines 10 and 20 to file `Clase.java`.
 
-3. User Y does not update file A after User X submits.
+3. User **Ana** does not update file `Clase.java` after User **Juanito** submits.
 
-4. User Y makes changes between lines n1 and n2.
+4. User **Ana** makes changes between lines 10 and 20.
 
-5. User Y later tries to push those changes to file A.
+5. User **Ana** later tries to push those changes to file `Clase.java`.
 
-The system is unable to merge the changes. User Y must resolve the conflict by combining the changes, or choosing one of them to discard the other.
+The system is unable to merge the changes. User **Ana** must resolve the conflict by combining the changes, or choosing one of them to discard the other.
 
 **Resolve**: The act of user intervention to address a conflict between different changes to the same document. 
 
@@ -396,7 +394,7 @@ The system is unable to merge the changes. User Y must resolve the conflict by c
 
 **Export**: An export is similar to a check-out, except that it creates a clean directory tree without the version control metadata present in the working copy. It is often used prior to publishing content.
 
-**Import**:An import is the action of copying a local directory tree (which is not currently a working copy) to the repository for the first time.
+**Import**: An import is the action of copying a local directory tree (which is not currently a working copy) to the repository for the first time.
 
 **Integration or merge ("merge")**: An integration or merge joins two sets of changes on a file or a set of files in a unified revision of said file or files.
 

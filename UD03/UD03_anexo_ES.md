@@ -27,11 +27,11 @@ Activar el coloreado de la salida:
 ```sh
 git config --global color.ui auto
 ```
-Mostrar el estado original en los con ictos
+Mostrar el estado original en los conflictos
 ```sh
 git config --global merge.conflictstyle diff3
 ```
-Mostrar la con guración
+Mostrar la configuración
 ```sh
 git config --list
 ```
@@ -78,11 +78,11 @@ Con Git, cualquier cambio que hagamos en un proyecto tiene que pasar por tres es
 
 Para guardar los cambios en un repositorio Git utiliza una estructura de tres niveles:
 
-- Commit Contiene información sobre el autor, el momento y el mensaje de los cambios.
+- **Commit** Contiene información sobre el autor, el momento y el mensaje de los cambios.
 
-- Árbol (tree) Cada commit contiene además un árbol donde se registran los nombres y rutas de los cheros en el repositorio cuando se hizo el commit.
+- **Árbol (tree)** Cada commit contiene además un árbol donde se registran los nombres y rutas de los cheros en el repositorio cuando se hizo el commit.
 
-- Blob (binary file object) Para cada uno de los ficheros listados en el árbol hay un blob, que contiene una instantánea comprimida del contenido del fichero  cuando se hizo el commit. 
+- **Blob (binary file object)** Para cada uno de los ficheros listados en el árbol hay un blob, que contiene una instantánea comprimida del contenido del fichero  cuando se hizo el commit. 
 
   Si un fichero del repositorio no ha cambiado en el commit, el árbol apunta al blob del fichero del último commit donde el fichero cambió.
 
@@ -184,7 +184,7 @@ Al crear una rama a partir de un commit, el flujo de commits se bifurca en dos d
 
 Para fusionar dos ramas es necesario que no haya conflictos entre los cambios realizados a las dos versiones del proyecto.
 
-Si en ambas versiones se han hecho cambios sobre la misma parte de un fichero, entonces se produce un con icto y es necesario resolverlo antes de poder fusionar las ramas.
+Si en ambas versiones se han hecho cambios sobre la misma parte de un fichero, entonces se produce un conflicto y es necesario resolverlo antes de poder fusionar las ramas.
 
 La resolución debe hacerse manualmente observando los cambios que inter eren y decidiendo cuales deben prevalecer, aunque existen herramientas como `KDif3` o `meld` que facilitan el proceso.
 
@@ -203,15 +203,15 @@ La otra característica de Git, que unida a las ramas, facilita la colaboración
 
 Git permite la creación de una copia del repositorio en un servidor git en internet. La principal ventaja de tener una copia remota del repositorio, a parte de servir como copia de seguridad, es que otros usuarios pueden acceder a ella y hacer también cambios.
 
-Existen muchos proveedores de alojamiento para repositorios Git pero el más usado es GitHub.
+Existen muchos proveedores de alojamiento para repositorios Git pero los más usados son [GitHub](https://github.com/) y [GitLab](https://about.gitlab.com/).
 
 # ¿Qué es GitHub?
 
 <img src="assets/06_github.jpg" alt="GitHub" style="zoom:25%;" />
 
-GitHub es el proveedor de alojamiento en la nube para repositorios gestionados con git más usado y el que actualmente tiene alojados más proyectos de desarrollo de software de código abierto en el mundo.
+[GitHub](https://github.com/) es el proveedor de alojamiento en la nube para repositorios gestionados con git más usado y el que actualmente tiene alojados más proyectos de desarrollo de software de código abierto en el mundo.
 
-La principal ventaja de GitHub es que permite albergar un número ilimitado de repositorios tanto públicos como privados, y que además ofrece servicios de registro de errores, solicitud de nuevas funcionalidades, gestión de tareas, wikis o publicación de páginas web, para cada proyecto, incluso con el plan básico que es gratuito.
+La principal ventaja de [GitHub](https://github.com/) es que permite albergar un número ilimitado de repositorios tanto públicos como privados, y que además ofrece servicios de registro de errores, solicitud de nuevas funcionalidades, gestión de tareas, wikis o publicación de páginas web, para cada proyecto, incluso con el plan básico que es gratuito.
 
 ## Configuración con clave publica/privada
 
@@ -272,15 +272,15 @@ Cuando se añade un repositorio remoto a un repositorio, Git seguirá también l
 Existen dos formas de colaborar en un repositorio alojado en GitHub:
 
 - Ser colaborador del repositorio:
-  1. Recibir autorización de colaborador por parte de la persona propietaria del proyecto.
-  2. Clonar el repositorio en local.
-  3. Hacer cambios en el repositorio local.
-  4. Subir los cambios al repositorio remoto. Primero hacer `git pull` para integrar los cambios remotos en el repositorio local y luego `git push` para subir los cambios del repositorio local al remoto.
+  1. `Recibir autorización de colaborador` por parte de la persona propietaria del proyecto.
+  2. `Clonar` el repositorio en local.
+  3. `Hacer cambios` en el repositorio local.
+  4. `Subir los cambios` al repositorio remoto. Primero hacer `git pull` para integrar los cambios remotos en el repositorio local y luego `git push` para subir los cambios del repositorio local al remoto.
 
 - Replicar el repositorio y solicitar integración de cambios:
-  1. Replicar el repositorio remoto en nuestra cuenta de GitHub mediante un fork.
-  2. Hacer cambios en nuestro repositorio remoto.
-  3. Solicitar a la persona propietaria del repositorio original que integre nuestros cambios en su repositorio mediante un pull request.
+  1. `Replicar` el repositorio remoto en nuestra cuenta de GitHub mediante un `fork`.
+  2. `Hacer cambios` en nuestro repositorio remoto.
+  3. Solicitar a la persona propietaria del repositorio original que `integre nuestros cambios` en su repositorio mediante un `pull request`.
 
 # Fuentes de información
 

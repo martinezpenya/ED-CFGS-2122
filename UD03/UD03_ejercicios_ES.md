@@ -51,7 +51,7 @@ ls -la
 git init
 ```
 
-## Comprobamos que se ha creado una carpeta  .git.
+## Comprobamos que se ha creado una carpeta  `.git`.
 
 Ésta es la carpeta donde se registrarán todos los cambios que vayamos realizando.
 
@@ -59,7 +59,9 @@ git init
 ls  -la
 ```
 
-## Creamos un archivo README.md
+Comprueba el contenido de esta nueva carpeta, porqué tiene un punto delante?
+
+## Creamos/editamos un archivo `README.md`
 
 ```sh
 nano README.md
@@ -75,11 +77,11 @@ Para ello deberemos realizar 2 pasos:
 
   1. Añadimos al área de preparación:   
 
-    git   add   README.md
+    git add README.md
 
   2. Añadimos al repositorio:  
 
-    git  commit  -m  "Primer cambio registrado David"
+    git commit -m "Primer cambio registrado David"
 
 El primer comando (`git add`) añade el archivo `README.md` al área de preparación. Y el segundo comando (`git commit ...`) lo añade al repositorio local.
 
@@ -109,7 +111,7 @@ Deberían aparecer 3 commits
 
 # Revisar commits realizados
 
-En la actividad siguiente, haremos uso del comando **git checkout** para movernos por los distintos commits Antes de nada comprueba que tienes al menos 3 commits realizados. Para ello ejecuta:
+En la actividad siguiente, haremos uso del comando `git checkout` para movernos por los distintos commits Antes de nada comprueba que tienes al menos 3 commits realizados. Para ello ejecuta:
 
 ```sh
 git  log  --oneline --all
@@ -142,7 +144,7 @@ Para mover el identificador HEAD utilizamos el comando **git checkout**  *numero
 
 Realiza los siguientes pasos y crea las capturas correspondientes:
 
-## Vamos a ver el contenido del archivo README.md en el commit actual. 
+## Vamos a ver el contenido del archivo `README.md` en el commit actual. 
 
 Para ello hacemos:
 
@@ -160,9 +162,9 @@ Para ello hacemos:
 git  checkout  8b670f6
 ```
 
-Tú deberás poner el hash que tengas.
+> Tú deberás poner el hash que tengas en el primer commit.
 
-Te aparecerá un mensaje que contiene "Te encuentras en estado 'detached HEAD'". Esto indica que la referencia HEAD no está al final de la rama. No te preocupes por ello.
+Te aparecerá un mensaje que contiene "*Te encuentras en estado 'detached HEAD'*....". Esto indica que la referencia HEAD no está al final de la rama. No te preocupes por ello.
 
 Ahora veamos el contenido del archivo `README.md`.
 
@@ -184,7 +186,7 @@ Debería aparecer algo semejante a la siguiente imagen:
 
 Fíjate donde apunta la referencia HEAD en este momento. 
 
-Algo que quizás te haya pasado desapercibido pero que es extremadamente IMPORTANTE es que cada vez que nos movemos de un commit a otro, el contenido del directorio de trabajo cambia. Esto lo hace git de forma automática.
+> Algo que quizás te haya pasado desapercibido pero que es extremadamente IMPORTANTE es que cada vez que nos movemos de un commit a otro, el contenido del directorio de trabajo cambia. Esto lo hace git de forma automática.
 
 NO REALIZAREMOS ningún cambio a los archivos, sólo vamos a echar un vistazo.
 
@@ -196,7 +198,7 @@ Para ello hacemos:
 git  checkout  c578
 ```
 
-Tú deberás poner el hash que tengas. No es necesario poner todos los dígitos, podemos acortar el hash. 
+> Tú deberás poner el hash que tengas. No es necesario poner todos los dígitos, podemos acortar el hash. 
 
 Ejecuta 
 
@@ -240,25 +242,25 @@ Haz una captura de pantalla.
 
 En esta actividad vamos a ver 3 comandos:
 
-- **git tag**
-- **git show** 
-- **git diff**
+- `git tag`
+- `git show` 
+- `git diff`
 
-El primer comando (**git tag**) nos permite poner etiquetas a los commits. **No se etiquetan todos los commits, sólo las releases que deseemos**.
+El primer comando (`git tag`) nos permite poner etiquetas a los commits. **No se etiquetan todos los commits, sólo las releases que deseemos**.
 
-Los 2 siguientes (**git show** y **git diff**) son para ver los cambios realizados entre distintos commits. Son muy parecidos aunque con pequeñas diferencias.
+Los 2 siguientes (`git show` y `git diff`) son para ver los cambios realizados entre distintos commits. Son muy parecidos aunque con pequeñas diferencias.
 
-**Básicamente git show nos permite ver los cambios de un commit respecto al anterior, mientras que git diff nos permite ver cambios en un rango de commits**.
+**Básicamente `git show` nos permite ver los cambios de un commit respecto al anterior, mientras que `git diff` nos permite ver cambios en un rango de commits**.
 
-De todas formas tanto git show como git diff tienen tantas opciones que aquí sólo nos centraremos en las esenciales.
+De todas formas tanto `git show` como `git diff` tienen tantas opciones que aquí sólo nos centraremos en las esenciales.
 
 Empecemos.
 
 ## Etiquetamos el commit primero y el tercero.
 
-El primer commit será la versión 1 de nuestro proyecto. La etiqueta será v1.
+El primer commit será la versión 1 de nuestro proyecto. La etiqueta será `v1`.
 
-El tercer commit será la versión 2 de nuestro proyecto. La etiqueta será v2.
+El tercer commit será la versión 2 de nuestro proyecto. La etiqueta será `v2`.
 
 El segundo commit no será etiquetado.
 
@@ -277,9 +279,9 @@ git tag  -a v1  -m "Versión 1"  8b67
 git tag  -a v2  -m "Versión 2"  fdeb
 ```
 
-La opción -a significa annotate.
+La opción `-a` significa annotate.
 
-La opción -m nos permite poner un mensaje.
+La opción `-m` nos permite poner un mensaje.
 
 Finalmente debemos poner el commit al que deseamos aplicar la etiqueta.
 
@@ -367,13 +369,13 @@ Si deseamos ver todos los cambios realizados a lo largo de varios commits, harem
 La forma de uso es 
 
 ```sh
-git  diff  commit1..commit2
+git diff commit1..commit2
 ```
 
 Por ejemplo, para ver los cambios entre la versión 1 y la versión 2, hacemos
 
 ```sh
-git  diff  v1..v2
+git diff v1..v2
 ```
 
 ![git diff](assets/git-diff.png)
@@ -382,7 +384,7 @@ Podemos ver que se han añadido 2 líneas desde el commit v1.
 
 Es muy aconsejable poner primero el commit más antiguo y después el commit más moderno. Si lo hacemos al contrario, el resultado en lugar de aparecer en color verde aparecerá en color rojo, y su interpretación será más confusa.
 
-## Diferencia entre git show y git diff
+## Diferencia entre `git show` y `git diff`
 
 También podemos hacer
 
@@ -390,12 +392,13 @@ También podemos hacer
 git show v1..v2
 ```
 
-Ejecuta dicho comando y haz una captura de pantalla. Explica brevemente la diferencia respecto a **git diff v1..v2**
+Ejecuta dicho comando y haz una captura de pantalla. Explica brevemente la diferencia respecto a `git diff v1..v2`
 
 
 > *NOTA: No borrar el repositorio local. Lo volveremos a utilizar en la siguiente actividad.*
 
 **Subir a plataforma AULES un documento PDF con las capturas de pantalla y explicaciones pertinentes.**
+
 # Crear repositorio remoto y subir commits locales
 
 En esta actividad crearemos un repositorio vacío en GitHub y subiremos el contenido de nuestro repositorio local.
@@ -410,11 +413,13 @@ En la **esquina superior derecha**, pulsamos en el signo **+** y luego en **New 
 
 Escogemos el nombre del repositorio. No tiene por que coincidir con el nombre del repositorio local, aunque es lo aconsejable para no hacernos un lío.
 
-En lugar de jose pon tu nombre.
+En lugar de provesED pon tu nombre.
 
 ![github nuevo repo](assets/github-nuevo-repo2.png)
 
-Es muy importante que **NO INICIALICES EL REPOSITORIO**. Si el repositorio no estuviese vacío podría darnos un conflicto.
+> Puedes elegir a tu gusto si el repositorio es público o privado, esto no afectará al resto de secciones.
+
+> Es muy importante que **NO INICIALICES EL REPOSITORIO**. Si el repositorio no estuviese vacío podría darnos un conflicto.
 
 En una actividad posterior crearemos conflictos y veremos como resolverlos. Pero en en esta actividad, sólo vamos a trabajar lo básico.
 
@@ -427,7 +432,7 @@ Ahí podemos ver la URL del repositorio remoto. Hay 2 formas de acceso:
 - **mediante HTTPS**
 - **mediante SSH**
 
-**Usaremos, por ahora, HTTPS**. En una actividad posterior veremos como usar **SSH** y utilizar cifrado público-privado para no tener que introducir cada vez nuestras credenciales.
+> **Usaremos SSH ya que es más seguro y nos permite utilizar cifrado público-privado** debido a que recientemente github ha deshabilitado el acceso mediante usuario y contraseña. En el punto `2.1 Configuración con clave pública/privada` del archivo `UD03_anexo_ES.pdf` tienes detallada la configuración y pasos a seguir, si todavia no has configurado tu PC de este modo... **debes hacerlo antes de seguir**.
 
 Más abajo se indican los comandos a ejecutar en nuestro repositorio local. Lo vemos en el siguiente punto. 
 
@@ -438,7 +443,7 @@ Para tu comodidad, no cierres la página. Más adelante volveremos a ella.
 En nuestro repositorio local, para asociarlo con el repositorio remoto, hacemos:
 
 ```sh
-git  remote  add  origin  https://github.com/jamj2000/pruebas-jose.git
+git remote add origin git@github.com:martinezpenya/provesED2021.git
 ```
 
 Nuestro repositorio remoto será identificado como **origin**. Podemos ponerle otro nombre, pero no debemos. Es una convención ampliamente aceptada poner este nombre al repositorio remoto de GitHub.
@@ -446,7 +451,7 @@ Nuestro repositorio remoto será identificado como **origin**. Podemos ponerle o
 Para ver si se ha añadido bien hacemos
 
 ```sh
-git  remote  -v
+git remote -v
 ```
 
 ![github remote](assets/git-remote.png)
@@ -455,7 +460,7 @@ Deben aparecer 2 entradas, una para bajada (fetch) y otra para subida (push)
 
 > NOTA: Si por cualquier motivo nos equivocamos y escribimos mal el nombre o la URL, podemos borrar la asociación con
 > ```sh
-> git  remote  remove  origin
+> git remote remove origin
 > ```
 > y luego volver a crear la asociación. 
 
@@ -464,14 +469,14 @@ Deben aparecer 2 entradas, una para bajada (fetch) y otra para subida (push)
 Para subir el contenido de nuestro repositorio local al repositorio remoto hacemos:
 
 ```sh
-git push  -u origin master
+git push -u origin master
 ```
 
-El identificador **origin** es el nombre que dimos a nuestro vínculo. El identificador master se refiere a la rama principal.
+El identificador **origin** es el nombre que dimos a nuestro vínculo. El identificador **master** se refiere a la rama principal.
 
 Es una convención ampliamente seguida, así que respétala.
 
-Se nos pedirá nuestro usuario y contraseña. Lo introducimos, y si no hay problema, se realizará la subida.
+> Si hemos realizado correctamente la configuración de git en nuestro PC se deberían enviar los cambios de nuestro PC al repositorio remoto sin pedir contraseña ya que estamos usando la llave que tenemos configurada en nuestro sistema.
 
 ## Comprobando la subida.
 
@@ -481,14 +486,14 @@ Volvemos a la página de GitHub y la actualizamos. Nos aparecerá algo semejante
 
 GitHub ofrece muchas funcionalidades.
 
-Así que nos centraremos ahora mismo en las releases. Estás se corresponden con el etiquetado que realizamos en la actividad anterior con git tag. 
+Así que nos centraremos ahora mismo en las releases. Estás se corresponden con el etiquetado que realizamos en la actividad anterior con `git tag`. 
 
 Teníamos 2 releases, etiquetadas como v1 y v2, pero sin embargo aquí no aparece ninguna.
 
 El motivo, es que debemos subir las etiquetas por separado con el comando 
 
 ```sh
-git  push  --tags
+git push --tags
 ```
 Así que ejecutaremos dicho comando desde nuestro repositorio local. Refrescaremos la página. Et voilà ! 
 
@@ -498,9 +503,9 @@ Así que ejecutaremos dicho comando desde nuestro repositorio local. Refrescarem
 
 ## Examinando commits y releases en GitHub.
 
-**Pulsa en 3 commits** y haz una captura de pantalla. Por tu cuenta puedes examinar cada uno de los commits.
+**Pulsa en commits** y haz una captura de pantalla. Por tu cuenta puedes examinar cada uno de los commits.
 
-**Pulsa en 2 releases** y haz una captura de pantalla. Observa que se han creado archivos comprimidos con el código fuente para descargar.
+**Pulsa en Tags** y haz una captura de pantalla. Observa que se han creado archivos comprimidos con el código fuente para descargar.
 
 
 > *NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.*
@@ -512,11 +517,11 @@ En esta actividad, veremos que podemos hacer cuando cometemos errores.
 
 Si realizamos algún cambio y hemos "metido la pata", podemos deshacer el "entuerto".
 
-Vamos a verlo de forma práctica haciendo uso del comando  **git reset --hard**
+Vamos a verlo de forma práctica haciendo uso del comando  `git reset --hard`
 
 ##  Deshacer cambios en el directorio de trabajo
 
-Estando en el último commit de la rama master, modificamos el archivo README.md
+Estando en el último commit de la rama master, modificamos el archivo `README.md`
 
 Vamos a eliminar las 2 últimas líneas.
 
@@ -534,7 +539,7 @@ git diff HEAD
 
 Es decir vamos a ver las diferencias que existen en nuestro directorio de trabajo respecto al commit HEAD, es decir el último commit confirmado.
 
-> NOTA: Si quisiesemos ver las diferencias de nuestro directorio de trabajo respecto al commit de la Versión 1, haríamos **git diff v1**.
+> NOTA: Si quisiesemos ver las diferencias de nuestro directorio de trabajo respecto al commit de la Versión 1, haríamos `git diff v1`.
 > Observa que estamos viendo las diferencias hacia al pasado. Esta forma de uso de git diff es diferente a la que vimos en la última actividad, en la cual veíamos las diferencias hacia el futuro.
 
 ![git diff HEAD](assets/git-diff-head.png)
@@ -564,13 +569,13 @@ Borrado las 2 últimas líneas.
 Y luego hemos añadido al área de preparación mediante 
 
 ```sh
-git  add  README.md
+git add README.md
 ```
 
 No te preocupes en este caso puede también aplicarse el comando anterior:
 
 ```sh
-git  reset --hard
+git reset --hard
 ```
 
 Dicho comando coge el contenido que hay en nuestro commit confirmado y recupera ambos: el directorio de trabajo y el área de preparación.
@@ -588,7 +593,7 @@ Borrado las 2 últimas líneas.
 Y luego hemos añadido al área de preparación mediante 
 
 ```sh
-git  add  README.md
+git add README.md
 ```
 
 Y además hemos hecho
@@ -602,7 +607,7 @@ git commit -m "Borras líneas de README.md"
 Pues en este caso también podemos usar el comando `git reset --hard` de la siguiente forma:
 
 ```sh
-git  reset --hard  HEAD~1
+git reset --hard HEAD~1
 ```
 
 
@@ -615,14 +620,14 @@ git  reset --hard  HEAD~1
 
 **HEAD~n** significa **n commits hacia atrás**, sustituyendo n por un número.
 
-> **NOTA: Usar git reset --hard de esta última forma es peligroso, porque perdemos el último o últimos commits. Así que hay que asegurarse muy bien de que es eso lo que queremos**. 
+> **NOTA: Usar `git reset --hard` de esta última forma es peligroso, porque perdemos el último o últimos commits. Así que hay que asegurarse muy bien de que es eso lo que queremos**. 
 
 
 > *NOTA: No borrar los repositorio local ni el remoto. Los volveremos a utilizar en la siguiente actividad.*
 
 **Subir a plataforma AULES un documento PDF con las capturas de pantalla y explicaciones pertinentes.**
 
-# Archivo .gitignore
+# Archivo `.gitignore`
 
 En esta actividad empezaremos a trabajar con algo más real. Por ejemplo, una sencilla aplicación de Java. Esta actividad también es práctica.
 
