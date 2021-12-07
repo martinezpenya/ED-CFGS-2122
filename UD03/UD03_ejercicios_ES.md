@@ -638,33 +638,21 @@ git log  --oneline --all
 
 ![git log](assets/git-log3.png)
 
-##  Creamos una aplicación HolaMundo en Java con Gradle.
+##  Creamos una aplicación HolaMundo en Java con nuestro IDE.
 
-```sh
-gradle init --type java-application
-```
+Para ello abriremos nuestro IDE favorito (en mi caso NetBeans) crearemos un nuevo proyecto (en mi caso PruebasGit) basado en ant en la misma carpeta en la que tenemos nuestro repositorio local de GIT. Creamos la clase principal, y la modificamos para que pueda imprimir el típico "Hola mundo.".
 
-![gradle init](assets/gradle-init.png)
+Nuestra estructura de carpetas debería ser algo similar a esto:
 
-Vemos que nos ha creado un proyecto de gradle con varios archivos.
+![gradle init](assets/netbeans-init.png)
 
-> NOTA: El archivo `README.md` no es creado por gradle. Ya existía previamente en la carpeta.
+> NOTA: El archivo `README.md` no es creado por NetBeans. Ya existía previamente en la carpeta.
 
-Para probar la ejecución hacemos:
+ Si ahora desde NetBeans compilamos o ejecutamos nuestro programa además aparecerá una nueva carpeta llamada `build`:
 
-```sh
-gradle run
-```
+![gradle run](assets/netbeans-run.png)
 
-![gradle run](assets/gradle-run.png)
-
-Si ahora volvemos a hacer un listado, veremos que nos ha creado una nueva carpeta llamada build con el bytecode resultante de la compilación.
-
-```sh
-ls -a
-tree build
-```
-![tree](assets/carpeta-build.png)
+Podemos ver en el listado que dentro de la carpeta `build` tenemos el bytecode resultante de la compilación.
 
 
 ## Añadiendo archivos al repositorio local
@@ -681,11 +669,13 @@ Esto es porque git diff `HEAD` funciona siempre teniendo en cuenta los archivos 
 
 Ahora debemos añadir todos estos archivos al área de preparación (Staging Area) y luego realizar un commit.
 
-PERO ESPERA UN MOMENTO. Voy a explicarte algo.
+> PERO ESPERA UN MOMENTO. Voy a explicarte algo.
 
 **Cuando se trabaja con proyectos de código fuente existen algunos archivos que no interesa añadir al repositorio, puesto que no aportan nada**. En el repositorio, como norma general, no debe haber archivos ejecutables, ni bytecode, ni código objeto, y muchas veces tampoco .zip, .rar, .jar, .war, etc. Estos archivos inflan el repositorio y, cuando llevamos muchos commits, hacen crecer demasiado el repositorio y además pueden ralentizar el trabajo de descarga y subida.
 
 Para cada lenguaje y para cada entorno de desarrollo se recomienda no incluir ciertos tipos de archivos. Son los **archivos a ignorar**. Cada programador puede añadir o eliminar de la lista los que considere adecuados. Los archivos y carpetas a ignorar deben indicarse en el archivo **`.gitignore`**. En cada línea se pone un archivo, una carpeta o una expresión regular indicando varios tipos de archivos o carpetas.
+
+> Puedes ver que al crear nuestro proyecto en NetBeans el IDE de manera automática ha generado un `.gitignore` por defecto que ha aparecido junto a la nueva carpeta `PruebasGit`
 
 En el repositorio https://github.com/github/gitignore tienes muchos ejemplos para distintos lenguajes, herramientas de construcción y entornos.
 
@@ -695,23 +685,32 @@ Para la herramienta Gradle: https://github.com/github/gitignore/blob/master/Grad
 
 Para el entorno Netbeans: https://github.com/github/gitignore/blob/master/Global/NetBeans.gitignore
 
-Simplificando, nosotros vamos a ignorar las carpetas `build` y `.gradle`. Entonces, el archivo **`.gitignore`** debe tener el siguiente contenido:
+Nosotros, siguiendo las indicaciones de este último enlace vamos a ignorar las carpetas y archivos sugeridos. Entonces, el archivo **`.gitignore`** debe tener el siguiente contenido:
 
 ```sh
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
 build/
-.gradle/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 ```
 
 La barra final es opcional, pero a mí me gusta ponerla cuando me refiero a carpetas, para así saber cuando se trata de un archivo y cuando de una carpeta.
 
-Crea el archivo .gitignore con dicho contenido y haz una captura de pantalla.
+Crea el archivo `.gitignore` con dicho contenido y haz una captura de pantalla.
 
-Ahora si hacemos 
+Ahora si, hacemos:
 
-**`git status`**
+```sh
+git add .
+git status
+```
 
 
-veremos que no nos aparecen las carpetas `build` ni `.gradle`. Y nos aparece un archivo nuevo .gitignore.
+veremos que no nos aparecen las carpetas `dist`, `build` ni `nbproject/private`, ni ninguno de los archivos omitidos en `.gitignore`.
 
 ![gitignore](assets/gitignore.png)
 
@@ -719,13 +718,12 @@ veremos que no nos aparecen las carpetas `build` ni `.gradle`. Y nos aparece un 
 Ahora ya podemos ejecutar
 
 ```sh
-git  add  .
 git  commit  -m  "Código fuente inicial"
 ```
 
-Fíjate que he escrito `git add .`. El punto indica el directorio actual, y es una forma de indicar que incluya en el área de preparación todos los archivos del directorio en el que me encuentro (salvo los archivos y carpetas indicados en `.gitignore`) Se utiliza bastante esta forma de git add cuando no queremos añadir los archivos uno a uno.
+> Fíjate que he escrito `git add .`. El punto indica el directorio actual, y es una forma de indicar que incluya en el área de preparación todos los archivos del directorio en el que me encuentro (salvo los archivos y carpetas indicados en `.gitignore`) Se utiliza bastante esta forma de git add cuando no queremos añadir los archivos uno a uno.
 
-## 3. Subir cambios de repositorio local a repositorio remoto
+## Subir cambios de repositorio local a repositorio remoto
 
 Ya sólo nos queda subir los cambios realizados al repositorio remoto con **git push**
 
@@ -753,9 +751,9 @@ Y la historia de nuestro repositorio local nos quedaría así de bonita
 
 ![git colorido](assets/git-colorido.png)
 
-Accede a tu repositorio en GitHub y haz una captura de pantalla de las *releases*.
+Accede a tu repositorio en GitHub y haz una captura de pantalla de las *Tags*.
 
-Haz otra captura de los archivos y carpetas de código subidas a GitHub. No deberían aparecer ni la carpeta build ni la carpeta .gradle. Y sí debería aparecer el archivo .gitignore.
+Haz otra captura de los archivos y carpetas de código subidas a GitHub. No deberían aparecer ni la carpeta `dist`, `build` ni la carpeta `nbproject/private`. Y sí debería aparecer el archivo `.gitignore`.
 
 > NOTA: La carpeta `.git` nunca se muestra en GitHub.
 
@@ -764,6 +762,8 @@ Haz otra captura de los archivos y carpetas de código subidas a GitHub. No debe
 
 **Subir a plataforma AULES un documento PDF con las capturas de pantalla y explicaciones pertinentes.**
 # Usando un par de claves SSH
+
+> En nuestro caso (diciembre 2021), gitHub ya no permite las conexiones por HTTP, solo por SSH, y esto ya lo hicimos al comenzar los ejercicios, así que te puedes saltar el paso 8 e ir directamente al punto 9. Lo dejo aquí como referencia y consulta.
 
 Como habréis observado, cada vez que hacemos un `git push` nos pide el usuario y contraseña. Esto es bastante molesto.
 
@@ -882,19 +882,16 @@ Después de ello, quedará registrado el host remoto en el archivo **.ssh/known_
 > *NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.*
 
 **Subir a plataforma AULES un documento PDF con las capturas de pantalla y explicaciones pertinentes.**
+
 # Resolviendo conflictos
 
 En esta actividad veremos qué se entiende por conflicto, cuándo se produce y cómo resolverlo.
 
-Como sabéis un mismo repositorio puede tener copias en distintos sitios. 
-Ahora mismo tenemos una copia en GitHub y otra local en nuestro PC. 
-Pero podrían existir más copias locales en otros PC.
+Como sabéis un mismo repositorio puede tener copias en distintos sitios.  Ahora mismo tenemos una copia en GitHub y otra local en nuestro PC. Pero podrían existir más copias locales en otros PC.
 
-Siempre que realicemos cambios (es decir commits) en el mismo archivo en las mismas líneas pero en copias distintas,
-se producirá un conflicto.
+Siempre que realicemos cambios (es decir commits) en el mismo archivo en las mismas líneas pero en copias distintas, se producirá un conflicto.
 
-Para ver esto, vamos a hacer un commit en nuestro repositorio en GitHub,
-y luego haremos un commit en nuestro repositorio local. Trabajaremos con el archivo `README.md` únicamente.
+Para ver esto, vamos a hacer un commit en nuestro repositorio en GitHub, y luego haremos un commit en nuestro repositorio local. Trabajaremos con el archivo `README.md` únicamente.
 
 ## 1. Modificamos archivo README.md remoto
 
@@ -904,6 +901,9 @@ Para ello, entramos en nuestro repositorio remoto, pulsamos sobre el archivo `RE
 y luego pulsamos sobre el lápiz para editar.
 ![readme edit](assets/readme-edit.png)
 
+> Recientemente (mediados de agosto de 2021) gitHub añadió una funcionalidad interesante a todos sus repositorios, y es la posibilidad de abrir el editor vsCode online para cualquier repositorio simplemente usando la `hotkey` ".".
+>
+> Por tanto podemos hacer esta modificación tal y como se muestra en las capturas, o pulsar la tecla "." (punto) y usar vsCode Online para hacer la modificación.
 
 **Insertamos una primera línea con título # y modificamos la línea de la fecha**.
 
@@ -1000,7 +1000,7 @@ Esto es lo que yo he hecho aquí al poner fecha 11 Mayo.
 
 A continuación, guardamos los cambios. Y registramos un nuevo commit.
 
-```
+```sh
 git add README.md
 git commit  -m "Arreglado conflicto en README.md"
 ```
@@ -1014,7 +1014,7 @@ Ahora ya podremos subir nuestro commit con el conflicto solucionado.
 ![git push sin conflicto](assets/git-push-sin-conflicto.png)
 
 
-> *NOTA: Para evitar situaciones como la anterior, es aconsejable no realizar modificaciones en GitHub, y si las hemos realizado o hemos subido commits desde otro repositorio local, lo primero que deberíamos hacer es git pull,  resolver los conflictos que puedan darse, realizar los commits locales que deseemos y finalmente subir commits a GitHub. Resumiendo, una buena estrategia puede ser la siguiente: al principio del día haremos git pull, y al final del día haremos git push.*
+> NOTA: Para evitar situaciones como la anterior, es aconsejable no realizar modificaciones en GitHub, y si las hemos realizado o hemos subido commits desde otro repositorio local, lo primero que deberíamos hacer es `git pull`,  resolver los conflictos que puedan darse, realizar los commits locales que deseemos y finalmente subir commits a GitHub. Resumiendo, una buena estrategia puede ser la siguiente: al principio del día haremos `git pull`, y al final del día haremos `git push`.
 
 > *NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.*
 
