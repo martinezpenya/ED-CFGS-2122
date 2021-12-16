@@ -94,7 +94,7 @@ String nombres[]; //incorrecto
 
 ### Identifier names
 
-For the identifiers we can use the English letters and numbers from the ASCII table. You should not use characters with accents or the (ñ). Underslashes or dashes are also not used. **The names of the identifiers should always be as descriptive as possible, be it variable, method or class**. Only single character identifiers are used to represent the counters in the for loop, and they begin at the letter *i*.
+For the identifiers we can use the English letters and numbers from the ASCII table. You should not use characters with accents or the (ñ). Underscores or dashes are also not used. **The names of the identifiers should always be as descriptive as possible, be it variable, method or class**. Only single character identifiers are used to represent the counters in the for loop, and they begin at the letter *i*.
 
 - **Package** name: always in lowercase.
 - Name of the **classes or interfaces**: *UpperCamelCase*. 

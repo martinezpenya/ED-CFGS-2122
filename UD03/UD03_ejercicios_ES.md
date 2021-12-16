@@ -262,7 +262,9 @@ El primer commit será la versión 1 de nuestro proyecto. La etiqueta será `v1`
 
 El tercer commit será la versión 2 de nuestro proyecto. La etiqueta será `v2`.
 
-El segundo commit no será etiquetado.
+El segundo commit no será etiquetado. 
+
+> [REHACER FOTO] la v2 deberia ser "Versión 2"
 
 ![git tag](assets/git-tag.png)
 
