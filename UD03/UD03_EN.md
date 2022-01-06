@@ -422,7 +422,7 @@ We could also associate a working copy (the one found on our hard drive) to seve
 
 ## Version control tools.
 
-We can find a good offer of version control systems available as proprietary and free software. We see some of the main version control systems on the market
+We can find a good offer of version control systems available as proprietary and free software. We see some of the main version control systems on the market.
 
 **CVS (concurrent versions system)**
 It was one of the most widely used programs in the world of free software for software version control. It is based on the client-server model, there are versions of the program for a multitude of platforms. Its solidity and its proven effectiveness, both in small and large groups of users, made it the tool used by successful free software projects such as Mozilla, OpenOffice.org, KDE or GNOME, among others.
