@@ -40,7 +40,7 @@ git config --list
 
 ### Creación de un repositorio nuevo (`git init`)
 
-Este comando crea crea una nueva carpeta con el nombre del repositorio, que a su vez contiene otra carpeta oculta llamada .git que contiene la base de datos donde se registran los cambios en el repositorio.
+Este comando crea una nueva carpeta con el nombre del repositorio, que a su vez contiene otra carpeta oculta llamada .git que contiene la base de datos donde se registran los cambios en el repositorio.
 
 `git init <nombre-repositorio>` crea un repositorio nuevo con el nombre \<nombre-repositorio\>.
 
