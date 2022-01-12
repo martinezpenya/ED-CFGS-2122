@@ -11,7 +11,7 @@ footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 
 # History
 
-In the previous unit we talked about the phases in the software development process.
+Previously, at unit 1, we talked about the phases in the software development process.
 One of them was the coding phase, in which a programming language was used to pass all the actions that the application had to carry out into a language that the machine was capable of understanding and executing.
 Reference was also made to tools to support the programming process.
 In this unit we are going to analyze, install and run these tools to understand their action and effect.
