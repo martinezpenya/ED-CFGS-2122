@@ -14,7 +14,7 @@ footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 
 Throughout the software development process, from the design phase, in the implementation and once the application is developed, it is necessary to carry out a set of tests (Process that allows verifying and revealing the quality of a software product. They are used to identify possible failures of implementation, quality or usability of a program), which allow verifying that the software being created is correct and complies with the specifications imposed by the user.
 
-In the software development process, we are going to find a set of activities, where it is very easy for human error to occur. These human errors can be: an incorrect specification of the objectives, errors produced during the design process and errors that appear in the development phase.
+In the software development process, we are going to find a set of activities, where it is very easy to find an human error. These human errors can be: an incorrect specification of the objectives, errors produced during the design process and errors that appear in the development phase.
 
 <img src="assets/ciclovida.png" alt="ciclo de vida" style="zoom: 67%;" />
 
