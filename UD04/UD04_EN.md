@@ -26,8 +26,8 @@ To carry out the testing process efficiently, you need to implement a testing st
 
 There is no official or formal classification on the various types of software tests. In software engineering, we find two fundamental approaches:
 
-- **Black Box Testing** (Black Box Testing): when an application is tested using its external interface, without worrying about its implementation. Here the fundamental thing is to check that the results of the execution of the application are as expected, based on the inputs it receives.
-- **White Box Testing** (White Box Testing): in this case, the application is tested from within, using its application logic.
+- **Black Box Testing**: when an application is tested using its external interface, without worrying about its implementation. Here the fundamental thing is to check that the results of the execution of the application are as expected, based on the inputs it receives.
+- **White Box Testing**: in this case, the application is tested from within, using its application logic.
 
 <img src="assets/caja_blanca-caja_negra.png" alt="Pruebas de caja blanca/negra" style="zoom: 67%;" />
 
