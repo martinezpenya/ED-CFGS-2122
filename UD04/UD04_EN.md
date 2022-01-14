@@ -319,7 +319,7 @@ The ISO / IEC 29119 standard for software testing, intends to unify in a single 
 >
 > - Part 2. Testing processes:
 >   - Organization policy.
->   - Management of the test project.
+>   - Test project management.
 >   - Static test processes.
 >   - Dynamic test processes.
 >

@@ -341,7 +341,7 @@ It is a feature that allows you to give different forms to a method, either in t
 
 Method `overloading` consists of implementing the same method several times but with different parameters, so that, when invoking it, the compiler decides which of the methods should be executed, based on the parameters of the call.
 
-An example of an overloaded method is one that calculates the salary of a worker in a company. Depending on the position that the worker occupies, he will have more or less items on his payroll (more or less incentives, for example).
+An example of an overloaded method is one that calculates the salary of an employee in a company. Depending on the position that the worker occupies, he will have more or less items on his payroll (more or less incentives, for example).
 The same method, which we could call `CalculateSalary`, will be implemented differently depending on whether the salary of an operator is calculated (with fewer items on his payroll, which causes the method to receive fewer variables) or if the salary of an operator is calculated. executive.
 
 Method `override` consists of reimplementing a method inherited from a superclass with exactly the same definition (including method name, parameters, and return value).
