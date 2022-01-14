@@ -53,13 +53,13 @@ In contrast to the above, a White Box test will directly analyze and test the ap
 
 ## Functional.
 
-We are facing evidence of the black box. It is about testing whether the outputs returned by the application, or part of it, are as expected, depending on the input parameters that we pass to it. We are not interested in the implementation of the software, only if it performs the functions expected of it.
+We are facing evidence of the black box. It is about testing whether the outputs returned by the application, or part of it, as are expected, depending on the input parameters that we pass to it. We are not interested in the implementation of the software, only if it performs the functions expected of it.
 
-Functional testing follows the Black Box testing approach. They would include those activities whose objective is to verify a specific or functional action within the code of an application. Functional tests would attempt to answer the questions can the user do this? or does this application utility work?
+Functional testing follows the Black Box testing approach. They would include those activities whose objective is to verify a specific or functional action within the code of an application. Functional tests would attempt to answer the questions: can the user do this? or does this application utility work?
 
 Its main task will consist of checking the correct functioning of the components of the computer application. To carry out this type of test, the inputs and outputs of each component must be analyzed, verifying that the result is as expected. Only the inputs and outputs of the system will be considered, without worrying about its internal structure.
 
-If, for example, we are implementing an application that performs a certain scientific calculation, in the approach of functional tests, we are only interested in verifying that before a certain input to that program the result of its execution returns the expected data as a result. This type of test would not consider, in any case, the code developed, nor the algorithm (Ordered set of steps to follow to solve a problem), nor the efficiency, nor if there are unnecessary parts of the code, etc.
+If, for example, we are implementing an application that performs a certain scientific calculation, in the approach of functional tests, we are only interested in verifying that before a certain input to the program the conclusion of its execution returns the expected data as a result. This type of test would not consider, in any case, the code developed, neither the algorithm (Ordered set of steps to follow to solve a problem), nor the efficiency, nor if there are unnecessary parts of the code, etc.
 
 Within the functional tests, we can indicate three types of tests:
 
