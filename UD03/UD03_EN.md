@@ -158,7 +158,7 @@ longName1 = longName2 * (longName3 + longName4 - longName5)
 		+ (4 * longname6); //Siempre con el operador al principio de línea
 ```
 
-- Blanks improve readability. They must be placed between operators, after semicolons in for loops, after assignment operators, and so on.
+- White spaces improve readability. They must be placed between operators, after semicolons in for loops, after assignment operators, and so on.
 
 ```java
 cantidadTotal = cantidadInicial + cantidadFinal;
