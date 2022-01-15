@@ -9,7 +9,6 @@ header: ${title} - ${subject} (ver:${today})
 footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 ---
 
-
 # Planning the tests.
 
 Throughout the software development process, from the design phase, in the implementation and once the application is developed, it is necessary to carry out a set of tests (Process that allows verifying and revealing the quality of a software product. They are used to identify possible failures of implementation, quality or usability of a program), which allow verifying that the software being created is correct and complies with the specifications imposed by the user.
@@ -49,6 +48,7 @@ In contrast to the above, a White Box test will directly analyze and test the ap
 
 > It is common for a software development company to spend 40 percent of the development effort on testing. Why is testing so important? What types of errors are the tests trying to fix?
 > The tests are very important, since they allow to discover errors in a program, failures in the implementation, quality or usability of the software, helping to guarantee the quality.
+>
 > The tests try to verify that each component that has been designed, be it a method, function, module, etc. performs the function for which it was designed. An attempt is also made to verify that there are conditions in which all the paths of an application are executed.
 
 ## Functional.
@@ -338,7 +338,7 @@ The ISO / IEC 29119 standard for software testing, intends to unify in a single 
 
 # Unit tests.
 
-Unit testing, or unit testing, is intended to test the correct operation of a code module. The aim is that each module works correctly separately.
+Unit testing is intended to test the correct operation of a code module. The aim is that each module works correctly separately.
 
 Later, with the integration test, the correct operation of the system can be ensured. A unit is the smallest part of the application that can be tested. In procedural programming, a unit can be a function or procedure. In object-oriented programming, a unit is usually a method.
 
@@ -441,8 +441,7 @@ The documents to be generated are:
 - **Test incident report**. For each incident, detected defect, request for improvement, etc., a "test incident report" will be prepared.
 - **Summary test report**. Finally a "Test Summary Report" will summarize the test activities linked to one or more test design specifications.
 
-> **To know more**
-> In the following link you can visit the page of the Ministry of Territorial Policy and Public Administration, dedicated to [Metrica v.3] (https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html)
+> **To know more**: In the following link you can visit the page of the Ministry of Territorial Policy and Public Administration, dedicated to [Metrica v.3] (https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html)
 
 # Test Driven Development
 
