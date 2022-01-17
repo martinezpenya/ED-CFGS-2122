@@ -271,10 +271,11 @@ In this example,
 
 ```java
 public double funcion1 (double x){
-    if (x>0 && x<100)
+    if (x>0 && x<100){
         return x+2;
-    else
+    }else{
         return x-2;
+    }
 }
 ```
 
@@ -306,35 +307,32 @@ However, these standards do not cover certain facets of the testing phase, such 
 
 The ISO / IEC 29119 standard for software testing, intends to unify in a single standard, all the standards, in such a way that it provides vocabulary, processes, documentation and techniques to cover the entire software life cycle. From test organization strategies and test policies, project testing to test case analysis, design, execution and reporting. With this standard, any test can be performed for any software development or maintenance project.
 
-> **ISO / IEC 29119.**
-> The ISO / IEC 29119 standard is made up of the following parts:
->
-> - Part 1. Concepts and vocabulary:
+> **ISO / IEC 29119**:The ISO / IEC 29119 standard is made up of the following parts:
+> 
+>- Part 1. Concepts and vocabulary:
 >   - Introduction to the test.
 >   - Risk-based tests.
 >   - Test phases (unit, integration, system, validation) and test types (static, dynamic, non-functional, ...).
 >   - Testing in different software life cycles.
 >   - Roles and responsibilities in the test.
 >   - Metrics and measures.
->
-> - Part 2. Testing processes:
+> 
+>- Part 2. Testing processes:
 >   - Organization policy.
 >   - Test project management.
 >   - Static test processes.
 >   - Dynamic test processes.
->
-> - Part 3. Documentation
+> 
+>- Part 3. Documentation
 >   - Content.
 >   - Template.
->
-> - Part 4. Testing techniques:
+> 
+>- Part 4. Testing techniques:
 >   - Description and examples.
 >   - Static: reviews, inspections, etc.
 >   - Dynamics: Black box, white box, Non-functional test techniques (Security, performance, usability, etc).
->
->
-> **To know more**
-> In the following link you can visit the international page, where the standards to be followed for software testing are detailed: Standards for software testing http://softwaretestingstandard.org/
+> 
+>**To know more**: In the following link you can visit the international page, where the standards to be followed for software testing are detailed: Standards for software testing http://softwaretestingstandard.org/
 
 # Unit tests.
 
