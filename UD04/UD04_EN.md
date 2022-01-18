@@ -44,8 +44,8 @@ The tests should seek a compromise between the amount of resources that will be 
 
 There is no official or formal classification on the various types of software tests. In software engineering, we find two fundamental approaches:
 
-- **Black Box / Functional Testing**: when an application is tested using its external interface, without worrying about its implementation. Here the fundamental thing is to check that the results of the execution of the application are as expected, based on the inputs it receives.
-- **White Box / Structural Testing**: in this case, the application is tested from within, using its application logic.
+- **Black Box/Functional Testing**: when an application is tested using its external interface, without worrying about its implementation. Here the fundamental thing is to check that the results of the execution of the application are as expected, based on the inputs it receives.
+- **White Box/Structural Testing**: in this case, the application is tested from within, using its application logic.
 
 <img src="assets/caja_blanca-caja_negra.png" alt="Pruebas de caja blanca/negra" style="zoom: 67%;" />
 
@@ -291,14 +291,14 @@ The standards that have been used in the software testing phase are:
 - IEEE Software Testing Standards:
   - IEEE Standard 829, Software Test Documentation.
   - IEEE Standard 1008, Unit Testing
-  - Other standards ISO / IEC 12207, 15289
+  - Other standards ISO/IEC 12207, 15289
 - Other sectoral standards
 
-However, these standards do not cover certain facets of the testing phase, such as the organization, process and management of the tests, they present few functional and non-functional tests, etc. Faced with this problem, the industry has developed the ISO / IEC 29119 standard.
+However, these standards do not cover certain facets of the testing phase, such as the organization, process and management of the tests, they present few functional and non-functional tests, etc. Faced with this problem, the industry has developed the ISO/IEC 29119 standard.
 
-The ISO / IEC 29119 standard for software testing, intends to unify in a single standard, all the standards, in such a way that it provides vocabulary, processes, documentation and techniques to cover the entire software life cycle. From test organization strategies and test policies, project testing to test case analysis, design, execution and reporting. With this standard, any test can be performed for any software development or maintenance project.
+The ISO/IEC 29119 standard for software testing, intends to unify in a single standard, all the standards, in such a way that it provides vocabulary, processes, documentation and techniques to cover the entire software life cycle. From test organization strategies and test policies, project testing to test case analysis, design, execution and reporting. With this standard, any test can be performed for any software development or maintenance project.
 
-> **ISO / IEC 29119**:The ISO / IEC 29119 standard is made up of the following parts:
+> **ISO/IEC 29119**:The ISO/IEC 29119 standard is made up of the following parts:
 > 
 >- Part 1. Concepts and vocabulary:
 >   - Introduction to the test.
@@ -416,7 +416,7 @@ The following tools should be highlighted:
 
 As in other stages and tasks of application development, the documentation of the tests is an essential requirement for their correct performance. Well-documented tests can also serve as a knowledge base for future testing tasks.
 
-Current methodologies, such as Métrica v.3 (Information Systems Planning, Development and Maintenance Methodology. Metrica v3 can be used freely, with the sole restriction of citing the source of its intellectual property, which is the Ministry of the Presidency), propose that the documentation of the testing phase be based on the ANSI / IEEE standards on software verification and validation.
+Current methodologies, such as Métrica v.3 (Information Systems Planning, Development and Maintenance Methodology. Metrica v3 can be used freely, with the sole restriction of citing the source of its intellectual property, which is the Ministry of the Presidency), propose that the documentation of the testing phase be based on the ANSI/IEEE standards on software verification and validation.
 
 The purpose of the ANSI/IEEE standards is to describe a set of documents for software testing. A standard test document can facilitate communication between developers by providing a common frame of reference. Defining a standard test document can be used to verify that the entire software testing process has been completed.
 
