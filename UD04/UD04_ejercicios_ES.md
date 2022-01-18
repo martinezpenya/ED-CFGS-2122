@@ -439,9 +439,13 @@ public class CCuenta {
 
 Tal cual tenemos ahora mismo la clase `Ccuenta` y `CcuentaTest`, hemos descubierto un problema en el método `retirar`. Explica como se lanzan las pruebas desde Netbeans (donde se vea el test que no es satisfactorio), justifica si el problema está en el Test o en el método `retirar`. Realiza las modificaciones oportunas (en el test o en el método `retirar`) para que el test sea satisfactorio explicando paso a paso y con capturas como realiza los test y resultan todos satisfactorios.
 
+Envia la memoria en PDF a la tarea correspondiente de AULES.
+
 ## Junit_2
 
 Modifique los métodos de prueba (tests) que considere oportuno para conseguir que para cada uno de los tests se impriman los milisegundos empleados en la prueba. Hay que hacerlo de la manera más eficiente posible, y no repetir código en cada uno de los tests.
+
+Envia la memoria en PDF a la tarea correspondiente de AULES.
 
 # Fuentes de información
 

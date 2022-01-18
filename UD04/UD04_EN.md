@@ -17,41 +17,41 @@ In the software development process, we are going to find a set of activities, w
 
 <img src="assets/ciclovida.png" alt="ciclo de vida" style="zoom: 67%;" />
 
-By performing software tests, the verification tasks (Process by which it is verified that the software meets the specified requirements) and validation (Process that verifies if the software does what the user wanted. verified) of the software. Verification is the verification that a system or part of a system complies with the imposed conditions. The verification checks if the application is building correctly. Validation is the process of evaluating the system or one of its components, to determine if it satisfies the specified requirements.
+By performing software tests, the **verification** tasks and **validation** of the software.
+
+> **Verification** is the ratification that a system or part of a system complies with the imposed conditions. The verification checks if the application is built correctly.
+>
+> **Validation** is the process of evaluating the system or one of its components, to determine if it satisfies the specified requirements.
 
 To carry out the testing process efficiently, you need to implement a testing strategy. Following the Spiral Model (Software life cycle life cycle model, in which the activities are formed in a spiral. Each loop or iteration represents a set of activities), the tests would start with the unit test, where the implemented code would be analyzed and we would continue in the integration test, where attention is paid to the design and construction of the software architecture. The next step would be the validation test, where it is verified that the built system complies with what is established in the software requirements analysis. Finally, the system test is reached, which verifies the total operation of the software and other elements of the system.
 
-# Test types.
+# Code testing.
+
+The test consists of executing a program with the aim of finding errors. The program or part of it will be executed under previously specified conditions, so that once the results have been observed, they will be recorded and evaluated.
+
+According to the IEEE, a test case is a set of inputs, execution conditions and expected results, developed for a particular objective, such as, for example, exercising a specific path of a program or verifying the fulfillment of a certain requirement, including all associated documentation.
+
+Given the complexity of computer applications that are currently being developed, it is practically impossible to test all the combinations that can occur within a program or between a program and the applications that can interact with it. For this reason, when designing test cases, it is always necessary to ensure that with them an acceptable level of probability is obtained that existing errors will be detected.
+
+The tests should seek a compromise between the amount of resources that will be consumed in the test process, and the probability obtained that existing errors will be detected.
+
+> It is common for a software development company to spend **40 percent** of the development effort on testing. Why is testing so important? What types of errors are the tests trying to fix?
+> The **tests are very important**, since they allow to discover errors in a program, failures in the implementation, quality or usability of the software, helping to guarantee the quality.
+>
+> The tests try to verify that each component that has been designed (method, function, module, etc. ) performs the function for which it was designed. An attempt is also made to verify that there are conditions in which all the paths of an application are executed.
+
+## Test types.
 
 There is no official or formal classification on the various types of software tests. In software engineering, we find two fundamental approaches:
 
-- **Black Box Testing**: when an application is tested using its external interface, without worrying about its implementation. Here the fundamental thing is to check that the results of the execution of the application are as expected, based on the inputs it receives.
-- **White Box Testing**: in this case, the application is tested from within, using its application logic.
+- **Black Box / Functional Testing**: when an application is tested using its external interface, without worrying about its implementation. Here the fundamental thing is to check that the results of the execution of the application are as expected, based on the inputs it receives.
+- **White Box / Structural Testing**: in this case, the application is tested from within, using its application logic.
 
 <img src="assets/caja_blanca-caja_negra.png" alt="Pruebas de caja blanca/negra" style="zoom: 67%;" />
 
-A Black Box type test is carried out without having to know the structure or the internal functioning of the system. When this type of test is carried out, only the appropriate inputs that the application should receive are known, as well as the corresponding outputs, but the process by which the application obtains these results is not known.
+- **Random focus**. From statistically obtained models, test cases are developed that test the program inputs.
 
-In contrast to the above, a White Box test will directly analyze and test the application code. As derived from the above, to carry out a White Box test, a specific knowledge of the code is necessary, in order to be able to analyze the test results.
-
-| | Types of software tests |
-| --------------------- | ------------------------------------------------------------ |
-| Unit tests | With it you will test the correct operation of a code module |
-| Load tests | This is the simplest type of performance test. A load test is generally performed to observe the behavior of an application under an expected number of requests. <br/> This load can be the expected number of concurrent users using the application and performing a specific number of transactions during the time that the charge lasts. This test can show response times for all important transactions in your application. If the database, application server, etc. are also monitored, then this test may show the bottleneck in the application. |
-| Stress test | This test is normally used to break the application. The number of users added to the application doubles and a load test runs until it breaks. This type of testing is performed to determine the robustness of the application during times of extreme load and helps administrators to determine if the application will perform sufficiently in the event that the actual load exceeds the expected load. |
-| Stability test | This test is normally done to determine if the application can withstand a continued expected load. Generally this test is done to determine if there are any memory leaks in the application |
-| Peak tests | The spike test, as the name suggests, tries to observe the behavior of the system by varying the number of users, both when they go down, and when it has drastic changes in its load. <br /> This test is recommended to be carried out with software automated system that allows changes to be made to the number of users while administrators keep a record of the values ​​to be monitored |
-| Structural test | The structural or white box approach focuses on the internal structure of the program (analyzes the execution paths). |
-| Functional test | The functional or black box approach focuses on the functions, inputs and outputs that a specific module or function receives and produces. |
-| Random tests | The random approach consists of using models (in many cases statistical) that represent the possible inputs to the program to create the test cases from them. |
-| Regression tests | They are any type of software tests that try to discover the causes of new errors, lack of functionality, or functional divergences with respect to the expected behavior of the software, induced by changes recently made in parts of the application that were not prone to before the aforementioned change. this kind of error. This implies that the error dealt with occurs as an unexpected consequence of the aforementioned change in the program. |
-
-> It is common for a software development company to spend 40 percent of the development effort on testing. Why is testing so important? What types of errors are the tests trying to fix?
-> The tests are very important, since they allow to discover errors in a program, failures in the implementation, quality or usability of the software, helping to guarantee the quality.
->
-> The tests try to verify that each component that has been designed, be it a method, function, module, etc. performs the function for which it was designed. An attempt is also made to verify that there are conditions in which all the paths of an application are executed.
-
-## Functional.
+### Functional (Black box).
 
 We are facing evidence of the black box. It is about testing whether the outputs returned by the application, or part of it, as are expected, depending on the input parameters that we pass to it. We are not interested in the implementation of the software, only if it performs the functions expected of it.
 
@@ -69,7 +69,7 @@ Within the functional tests, we can indicate three types of tests:
 
 There are other types of functional tests, although they all share the same objective, and that is to verify, only by acting on the application interface, that the results it produces are correct based on the inputs that are introduced to test them.
 
-## Structural.
+### Structural (White Box).
 
 We have already seen that functional testing focuses on results, on what the application does, but not on how it does it.
 
@@ -88,7 +88,125 @@ These types of tests are based on criteria of logical coverage, the fulfillment 
 - **Road coverage**: it is the most important criterion. It establishes that each sequence of chained statements must be executed at least once, from the initial statement of the program, to its final statement. The execution of this set of sentences is known as a path. As the number of paths that an application can have can be very large, to perform this test, the number is reduced to what is known as the test path.
 - **Test path coverage**: Two variants can be performed, one indicates that each loop should be executed only once, since doing it more times does not increase the effectiveness of the test and another that recommends that each loop be tested three times: the first without entering it, another by executing it once and another by executing it twice.
 
-## Regression.
+### Other types
+
+|                  | Types of software tests                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Unit tests       | With it you will test the correct operation of a code module |
+| Load tests       | This is the simplest type of performance test. A load test is generally performed to observe the behavior of an application under an expected number of requests. <br/> This load can be the expected number of concurrent users using the application and performing a specific number of transactions during the time that the charge lasts. This test can show response times for all important transactions in your application. If the database, application server, etc. are also monitored, then this test may show the bottleneck in the application. |
+| Stress test      | This test is normally used to break the application. The number of users added to the application doubles and a load test runs until it breaks. This type of testing is performed to determine the robustness of the application during times of extreme load and helps administrators to determine if the application will perform sufficiently in the event that the actual load exceeds the expected load. |
+| Stability test   | This test is normally done to determine if the application can withstand a continued expected load. Generally this test is done to determine if there are any memory leaks in the application |
+| Peak tests       | The spike test, as the name suggests, tries to observe the behavior of the system by varying the number of users, both when they go down, and when it has drastic changes in its load. <br /> This test is recommended to be carried out with software automated system that allows changes to be made to the number of users while administrators keep a record of the values ​​to be monitored |
+| Structural test  | The structural or white box approach focuses on the internal structure of the program (analyzes the execution paths). |
+| Functional test  | The functional or black box approach focuses on the functions, inputs and outputs that a specific module or function receives and produces. |
+| Random tests     | The random approach consists of using models (in many cases statistical) that represent the possible inputs to the program to create the test cases from them. |
+| Regression tests | They are any type of software tests that try to discover the causes of new errors, lack of functionality, or functional divergences with respect to the expected behavior of the software, induced by changes recently made in parts of the application that were not prone to before the aforementioned change. this kind of error. This implies that the error dealt with occurs as an unexpected consequence of the aforementioned change in the program. |
+
+## Code samples
+
+### Coverage.
+
+With this type of test, what is intended is to verify that all the functions, sentences, decisions, and conditions are going to be executed.
+
+For instance:
+
+```java
+int prueba (int x, int y){
+    int z=0;
+    if ((x>0) && (y>0)){
+        z=x;
+    }
+    return z;
+}
+```
+
+Considering that this function is part of a larger program, the following is considered:
+
+- If during the execution of the program, the function is called, at least once, the coverage of the function is satisfied.
+- The coverage of sentences for this function will be satisfied if it is invoked, for example as test (1,1), since in this case, each line of the function is executed, including z = x;
+- If we invoke the function with test (1,1) and test (0,1), the decision coverage will be satisfied. In the first case, the if condition will be true, z = x will be executed, but in the second case, it will not.
+- The condition coverage can be satisfied if we test with proof (1,1), proof (1,0) and proof (0,0). In the first two cases (x <0) it evaluates to true while in the third, it evaluates to false. At the same time, the first case makes (y> 0) true, while the third makes it false.
+
+There are another series of criteria to check coverage.
+
+- Linear sequence of code and jump.
+- JJ-Path Coverage.
+- Entry and exit coverage.
+
+There are commercial tools and also free software, which allow the testing of
+covering, among them, for Java, we find Clover.
+
+### Limit values.
+
+In the attached Java code, there are two functions that take the parameter x. In function1, the parameter is of type real and in function2, the parameter is of type integer.
+
+```java
+public double funcion1 (double x){
+    if (x>5)
+        return x;
+    else
+        return -1;
+}
+
+public int funcion2 (int x){
+    if (x>5)
+        return x;
+    else
+        return -1;
+}
+```
+
+As can be seen, the code of the two functions is the same, however, the test cases with limit values ​​will be different.
+
+Experience has shown that the test cases with the highest probability of success are those that work with limit values.
+
+This technique is usually used as a complement to equivalent partitions, but it differs, in that not a set of values ​​are usually selected, but a few, at the limit of the range of values ​​accepted by the component to be tested.
+
+When you have to select a value to perform a test, you choose those that are located just at the limit of the allowed values.
+
+For example, suppose we want to test the result of executing a function, which receives a parameter x:
+
+- If the input parameter x has to be stricter than 5, and the value is real, the limit values ​​can be 4.99 and 5.01.
+- If the input parameter x is between -4 and +4, assuming they are integer values, the limit values ​​will be -5, -4, -3.3, 4, and 5.
+
+### Equivalence classes.
+
+The equivalence classes are a type of functional test, where each test case aims to cover as many entries as possible.
+
+The domain of input values ​​is divided into a finite number of equivalence classes. As the input is divided into a set of equivalence classes, the test of a representative value of each class allows us to suppose that the result obtained with it will be the same as with any other value in the class.
+
+Each equivalence class must meet:
+
+- If an input parameter must be within a certain range, there are three equivalence classes: below, in and above.
+- If an entry requires a value between those of a set, two equivalence classes appear: in the set or outside of it.
+- If an input is Boolean, there are two classes: yes or no.
+- The same criteria apply to the expected outputs: you have to try to generate results in each and every one of the classes.
+
+In this example,
+
+```java
+public double funcion1 (double x){
+    if (x>0 && x<100){
+        return x+2;
+    }else{
+        return x-2;
+    }
+}
+```
+
+the equivalence classes would be:
+
+1. Below: x <= 0
+2. At: x> 0 and x <100
+3. Above: x> = 100
+
+and the respective test cases could be:
+
+1. Below: x = 0
+2. In: x = 50
+3. Above: x = 100
+
+# Regression.
 
 During the testing process, we will be successful if we detect a possible failure or error. The direct consequence of this discovery involves the modification of the component where it has been detected. This modification can generate collateral errors, which did not exist before. As a consequence, the modification made forces us to repeat tests that we have carried out previously.
 
@@ -107,20 +225,6 @@ The regression test suite contains three different classes of test classes:
 - Tests that focus on the software components that have changed.
 
 To prevent the number of regression tests from growing too large, they should be designed to include only those tests that deal with one or more kinds of errors in each of the main functions of the program. It is neither practical nor efficient to rerun every test of every function in the program after a change.
-
-# Procedures and test cases.
-
-According to the IEEE, a test case is a set of inputs, execution conditions and expected results, developed for a particular objective, such as, for example, exercising a specific path of a program or verifying the fulfillment of a certain requirement, including all associated documentation.
-
-Given the complexity of computer applications that are currently being developed, it is practically impossible to test all the combinations that can occur within a program or between a program and the applications that can interact with it. For this reason, when designing test cases, it is always necessary to ensure that with them an acceptable level of probability is obtained that existing errors will be detected.
-
-The tests should seek a compromise between the amount of resources that will be consumed in the test process, and the probability obtained that existing errors will be detected.
-
-There are several procedures for designing test cases:
-
-- **Functional or black box approach**. In this type of test, we focus on that the program, or part of the program that we are testing, receives an input properly and produces a correct output, as well as that the integrity of the external information is maintained. The test does not verify the process, only the results.
-- **Structural approach or white box**. In this type of testing, we must focus on the internal implementation of the program. This is to check that the internal operation conforms to specifications. In this test, all the paths that the execution of the program can follow should be tested.
-- **Random focus**. From statistically obtained models, test cases are developed that test the program inputs.
 
 # Debugging tools.
 
@@ -154,7 +258,7 @@ In order to debug a program, we can run the program in different ways, so that d
 The different execution modes will be adjusted to the debugging needs that we have at all times. If we have tested a method, and we know that it works correctly, it is not necessary to perform a step-by-step execution on it.
 In the NetBeans IDE, within the debugging menu, we can select the specified execution modes, and some more. The objective is to be able to examine all the parts that are considered necessary, quickly, easily and as clearly as possible.
 
-## Variable browsers.
+## Variable inspection.
 
 During the software implementation and testing process, one of the most common ways to verify that the application is working properly is to check that the variables are taking the appropriate values ​​at all times.
 
@@ -176,119 +280,6 @@ When proceeding with each validation test case, one of the following two conditi
 
 - The operating or performance characteristics are in accordance with the specifications and are acceptable or 
 - A deviation from the specifications is discovered and a list of deficiencies is created. Deviations or errors discovered in this phase of the project can rarely be corrected before planned completion.
-
-# Code testing.
-
-The test consists of executing a program with the aim of finding errors. The program or part of it will be executed under previously specified conditions, so that once the results have been observed, they will be recorded and evaluated.
-
-To carry out the tests, it is necessary to define a series of test cases, which are going to be a set of inputs, execution conditions and expected results, developed for a particular objective.
-
-For test case design, three main approaches are typically used:
-
-- Structural or white box approach. This approach focuses on the internal structure of the program, analyzing the execution paths. Within our testing process, we apply it with the coating.
-- Functional or black box approach. This approach focuses on functions, inputs and outputs. Limit values ​​and equivalence classes apply.
-- Random approach, which consists of using models that represent the possible inputs to the program, to create the test cases from them. In this test, we try to simulate the usual input that the program is going to receive, for this, input data is created in the sequence and with the frequency in which it could appear. Automatic test case generators are used for this.
-
-## Coverage.
-
-With this type of test, what is intended is to verify that all the functions, sentences, decisions, and conditions are going to be executed.
-
-For instance:
-
-```java
-int prueba (int x, int y){
-    int z=0;
-    if ((x>0) && (y>0)){
-        z=x;
-    }
-    return z;
-}
-```
-
-Considering that this function is part of a larger program, the following is considered:
-
-- If during the execution of the program, the function is called, at least once, the coverage of the function is satisfied.
-- The coverage of sentences for this function will be satisfied if it is invoked, for example as test (1,1), since in this case, each line of the function is executed, including z = x;
-- If we invoke the function with test (1,1) and test (0,1), the decision coverage will be satisfied. In the first case, the if condition will be true, z = x will be executed, but in the second case, it will not.
-- The condition coverage can be satisfied if we test with proof (1,1), proof (1,0) and proof (0,0). In the first two cases (x <0) it evaluates to true while in the third, it evaluates to false. At the same time, the first case makes (y> 0) true, while the third makes it false.
-
-There are another series of criteria to check coverage.
-
-- Linear sequence of code and jump.
-- JJ-Path Coverage.
-- Entry and exit coverage.
-
-There are commercial tools and also free software, which allow the testing of
-covering, among them, for Java, we find Clover.
-
-## Limit values.
-
-In the attached Java code, there are two functions that take the parameter x. In function1, the parameter is of type real and in function2, the parameter is of type integer.
-
-```java
-public double funcion1 (double x){
-    if (x>5)
-        return x;
-    else
-        return -1;
-}
-
-public int funcion2 (int x){
-    if (x>5)
-        return x;
-    else
-        return -1;
-}
-```
-
-As can be seen, the code of the two functions is the same, however, the test cases with limit values ​​will be different.
-
-Experience has shown that the test cases with the highest probability of success are those that work with limit values.
-
-This technique is usually used as a complement to equivalent partitions, but it differs, in that not a set of values ​​are usually selected, but a few, at the limit of the range of values ​​accepted by the component to be tested.
-
-When you have to select a value to perform a test, you choose those that are located just at the limit of the allowed values.
-
-For example, suppose we want to test the result of executing a function, which receives a parameter x:
-
-- If the input parameter x has to be stricter than 5, and the value is real, the limit values ​​can be 4.99 and 5.01.
-- If the input parameter x is between -4 and +4, assuming they are integer values, the limit values ​​will be -5, -4, -3.3, 4, and 5.
-
-## Equivalence classes.
-
-The equivalence classes are a type of functional test, where each test case aims to cover as many entries as possible.
-
-The domain of input values ​​is divided into a finite number of equivalence classes. As the input is divided into a set of equivalence classes, the test of a representative value of each class allows us to suppose that the result obtained with it will be the same as with any other value in the class.
-
-Each equivalence class must meet:
-
-- If an input parameter must be within a certain range, there are three equivalence classes: below, in and above.
-- If an entry requires a value between those of a set, two equivalence classes appear: in the set or outside of it.
-- If an input is Boolean, there are two classes: yes or no.
-- The same criteria apply to the expected outputs: you have to try to generate results in each and every one of the classes.
-
-In this example,
-
-```java
-public double funcion1 (double x){
-    if (x>0 && x<100){
-        return x+2;
-    }else{
-        return x-2;
-    }
-}
-```
-
-the equivalence classes would be:
-
-1. Below: x <= 0
-2. At: x> 0 and x <100
-3. Above: x> = 100
-
-and the respective test cases could be:
-1. Below: x = 0
-2. In: x = 50
-3. Above: x = 100
 
 # Quality standards.
 
