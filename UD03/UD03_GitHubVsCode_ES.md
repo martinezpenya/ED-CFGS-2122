@@ -1,13 +1,17 @@
 ---
-title: "Como usar el VSCode integrado en GitHub"
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Entornos de desarrollo
-keywords: [EED, 2021, Entornos, Desarrollo]
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver: ${today}) 
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: Como usar el VSCode integrado en GitHub
+    language: ES
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Entornos de desarrollo
+    keywords: [EED, 2021, Entornos, Desarrollo]
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    header: ${title} - ${subject} (ver: ${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
 ---
+[toc]
 # VsCode integrado en GitHub
 
 ## Localizar repositorio.

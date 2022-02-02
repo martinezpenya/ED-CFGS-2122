@@ -1,13 +1,17 @@
 ---
-title: "UD02: Instalando y usando entornos de desarrollo"
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Entornos de desarrollo
-keywords: [EED, 2021, Entornos, Desarrollo]
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver:${today}) 
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: UD02: Instalando y usando entornos de desarrollo
+    language: ES
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Entornos de desarrollo
+    keywords: [EED, 2021, Entornos, Desarrollo]
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    header: ${title} - ${subject} (ver:${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD02/assets/cover.png
 ---
+[toc]
 # Evolución histórica
 
 En la unidad anterior hablábamos de las fases en el proceso de desarrollo de software.

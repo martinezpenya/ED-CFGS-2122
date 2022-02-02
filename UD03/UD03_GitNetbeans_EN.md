@@ -1,13 +1,17 @@
 ---
-title: "Using Git in Apache NetBeans"
-language: EN
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Entornos de desarrollo
-keywords: [EED, 2021, Entornos, Desarrollo]
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver: ${today}) 
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: Using Git in Apache NetBeans
+    language: EN
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Entornos de desarrollo
+    keywords: [EED, 2021, Entornos, Desarrollo]
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    header: ${title} - ${subject} (ver: ${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
 ---
+[toc]
 # Using Git in Apache NetBeans
 
 The Apache NetBeans IDE provides support for the [Git version control system](https://git-scm.com/). The IDE’s Git features let you perform versioning tasks directly from your projects and code within the IDE. This document demonstrates how to perform versioning tasks in the IDE by guiding you through the standard workflow when using Git.

@@ -1,15 +1,12 @@
 ﻿---
-    title: UD04: Designing tests and testing
-    language: EN
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Development Environments
-    keywords: [EED, 2022, Environments, Development]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver:${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD04/assets/cover.png
+title: "UD04: Designing tests and testing"
+language: EN
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Development Environments
+keywords: [EED, 2022, Environments, Development]
+IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver:${today}) 
+footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 ---
 
 # Planning the tests.

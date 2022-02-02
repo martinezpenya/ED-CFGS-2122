@@ -1,15 +1,17 @@
 ﻿---
-title: "UD03: Refactoring and version control tools"
-language: EN
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Development Environments
-keywords: [EED, 2021, Environments, Development]
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver:${today}) 
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: UD03: Refactoring and version control tools
+    language: EN
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Development Environments
+    keywords: [EED, 2021, Environments, Development]
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    header: ${title} - ${subject} (ver:${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
 ---
-
-
+[toc]
 # Refactoring
 
 The term refactoring within the field of Software Engineering refers to modifying the code without changing its operation. It is used to create a clearer and simpler code, facilitating the subsequent reading or revision of a program. It could be understood as the maintenance of the code, to facilitate its understanding, but without adding or eliminating functionalities. **Refactoring code is about creating cleaner code.**

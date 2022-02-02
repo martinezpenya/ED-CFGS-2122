@@ -1,13 +1,18 @@
 ---
-title: "UD04: Diseño y realización de pruebas"
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Entornos de desarrollo
-keywords: [EED, 2021, Entornos, Desarrollo]
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver:${today}) 
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: UD04: Diseño y realización de pruebas
+    language: ES
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Entornos de desarrollo
+    keywords: [EED, 2021, Entornos, Desarrollo]
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    header: ${title} - ${subject} (ver:${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD04/assets/cover.png
 ---
+[toc]
+
 # Planificación de las pruebas.
 
 Durante todo el proceso de desarrollo de software, desde la fase de diseño, en la implementación y una vez desarrollada la aplicación, es necesario realizar un conjunto de pruebas ( Proceso que permite verificar y revelar la calidad de un producto software. Se utilizan para identificar posibles fallos de implementación, calidad o usabilidad de un programa), que permitan verificar que el software que se está creando, es correcto y cumple con las especificaciones impuesta por el usuario.

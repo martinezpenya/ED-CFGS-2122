@@ -18,10 +18,7 @@ import org.junit.BeforeClass;
  *
  * @author David Martínez (wwww.martinezpenya.es|iesmre.com)
  */
-public class CCuentaTest {
-
-    //Variable donde guardamos el tiempo cuando ha comenzado la prueba
-    long comienzo;
+public class CCuentaTestv1 {
 
     //Las variables que usaremos para hacer los tests, ojo! son static!.
     static CCuenta cuentaSinParmetros;
@@ -32,7 +29,7 @@ public class CCuentaTest {
 
     //Aunque el constructor no es obligatorio, Junit lo añade, observa que no 
     //tiene ninguna anotación.
-    public CCuentaTest() {
+    public CCuentaTestv1() {
     }
 
     @BeforeClass
@@ -54,10 +51,6 @@ public class CCuentaTest {
         //en nuestro caso imprimiremos el comentario de que comienza la prueba
         //y crearemos aquí los objetos que vamos a necesitar para hacer pruebas.
         System.out.print("Comienza la prueba ");
-
-        //Inicializamos comienzo con la hora actual
-        comienzo = System.currentTimeMillis();
-
         cuentaSinParmetros = new CCuenta();
         cuentaDavid = new CCuenta("David", "1234", 50, 0.5);
         cuentaPepe = new CCuenta("Pepe", "5678", 200, 1);
@@ -69,8 +62,6 @@ public class CCuentaTest {
         //en nuestro caso imprimiremos el comentario de que ha terminado la prueba
         //Añadimos la variable fin y el calculo respecto al comienzo para saber
         //los ms empleados en la prueba.
-        long fin = System.currentTimeMillis();
-        System.out.println("Total Time: " + (fin - comienzo) + "ms");
         System.out.println("Fin de la prueba\n");
     }
 

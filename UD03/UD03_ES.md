@@ -1,13 +1,17 @@
 ---
-title: "UD03: Refactorización y herramientas de control de versiones"
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Entornos de desarrollo
-keywords: [EED, 2021, Entornos, Desarrollo]
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver:${today}) 
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: UD03: Refactorización y herramientas de control de versiones
+    language: ES
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Entornos de desarrollo
+    keywords: [EED, 2021, Entornos, Desarrollo]
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    header: ${title} - ${subject} (ver:${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
 ---
+[toc]
 # Refactorización
 
 El término refactorizar dentro del campo de la Ingeniería del Software hace referencia a la modificación del código sin cambiar su funcionamiento. Se emplea para crear un código más claro y sencillo, facilitando la posterior lectura o revision de un programa. Se podría entender como el mantenimiento del código, para facilitar su comprensión, pero sin añadir ni eliminar funcionalidades. **Refactorizar código consiste en crear un código más limpio.**

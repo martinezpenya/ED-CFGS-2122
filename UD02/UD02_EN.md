@@ -1,14 +1,17 @@
 ﻿---
-title: "UD02: Installing and using Development Environments"
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Development Environments
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-keywords: [EED, 2021, Development, Environments]
-header: ${title} - ${subject} (ver. ${today})
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: UD02: Installing and using Development Environments
+    language: ES
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Development Environments
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    keywords: [EED, 2021, Development, Environments]
+    header: ${title} - ${subject} (ver. ${today})
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD02/assets/cover.png
 ---
-
+[toc]
 # History
 
 Previously, at unit 1, we talked about the phases in the software development process.

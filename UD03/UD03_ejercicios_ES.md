@@ -1,14 +1,17 @@
 ---
-title: "UD03: Ejercicios GIT"
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Entornos de desarrollo
-keywords: [EED, 2021, Entornos, Desarrollo]
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver:${today}) 
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: UD03: Ejercicios GIT
+    language: ES
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Entornos de desarrollo
+    keywords: [EED, 2021, Entornos, Desarrollo]
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    header: ${title} - ${subject} (ver:${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
 ---
-
+[toc]
 # Áreas de un repositorio GIT
 
 En esta actividad deberás buscar información y explicar las 3 áreas de un proyecto Git:
@@ -1055,7 +1058,7 @@ La opción **`--graph`** nos permite ver las ramas de forma "gráfica".
 Podemos ver también "otra rama" sin nombre con el commit `b0ef` `Update README.md`. 
 En realidad éste es el commit que editamos en GitHub en una actividad anterior y que tuvimos que fusionar en la rama local master, antes de volver a subirlo a GitHub.
 
-# Crear rama mediante `git checkout -b ...`
+## Crear rama mediante `git checkout -b ...`
 
 El comando `git checkout -b  nueva-rama` tiene esencialmente 2 formas:
 
@@ -1115,7 +1118,7 @@ Después de esto, ya podremos cambiar de rama con `git checkout` sin miedo a per
 
 Asegúrate de ejecutar el comando anterior antes de pasar al punto siguiente.
 
-# 2. Crear ramas con git branch ...
+## Crear ramas con `git branch` ...
 
 El comando `git branch  nueva-rama` tiene esencialmente 2 formas:
 
@@ -1191,7 +1194,7 @@ El resultado de `git log --oneline --all --graph` es
 
 ![git log graph 5](assets/git-log-graph5.png)	
 
-## 3. Subir ramas a repositorio remoto
+## Subir ramas a repositorio remoto
 
 Para subir todos los cambios realizados en todas las ramas ejecutamos
 
@@ -1210,6 +1213,7 @@ En **GitHub**, dentro del repositorio correspondiente, podemos ver un gráfico d
 > *NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.*
 
 **Subir a plataforma AULES un documento PDF con las capturas de pantalla y explicaciones pertinentes.**
+
 # Fusión y eliminación de ramas
 
 Esta actividad es una continuación de la anterior. En ella veremos como ealizar **fusión de ramas** (**merge**) y como eliminar apuntadores a ramas antiguas.
@@ -1225,7 +1229,7 @@ Para realizar fusión (merge) de ramas se utiliza el comando
 **`git merge ...`**
 
 
-## 1. Eliminando una rama local
+## Eliminando una rama local
 
 Para eliminar una rama local se usa el comando
 
@@ -1251,7 +1255,7 @@ De esta manera perdemos todas las modificaciones que hubiésemos realizado en di
 
 ![borrar rama2 local](assets/borrar-rama2-local.png)
 
-## 2. Fusionando ramas locales 
+## Fusionando ramas locales 
 
 Vamos a integrar en la rama `master` los cambios realizados en `rama1`, `licencia` y `autor`.
 
@@ -1263,7 +1267,7 @@ Procederemos de la siguiente forma:
 4. Fusionamos rama rama1
 
 
-### 2.1. Cambiamos a rama master
+### Cambiamos a rama master
 
 Es **MUY IMPORTANTE** cambiar a la rama `master`. Si no hacemos el cambio, todas las fusiones se realizarían sobre la rama `autor` (la rama en la que actualmente estamos).
 
@@ -1273,7 +1277,7 @@ git  checkout master
 ```
 
 
-### 2.2. Fusionamos rama licencia
+### Fusionamos rama licencia
 
 Antes, fijémonos en la estructura de las ramas. Hacemos 
 ```sh
@@ -1299,7 +1303,7 @@ Observa como queda tras la fusión. Únicamente se han movido los apuntadores `H
 
 > **NOTA: No te preocupes ahora mismo por los apuntadores remotos (los que aparecen en color rojo). Más adelante los sincronizaremos con el repositorio remoto.**
 
-### 2.3. Fusionamos rama autor
+### Fusionamos rama autor
 
 Si en lugar de fusionar una rama que está adelantada respecto a `master`, 
 lo que hacemos es fusionar una rama que está en paralelo con la rama `master`, 
@@ -1330,7 +1334,7 @@ Esto siempre sucede en la fusión de 3 vías.
 ![git log graph 9](assets/git-log-graph9.png)	
 
 
-### 2.4. Fusionamos rama rama1
+### Fusionamos rama rama1
 
 Por último, integraremos en master los cambios realizados en la `rama1`. 
 Es un tipo de **fusión de 3 vías**, al igual que el anterior.
@@ -1348,7 +1352,7 @@ Cuando aparezca el editor con el mensaje asociado, aceptaremos el mensaje o lo e
 ![3 way rama1](assets/3-way-rama1.png)	
 
 
-## 3. Subiendo cambios a repositorio remoto
+## Subiendo cambios a repositorio remoto
 
 Para subir al repositorio remoto todos los cambios realizados en nuestro repositorio local, ejecutamos
 
@@ -1359,7 +1363,7 @@ git push origin --all
 ![git push all](assets/git-push-all2.png)	
 
 
-## 4. Eliminando apuntadores a ramas locales
+## Eliminando apuntadores a ramas locales
 
 Para eliminar los apuntadores locales ejecutamos
 
@@ -1371,7 +1375,7 @@ Los apuntadores a `licencia` y `autor` no los eliminaremos, por si en el futuro 
 	
 ![borrar rama1 local](assets/borrar-rama1-local.png)
 
-## 5. Eliminando apuntadores a ramas remotas
+## Eliminando apuntadores a ramas remotas
 
 Para eliminar los apuntadores en el repositorio remoto, ejecutamos
 
@@ -1390,16 +1394,20 @@ Observa como las ramas están actualizadas y sincronizadas con el repositorio re
 
 ![git log graph 10](assets/git-log-graph10.png)
 
-## 6. Comprobando cambios en repositorio remoto
+## Comprobando cambios en repositorio remoto
 
 Para ver un gráfico de las ramas en el repositorio remoto pulsamos en **Insights**, **Network**.
 
 ![github insights network](assets/github-insights-network2.png)
 
-## 7. Tarea propuesta para el alumno/a
+## Tarea propuesta para el alumno/a
 
 Como tarea, se propone
 
 - volver a la rama `licencia`, añadir contenido al archivo `LICENSE` y hacer commit.
 - volver a la rama `autor`, añadir contenido al archivo `AUTHOR` y hacer commit.
 - integrar los cambios de ambas ramas en la rama `master`.
+
+> *NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.*
+
+**Subir a plataforma AULES un documento PDF con las capturas de pantalla y explicaciones pertinentes.**

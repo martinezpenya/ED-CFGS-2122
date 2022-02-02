@@ -1,17 +1,13 @@
 ---
-    title: UD04: Junit en Netbeans (Ejercicios)
-    language: ES
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Entornos de desarrollo
-    keywords: [EED, 2022, Entornos, Desarrollo]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver:${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD04/assets/cover.png
+title: "UD04: Junit en Netbeans (Ejercicios)"
+language: ES
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Entornos de desarrollo
+keywords: [EED, 2022, Entornos, Desarrollo]
+IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver:${today}) 
+footer: ${author} - ${IES} - ${pageNo}/${pageCount}
 ---
-[toc]
 # Introducción.
 
 Las pruebas de software son parte esencial del ciclo de desarrollo. La elaboración y mantenimiento de unidad, pueden ayudarnos a asegurar que los los métodos individuales de nuestro código, funcionan correctamente. Los entorno de desarrollo, integran frameworks, que permiten automatizar las pruebas.

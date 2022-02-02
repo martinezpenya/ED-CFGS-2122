@@ -1,13 +1,15 @@
 ﻿---
-title: "UD02 exercises"
-version: 20210823
-language: EN
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Development Environments
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-keywords: [EED, 2021, Development, Environments]
-header: ${title} - ${subject} (${version}) 
-footer: ${author} - ${IES} - ${pageNo}/${pageCount}
+    title: UD02 exercises
+    language: EN
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Development Environments
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    keywords: [EED, 2021, Development, Environments]
+    header: ${title} - ${subject} (ver: ${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD02/assets/cover.png
 ---
 # Activities
 

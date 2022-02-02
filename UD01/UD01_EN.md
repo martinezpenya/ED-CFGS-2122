@@ -1,13 +1,17 @@
 ---
-title: "UD01: Software development"
-language: EN
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Development environments
-keywords: [DE, 2021, Environment, Development]
-IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header: ${title} - ${subject} (ver. ${today}) 
-footer: ${author} - ${IES} - ${pageNo} / ${pageCount}
+    title: UD01: Software development
+    language: EN
+    author: David Martínez Peña [www.martinezpenya.es]
+    subject: Development environments
+    keywords: [DE, 2021, Environment, Development]
+    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+    header: ${title} - ${subject} (ver: ${today}) 
+    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+    typora-root-url:${filename}/../
+    typora-copy-images-to:${filename}/../assets
+    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD01/assets/cover.png
 ---
+[toc]
 # Computer program
 
 Definition of computer program:
