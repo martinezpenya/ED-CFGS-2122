@@ -9,7 +9,6 @@
     footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
     typora-root-url:${filename}/../
     typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
 ---
 [toc]
 # Áreas de un repositorio GIT
@@ -267,7 +266,7 @@ El tercer commit será la versión 2 de nuestro proyecto. La etiqueta será `v2`
 
 El segundo commit no será etiquetado. 
 
-> [REHACER FOTO] la v2 deberia ser "Versión 2"
+> En la captura se muestra un error que más tarde corregiremos en la etiqueta de la v2.
 
 ![git tag](assets/git-tag.png)
 
@@ -585,7 +584,7 @@ git reset --hard
 
 Dicho comando coge el contenido que hay en nuestro commit confirmado y recupera ambos: el directorio de trabajo y el área de preparación.
 
-## 3. ¿Y qué pasa si ya realicé un commit?
+## ¿Y qué pasa si ya realicé un commit?
 
 Imaginemos que hemos ido todavía un poco más lejos, y que además de modificar el directorio de trabajo y añadir los cambios al Staging Area, hemos realizado un commit. Es decir hemos hecho
 
