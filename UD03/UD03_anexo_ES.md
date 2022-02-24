@@ -101,7 +101,7 @@ Cada commit tiene asociado un código hash de 40 caracteres hexadecimales que lo
 
 ### Mostrar el estado de un repositorio (`git status`)
 
-`git status` muestra el estado de los cambios en el repositorio desde la última versión guardada. En particular, muestra los cheros con cambios en el directorio de trabajo que no se han añadido a la zona de intercambio temporal y los cheros en la zona de intercambio temporal que no se han añadido al repositorio.
+`git status` muestra el estado de los cambios en el repositorio desde la última versión guardada. En particular, muestra los ficheros con cambios en el directorio de trabajo que no se han añadido a la zona de intercambio temporal y los ficheros en la zona de intercambio temporal que no se han añadido al repositorio.
 
 ### Mostrar el historial de versiones de un repositorio (`git log`)
 
@@ -137,7 +137,7 @@ Suele utilizarse para eliminar los cambios en un chero que no han sido guardados
 
 ### Eliminar cambios de la zona de intercambio temporal (`git reset`)
 
-`git reset <fichero>` elimina los cambios del chero `<fichero>` de la zona de intercambio temporal, pero preserva los cambios en el directorio de trabajo.
+`git reset <fichero>` elimina los cambios del fichero `<fichero>` de la zona de intercambio temporal, pero preserva los cambios en el directorio de trabajo.
 
 Para eliminar por completo los cambios de un chero que han sido guardados en la zona de intercambio temporal hay que aplicar este comando y después `git checkout HEAD -- <fichero>`.
 
