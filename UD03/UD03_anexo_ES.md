@@ -92,7 +92,7 @@ Para guardar los cambios en un repositorio Git utiliza una estructura de tres ni
 
 ### Referenciar un commit
 
-Cada commit tiene asociado un código hash de 40 caracteres hexadecimales que lo identfica de manera única. Hay dos formas de referirse a un commit:
+Cada commit tiene asociado un código hash de 40 caracteres hexadecimales que lo identifica de manera única. Hay dos formas de referirse a un commit:
 
 - **Nombre absoluto**: Se utiliza su código hash (basta indicar los 4 o 5 primeros dígitos).
 - **Nombre relativo**: Se utiliza la palabra **HEAD** para referirse siempre al último commit. Para referirse al penúltimo commit se utiliza **HEAD~1**, al antepenúltimo **HEAD~2**, etc.
