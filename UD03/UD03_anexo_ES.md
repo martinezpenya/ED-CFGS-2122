@@ -84,7 +84,7 @@ Para guardar los cambios en un repositorio Git utiliza una estructura de tres ni
 
 - **Commit** Contiene información sobre el autor, el momento y el mensaje de los cambios.
 
-- **Árbol (tree)** Cada commit contiene además un árbol donde se registran los nombres y rutas de los cheros en el repositorio cuando se hizo el commit.
+- **Árbol (tree)** Cada commit contiene además un árbol donde se registran los nombres y rutas de los ficheros en el repositorio cuando se hizo el commit.
 
 - **Blob (binary file object)** Para cada uno de los ficheros listados en el árbol hay un blob, que contiene una instantánea comprimida del contenido del fichero  cuando se hizo el commit. 
 
