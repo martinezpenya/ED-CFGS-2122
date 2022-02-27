@@ -1,15 +1,14 @@
 ﻿---
-    title: UD03: Refactoring and version control tools
-    language: EN
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Development Environments
-    keywords: [EED, 2021, Environments, Development]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver:${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
+title: UD03: Refactoring and version control tools
+language: EN
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Development Environments
+keywords: [EED, 2021, Environments, Development]
+IES:IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
 # Refactoring
@@ -414,8 +413,7 @@ The system is unable to merge the changes. User **Ana** must resolve the conflic
 
 ## Repository
 
-A repository is basically a typical file server, with one big difference: what makes repositories special compared to those
-file servers is that they remember all the changes that have ever been written to them, in this way, every time we update the repository, it remembers every change made to the file or directory structure. In addition, it allows to establish additional information for each update, being able to have an example a changelog of the versions in the repository itself.
+A repository is basically a typical file server, with one big difference: what makes repositories special compared to those file servers is that they remember all the changes that have ever been written to them, in this way, every time we update the repository, it remembers every change made to the file or directory structure. In addition, it allows to establish additional information for each update, being able to have an example a changelog of the versions in the repository itself.
 
 Each version control tool has its own repository, and unfortunately they are not interoperable, that is, you cannot get the data from the repository or update it if the repository and version control do not match. Actually, being a file server (special, but in essence it is the
 same), you could always directly access the files stored in the repository and obtain the code without major problem, but we will not have a version control over said code until we associate it to said repository with the appropriate version control.
