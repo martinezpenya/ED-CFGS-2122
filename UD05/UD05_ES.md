@@ -1,127 +1,14 @@
 ---
-title:UD05: UML Language
-language:ES
-author:David Martínez Peña [www.martinezpenya.es]
-subject:Entornos de desarrollo
-keywords:[EED, 2021, Entornos, Desarrollo]
+title: UD05: UML Language
+language: ES
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Entornos de desarrollo
+keywords: [EED, 2022, Entornos, Desarrollo]
 IES:IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-header:${title} - ${subject} (ver:${today}) 
-footer:${currentFileName} - ${author} - ${IES} - ${pageNo}/${pageCount}
-typora-root-url:${filename}/../
-typora-copy-images-to:${filename}/../assets
-
-append-head: |
-    <meta name="title" content="${title}">
-    <meta name="currentPath" content="${currentPath}">
-    <div id='_export_cover' style="height:100vh;">
-    <div id='_export_title' style="margin-top: 25%;text-align: center;font-size: 3rem;">
-    </div><img id="imgcover" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/></div>
-    <script>
-        var $cover = document.querySelector("#_export_cover");
-        var title = document.querySelector("meta[name='title']").getAttribute("content");
-        var currentPath = document.querySelector("meta[name='currentPath']").getAttribute("content");
-        document.body.insertBefore($cover, document.body.childNodes[0])
-        $cover.querySelector("#_export_title").textContent = title;
-        document.getElementById("imgcover").src=currentPath+'/../assets/cover.png';
-    </script>
-typora-append-head: |
-    <meta name="title" content="${title}">
-    <meta name="currentPath" content="${currentPath}">
-    <div id='_export_cover' style="height:100vh;">
-    <div id='_export_title' style="margin-top: 25%;text-align: center;font-size: 3rem;">
-    </div><img id="imgcover" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/></div>
-    <script>
-        var $cover = document.querySelector("#_export_cover");
-        var title = document.querySelector("meta[name='title']").getAttribute("content");
-        var currentPath = document.querySelector("meta[name='currentPath']").getAttribute("content");
-        document.body.insertBefore($cover, document.body.childNodes[0])
-        $cover.querySelector("#_export_title").textContent = title;
-        document.getElementById("imgcover").src=currentPath+'/../assets/cover.png';
-    </script>
-append-body: |
-    <meta name="title" content="${title}">
-    <meta name="currentPath" content="${currentPath}">
-    <div id='_export_cover' style="height:100vh;">
-    <div id='_export_title' style="margin-top: 25%;text-align: center;font-size: 3rem;">
-    </div><img id="imgcover" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/></div>
-    <script>
-        var $cover = document.querySelector("#_export_cover");
-        var title = document.querySelector("meta[name='title']").getAttribute("content");
-        var currentPath = document.querySelector("meta[name='currentPath']").getAttribute("content");
-        document.body.insertBefore($cover, document.body.childNodes[0])
-        $cover.querySelector("#_export_title").textContent = title;
-        document.getElementById("imgcover").src=currentPath+'/../assets/cover.png';
-    </script>
-typora-append-body: |
-    <meta name="title" content="${title}">
-    <meta name="currentPath" content="${currentPath}">
-    <div id='_export_cover' style="height:100vh;">
-    <div id='_export_title' style="margin-top: 25%;text-align: center;font-size: 3rem;">
-    </div><img id="imgcover" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/></div>
-    <script>
-        var $cover = document.querySelector("#_export_cover");
-        var title = document.querySelector("meta[name='title']").getAttribute("content");
-        var currentPath = document.querySelector("meta[name='currentPath']").getAttribute("content");
-        document.body.insertBefore($cover, document.body.childNodes[0])
-        $cover.querySelector("#_export_title").textContent = title;
-        document.getElementById("imgcover").src=currentPath+'/../assets/cover.png';
-    </script>
-typora-append-head-extra: |
-    <meta name="title" content="${title}">
-    <meta name="currentPath" content="${currentPath}">
-    <div id='_export_cover' style="height:100vh;">
-    <div id='_export_title' style="margin-top: 25%;text-align: center;font-size: 3rem;">
-    </div><img id="imgcover" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/></div>
-    <script>
-        var $cover = document.querySelector("#_export_cover");
-        var title = document.querySelector("meta[name='title']").getAttribute("content");
-        var currentPath = document.querySelector("meta[name='currentPath']").getAttribute("content");
-        document.body.insertBefore($cover, document.body.childNodes[0])
-        $cover.querySelector("#_export_title").textContent = title;
-        document.getElementById("imgcover").src=currentPath+'/../assets/cover.png';
-    </script>
-typora-append-body-extra: |
-    <meta name="title" content="${title}">
-    <meta name="currentPath" content="${currentPath}">
-    <div id='_export_cover' style="height:100vh;">
-    <div id='_export_title' style="margin-top: 25%;text-align: center;font-size: 3rem;">
-    </div><img id="imgcover" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/></div>
-    <script>
-        var $cover = document.querySelector("#_export_cover");
-        var title = document.querySelector("meta[name='title']").getAttribute("content");
-        var currentPath = document.querySelector("meta[name='currentPath']").getAttribute("content");
-        document.body.insertBefore($cover, document.body.childNodes[0])
-        $cover.querySelector("#_export_title").textContent = title;
-        document.getElementById("imgcover").src=currentPath+'/../assets/cover.png';
-    </script>
-append-extra-content: |
-    <meta name="title" content="${title}">
-    <meta name="currentPath" content="${currentPath}">
-    <div id='_export_cover' style="height:100vh;">
-    <div id='_export_title' style="margin-top: 25%;text-align: center;font-size: 3rem;">
-    </div><img id="imgcover" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/></div>
-    <script>
-        var $cover = document.querySelector("#_export_cover");
-        var title = document.querySelector("meta[name='title']").getAttribute("content");
-        var currentPath = document.querySelector("meta[name='currentPath']").getAttribute("content");
-        document.body.insertBefore($cover, document.body.childNodes[0])
-        $cover.querySelector("#_export_title").textContent = title;
-        document.getElementById("imgcover").src=currentPath+'/../assets/cover.png';
-    </script>
-append-content-extra: |
-    <meta name="title" content="${title}">
-    <meta name="currentPath" content="${currentPath}">
-    <div id='_export_cover' style="height:100vh;">
-    <div id='_export_title' style="margin-top: 25%;text-align: center;font-size: 3rem;">
-    </div><img id="imgcover" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/></div>
-    <script>
-        var $cover = document.querySelector("#_export_cover");
-        var title = document.querySelector("meta[name='title']").getAttribute("content");
-        var currentPath = document.querySelector("meta[name='currentPath']").getAttribute("content");
-        document.body.insertBefore($cover, document.body.childNodes[0])
-        $cover.querySelector("#_export_title").textContent = title;
-        document.getElementById("imgcover").src=currentPath+'/../assets/cover.png';
-    </script>
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
 
@@ -150,25 +37,26 @@ Además UML puede conectarse a lenguajes de programación mediante ingeniería d
 ## Tipos de diagramas UML.
 
 UML define un sistema como una colección de modelos que describen sus diferentes perspectivas. Los modelo se implementan en una serie de diagramas que son representaciones gráficas de una colección de elementos de modelado, a menudo dibujado como un grafo conexo de arcos (relaciones)  y vértices (otros elementos del modelo).
+
 ```mermaid
-graph LR
-    A[Diagram] --- B[Structure Diagram];
-    A --- C[Behavior Diagram];
-    B --- D[Class Diagram];
-    B --- E[Object Diagram];
-    B --- F[Package Diagram];
-    B --- G[Composite Structure Diagram];
-    B --- H[Component Diagram];
-    B --- I[Deployment Diagram];
-    B --- J[Profile Diagram];
-    C --- K[UseCase Diagram];
-    C --- L[Activity Diagram];
-    C --- M[State Machine Diagram];
-    C --- N[Interaction Diagram];
-    N --- O[Sequence Diagram];
-    N --- P[Communication Diagram];
-    N --- Q[Timing Diagram];
-    N --- R[Interaction Overview Diagram];
+  graph LR
+  A[Diagram] --- B[Structure Diagram];
+  A --- C[Behavior Diagram];
+  B --- D[Class Diagram];
+  B --- E[Object Diagram];
+  B --- F[Package Diagram];
+  B --- G[Composite Structure Diagram];
+  B --- H[Component Diagram];
+  B --- I[Deployment Diagram];
+  B --- J[Profile Diagram];
+  C --- K[UseCase Diagram];
+  C --- L[Activity Diagram];
+  C --- M[State Machine Diagram];
+  C --- N[Interaction Diagram];
+  N --- O[Sequence Diagram];
+  N --- P[Communication Diagram];
+  N --- Q[Timing Diagram];
+  N --- R[Interaction Overview Diagram];
 ```
 Un diagrama UML se compone de cuatro tipos de elementos:
 
@@ -289,10 +177,6 @@ classDiagram
 	Food <|-- Lassagne    
 ```
 
-
-
-
-
 ## Relaciones entre objetos
 
 Representa las *conexiones* que hay entre las distintas clases u objetos de un programa. Indican de qué forma una clase usa elementos de otras clases.
@@ -304,31 +188,41 @@ Representa las *conexiones* que hay entre las distintas clases u objetos de un p
 
 #### Herencia
 
-Se representa por una línea con una flecha en el extremo de la superclase. [![img](http://entornos.codeandcoke.com/lib/exe/fetch.php?w=300&tok=dd46b4&media=apuntes:uml_herencia.png)](http://entornos.codeandcoke.com/lib/exe/detail.php?id=apuntes%3Adiagramas&media=apuntes:uml_herencia.png)
+Se representa por una línea con una flecha en el extremo de la superclase.
+
+![img](assets/herencia.png)
 
 Indica que una clase puede ser de distintos tipos de clase: varias subclases *extienden* de una superclase.
 
-[![img](http://entornos.codeandcoke.com/lib/exe/fetch.php?w=400&tok=da97ea&media=apuntes:uml_herencia.jpg)](http://entornos.codeandcoke.com/lib/exe/detail.php?id=apuntes%3Adiagramas&media=apuntes:uml_herencia.jpg)
+![img](assets/herencia2.jpg)
 
 #### Asociación
 
-Se representa por una flecha abierta.  [![img](http://entornos.codeandcoke.com/lib/exe/fetch.php?w=300&tok=0de6ce&media=apuntes:uml_asociacion.png)](http://entornos.codeandcoke.com/lib/exe/detail.php?id=apuntes%3Adiagramas&media=apuntes:uml_asociacion.png) Representa cualquier tipo de asociación entre dos clases. Por ejemplo,  cuando una clase usa métodos de otra clase, o cuando hay un método que  recibe tipos de datos de otra clase.
+Se representa por una flecha abierta. 
+
+![img](assets/asociacion.png)
+
+Representa cualquier tipo de asociación entre dos clases. Por ejemplo,  cuando una clase usa métodos de otra clase, o cuando hay un método que  recibe tipos de datos de otra clase.
 
 Además, en cualquier tipo de relación de asociación se puede indicar la  cardinalidad de la relación para indicar la cantidad de participación  entre las dos clases.
 
-Hay dos tipos de asociación mas restrictivos que concretan el tipo de  relación de asociación entre dos clases: la agregación y la composición. Ambas representan relaciones entre objetos pero se diferencian en su  rigidez. [![img](http://entornos.codeandcoke.com/lib/exe/fetch.php?w=200&tok=c51d34&media=apuntes:association_aggregation_composition.jpg)](http://entornos.codeandcoke.com/lib/exe/detail.php?id=apuntes%3Adiagramas&media=apuntes:association_aggregation_composition.jpg)
+Hay dos tipos de asociación mas restrictivos que concretan el tipo de  relación de asociación entre dos clases: la agregación y la composición. Ambas representan relaciones entre objetos pero se diferencian en su  rigidez.
+
+![img](assets/composition.jpg)
 
 Para explicar el concepto vamos a plantear el siguiente ejemplo: *Una universidad posee varios departamentos, y cada departamento  tiene un numero de profesores. Si la universidad cierra, los  departamentos dejan de existir para siempre, pero los profesores de esos departamentos seguirán existiendo. Una Universidad es una composición de Departamentos, y un Departamento  es una agregación de Profesores. Además un Profesor puede trabajar en  más de un Departamento, pero un Departamento solo puede pertenecer a una Universidad.*
 
 #### Agregación
 
-[![img](http://entornos.codeandcoke.com/lib/exe/fetch.php?w=300&tok=197411&media=apuntes:uml_agregacion.png)](http://entornos.codeandcoke.com/lib/exe/detail.php?id=apuntes%3Adiagramas&media=apuntes:uml_agregacion.png) Se representa por una línea con un rombo. Es un tipo de relación de Asociación, pero más específica.
+![img](assets/agregacion.png)
+
+Se representa por una línea con un rombo. Es un tipo de relación de Asociación, pero más específica.
 
 Una agregación se da cuando una clase es una colección o un contenedor  de otras clases, pero no depende de la existencia de esas otras clases.  Si la clase que contiene a la colección desaparecen, no afecta a las  clases contenidas.
 
 En el siguiente ejemplo, la clase Departamento es un contenedor de clases Profesor:
 
-```
+```java
 public class Departamento{
    private String nombreDepartamento;
    private ArrayList<Profesor> listadoProfesores;
@@ -344,11 +238,13 @@ Los Profesores no desaparecen porque desaparezca el objeto Departamento.
 
 #### Composición
 
-[![img](http://entornos.codeandcoke.com/lib/exe/fetch.php?w=300&tok=b4cffb&media=apuntes:uml_composicion.png)](http://entornos.codeandcoke.com/lib/exe/detail.php?id=apuntes%3Adiagramas&media=apuntes:uml_composicion.png) Se representa por una línea con un rombo negro.
+![img](assets/composicion.png)
+
+Se representa por una línea con un rombo negro.
 
 La composición de clases es una relación aun más estricta que la  agregación. Se da cuando una clase contiene referencias a otra clase,  pero la vida de las instancias contenidas está ligada a la vida de la  instancia contenedora. O sea, si la clase compuesta desaparece también  lo harán las clase contenidas.
 
-```
+```java
 public class Universidad{
    private String nombreUniversidad;
    private ArrayList<Departamento> listadoDepartamentos;
@@ -366,11 +262,50 @@ public class Universidad{
 
 Si desaparece el objeto Universidad desaparecen también los  departamentos que posee. Además un departamento solo puede pertenecer a  una sola Universidad.
 
-
-
-
-
 # Diagrama de casos de uso
+
+Un diagrama de casos de uso es una lista de pasos que definen la  interacción entre un actor y el sistema propiamente dicho. Deben cumplir los siguientes objetivos:
+
+-  Indicar los requisitos funcionales: cómo funciona un programa/sistema.
+-  Proporcionar una descripción clara de su uso: cómo el usuario interactúa con el sistema.
+-  Se debe leer con claridad.
+-  Orientar en la realización de pruebas: nos dice cómo debe funcionar (requisitos).
+-  Sirve de guía para crear la documentación de uso del programa.
+
+Un diagrama de casos de uso debe mostrar a simple vista, qué se puede  hacer con un programa desde el punto de vista de un usuario. Cada cosa  que el usuario hace, *es un caso de uso*.
+
+![img](assets/cases.png)
+
+Caso de uso más detallado:
+
+![Major elements of business use case UML diagram.](assets/business-use-case-diagram-elements.png)
+
+## Elementos de un diagrama de casos de uso
+
+UML es un lenguaje, por lo que debemos usar su notación concreta para cada elemento:
+
+-  **Actores**: Es  cualquier cosa que interactúa con el sistema, y es externo a él. No es  necesariamente una persona, puede ser un dispositivo u otro sistema. Se  representan mediante un *monigote*.
+-  **Casos de uso**: Representan el funcionamiento que se produce tras la orden de un actor. Se representan con una *elipse*, y dentro se escribe la descripción textual.
+-  **Relaciones**:  Relacionan a los actores con los casos de uso, aunque en algunos casos  también permiten relacionar unos casos de uso con otros.
+-  Un rectángulo se usa para representar los límites del sistema, si es necesario.
+
+![img](assets/notacion_caso_de_uso.png)
+
+> Para diseñar un diagrama de casos de uso se comienza por  reconocer los actores y los casos de uso, para posteriormente  relacionarlos.
+
+![img](assets/bank_use_case.png)
+
+## Relaciones entre casos de uso
+
+Las principales relaciones entre casos de uso son las de inclusión y extensión. Muchas veces se suelen confundir:
+
+-  **Inclusión**: Un caso de uso inicial incluye a otro caso de uso secundaria, cuando para realizar el caso de uso inicial se debe *obligatoriamente* realizar el caso de uso secundario.
+
+![img](assets/include_use_case_example.png)
+
+-  **Extensión**: Un caso  de uso extiende de otro, cuando hace algo similar pero amplía la  funcionalidad. La idea es muy similar a la de herencia en programación. 
+
+![img](assets/extends_use_case_example.png)
 
 # Ingeniería inversa
 
