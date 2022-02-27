@@ -6,7 +6,6 @@ package UD04;
  * and open the template in the editor.
  */
 
-import UD04.CCuenta;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
