@@ -84,7 +84,7 @@ Para guardar los cambios en un repositorio Git utiliza una estructura de tres ni
 
 - **Commit** Contiene información sobre el autor, el momento y el mensaje de los cambios.
 
-- **Árbol (tree)** Cada commit contiene además un árbol donde se registran los nombres y rutas de los cheros en el repositorio cuando se hizo el commit.
+- **Árbol (tree)** Cada commit contiene además un árbol donde se registran los nombres y rutas de los ficheros en el repositorio cuando se hizo el commit.
 
 - **Blob (binary file object)** Para cada uno de los ficheros listados en el árbol hay un blob, que contiene una instantánea comprimida del contenido del fichero  cuando se hizo el commit. 
 
@@ -92,7 +92,7 @@ Para guardar los cambios en un repositorio Git utiliza una estructura de tres ni
 
 ### Referenciar un commit
 
-Cada commit tiene asociado un código hash de 40 caracteres hexadecimales que lo identi ca de manera única. Hay dos formas de referirse a un commit:
+Cada commit tiene asociado un código hash de 40 caracteres hexadecimales que lo identifica de manera única. Hay dos formas de referirse a un commit:
 
 - **Nombre absoluto**: Se utiliza su código hash (basta indicar los 4 o 5 primeros dígitos).
 - **Nombre relativo**: Se utiliza la palabra **HEAD** para referirse siempre al último commit. Para referirse al penúltimo commit se utiliza **HEAD~1**, al antepenúltimo **HEAD~2**, etc.
