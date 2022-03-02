@@ -1,5 +1,5 @@
 ---
-title: "UD05: ArgoUML"
+title: UD05: ArgoUML
 language: EN
 author: David Martínez Peña [www.martinezpenya.es]
 subject: Development Environments
@@ -10,6 +10,8 @@ footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
 typora-root-url: ${filename}/../
 typora-copy-images-to: ${filename}/../assets
 ---
+[toc]
+
 # Introduction.
 
 In order to better understand the class diagrams and their notation, the following is a complete example. In addition, the ArgoUML modeling environment has been used to create these UML diagrams. This environment specializes in modeling with UML and other graphical languages. It also allows you to both generate code from diagrams and generate diagrams from source code.
@@ -18,7 +20,7 @@ The ArgoUML application can be used from Windows, Linux, and MacOS X operating s
 
 >**Example of invoice management**
 >
-> Invoices from a company's suppliers can be from service providers or from suppliers of products or materials. Each of the invoices, of either type, has in common:
+>Invoices from a company's suppliers can be from service providers or from suppliers of products or materials. Each of the invoices, of either type, has in common:
 >
 >- The invoice number.
 >- The date of the invoice.
@@ -26,16 +28,19 @@ The ArgoUML application can be used from Windows, Linux, and MacOS X operating s
 >- Customer data, which is the NIF and name, and must be found in a separate class.
 >- The detail of the invoice (whether it is materials or services).
 >
->For both service invoices and product or material invoices, the last invoice issued must be kept in order to keep the invoice number in mind. There is a list of services with the description and price per hour of each.
+>For both service invoices and product or material invoices, the last invoice issued must be kept in order to keep the invoice number in mind. 
+>
+>There is a list of services with the description and price per hour of each.
 >
 >The details of the invoices must include:
 >
 >- In the invoices for services, each invoice contains a list of services with the date of service, the number of hours spent, and the price / hour per service. There may be more than one benefit from the same service on an invoice.
+>
 >- Product invoices must include a description, unit price, and quantity for each product (each invoice must have at least one).
 >
-
+>  
+>
 # ArgoUML
-
 The latest available version (0.35.1) can be found among the releases in the tigris github profile (https://github.com/argouml-tigris-org/argouml/releases).
 
 We can download the zip file (https://github.com/argouml-tigris-org/argouml/releases/download/VERSION_0_35_1/ArgoUML-0.35.1.zip) and unzip it on our PC.
@@ -50,7 +55,7 @@ Once opened we will see something similar to this:
 
 # Our example step by step
 
-## Start
+## Start ArgoUML
 
 To start working with argoUML, it is only necessary to start the application, since it is entirely dedicated to the design of UML diagrams. By default it creates an empty untitledModel (that we can rename) with two empty diagrams (class and use case). By right-clicking on the model, we can choose to create more diagrams, like sequence diagrams...etc.
 
@@ -60,7 +65,7 @@ By now we only need to rename our model to InvoicesManagement:
 
 ![](assets/ArgoUML_renameModel.png)
 
-## Creating the class diagram
+## Basic ArgoUML
 
 The start screen is actually very intuitive, containing a bar of entities that are identified by their own UML symbols.
 
@@ -68,38 +73,77 @@ The start screen is actually very intuitive, containing a bar of entities that a
 
 To start drawing classes, click on the class box (the second in the palette), and mark some point in the drawing area. The class will appear, without any associated information.
 
-![](/assets/ArgoUML_createClass.png)
+![](assets/ArgoUML_createClass.png)
 
 In the lower right part of the window, the properties of the class appear, which can be modified to our liking at any time, just by selecting it. In the window to the left of the properties, the critics appear, which are recommendations that we should follow to obtain a good UML diagram.
 
-![](/assets/ArgoUML_classProperties.png)
-
-Property box for a class
+![](assets/ArgoUML_classProperties.png)
 
 In the "attributes" and "operations" sections, we place everything (attributes and methods) related to the class. It is necessary to specify the name of the attribute or method, its visibility, its type, and its parameters (in the case of the method), separately. In this main tab, we mark the characteristics of the class itself, such as being abstract (as shown in the following figure).
 
-The figure class, abstract
+![Screenshot_20220301_193450](assets/ArgoUML_abstract.png)
 
-When a class is selected, an arrow with a hollow triangular tip appears at the top of it, so that it can be automatically stretched into an inheritance relationship:
+When a class is selected, a different kind of link could be used:
 
-Already the three classes of figures placed
+![](assets/ArgoUML_classButtons.svg)
 
-Placing all the attributes and methods, we get the following final diagram:
+## Recommended configuration
 
-final design
+I recommend you to **show name of nodes in bold font** with `File/Project Properties/Diagram Appearance`:
 
-It is convenient to mark, in the model properties, that the visibility be seen:
+![](assets/ArgoUML_bold.png)
 
-Final diagram with visibilities
-Generating the code
+And to **show visibility** with `File/Project Properties/Notations`:
 
-Once the diagram has been created, to generate the source code it is only necessary to press F7, or go to the main menu, option Generate (or Generate). It is capable of generating, from diagrams, code for C++, PHP, C# or Java.
+![](assets/ArgoUML_visibility.png)
 
-Generate the classes
+## The example step by step
 
+### Create classes
 
+Create three classes hierarchy, first create one of them (for example `Invoice` and after that create two childclasses: `ServicesInvoices` and `ProductsInvoices`). After that select each one and add the name in the Properties tab. Then you should see something like this:
+
+![](assets/ArgoUML_step1.png)
+
+### Add attributes and methods
+
+Add attributes for each class, take care of selecting correct visibility for each attribute (by default private), and also select the correct data type. You get this:
+
+![](assets/ArgoUML_step2.png)
+
+### `>` class
+
+As said by the problem: "*Customer data, which is the NIF and name, and must be found in a separate class.*", so let's add as an Aggregation, because the client only has sense with an invoice. You need to select the correct button in the toolbar and then click and drag from one class (`Invoices`) to the other (`ClientData`)
+
+![](assets/ArgoUML_step3.png)
+
+### `Services` and `Hours` Class
+
+From the line "*There is a list of services with the description and price per hour of each.*" we extract that the `Services` class has two attributes (`description` and `hourPrice` ). And from "*...each invoice contains a list of services with the date of service, the number of hours spent, and the price / hour per service. There may be more than one benefit from the same service on an invoice.*" we need an associated `Hours` class with two attributes (`numberHours` and `description`):
+
+![](assets/ArgoUML_step4.png)
+
+### `InvoiceProduct` Class
+
+Last line says: "*Product invoices must include a description, unit price, and quantity for each product (each invoice must have at least one).*" so we need a `InvoiceProduct` class with three attributes (`description`, `unitPrice`, `quantity`) and the relation with `ProductsInvoices` class is a composition, be sure to select the correct button:
+
+![](assets/ArgoUML_step5.png)
+
+# Exercises
+
+## Argo_01
+
+ Download `ArgoUML` for your Operating System and follow this step by step guite until point 3 (included) and send through AULES the `YOURNAME.zargo` file with this project.
+
+## Argo_02
+
+Following point 4 of this guide generate the souces for the project in Java and send it through AULES site.
+
+## Argo_03
+
+\**TODO*\* Generate diagram from souce code
 
 # Fuentes de información
 
-- https://netbeans.apache.org/kb/docs/java/junit-intro.html
-- https://www.discoduroderoer.es/como-hacer-una-aplicacion-de-prueba-con-junit/
+- [Apuntes IOC (Marcel García)](https://ioc.xtec.cat/materials/FP/Recursos/fp_dam_m05_/web/fp_dam_m05_htmlindex/index.html)
+- [Uso de *argoUML* para diseño de aplicaciones](http://jbgarcia.webs.uvigo.es/asignaturas/TO/usoArgoUML/index.html)

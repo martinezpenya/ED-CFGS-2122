@@ -102,14 +102,13 @@ The image shows all the diagrams organized according to their category. Those th
 
 ## Tools for the elaboration of UML diagrams.
 
-The simplest tool that can be used to generate diagrams is pencil and paper, however, today we can access CASE tools that greatly facilitate the development of UML diagrams. These tools usually have a WYSIWYG-like window environment (**W**hat **Y**ou **S**ee **I**s **W**hat **Y**ou ** G**et), allow documentation of diagrams and integration with other development environments including automatic code generation and reverse engineering procedures.
+The simplest tool that can be used to generate diagrams is pencil and paper, however, today we can access CASE tools that greatly facilitate the development of UML diagrams. These tools usually have a WYSIWYG-like window environment (**W**hat **Y**ou **S**ee **I**s **W**hat **Y**ou **G**et), allow documentation of diagrams and integration with other development environments including automatic code generation and reverse engineering procedures.
 
 We can find, among others, the following tools:
 
 - **Rational Systems Developer from IBM**: Proprietary tool that allows the development of software projects based on the UML methodology. Originally developed by the creators of the UML, it has recently been taken over by IBM. It offers trial versions, and free software for
   the development of UML diagrams. Rational Systems Developer official page: http://www-01.ibm.com/software/rational/
-- **Visual Paradigm for UML (VP-UML)**: Includes a version for non-commercial use that is freely distributed without further registration for a license file. It includes different modules to carry out UML development, design databases, carry out engineering activities
-  reverse and design with Agile. It is compatible with Eclipse, Visual Studio .net, IntellijDEA, and NetBeans IDEs. Cross-platform, includes installers for Windows and Linux. Link to the official page of Visual Paradigm. http://www.visual-paradigm.com/
+- **Visual Paradigm for UML (VP-UML)**: Includes a version for non-commercial use that is freely distributed without further registration for a license file. It includes different modules to carry out UML development, design databases, carry out engineering activities reverse and design with Agile. It is compatible with Eclipse, Visual Studio .net, IntellijDEA, and NetBeans IDEs. Cross-platform, includes installers for Windows and Linux. Link to the official page of Visual Paradigm. http://www.visual-paradigm.com/
 - **ArgoUML**: it is distributed under the Eclipse license. Supports UML 1.4 diagrams, and generates code for Java and C++. To be able to execute it, the java platform is needed. Supports forward and reverse engineering.
 
 # Class diagrams
@@ -161,8 +160,8 @@ One of the following symbols is placed before the name of the class member (attr
 ```mermaid
 classDiagram
     class Food{
-   	Food: +void setType(type string)
-   	Food: +double calculatePrice()
+   		+void setType(type String)
+   		+double calculatePrice()
     }
     <<Interface>> Food
     class Pizza{
@@ -234,7 +233,7 @@ public class Department{
 }
 ```
 
-Professors do not disappear because the Department object disappears.
+Teachers do not disappear because the Department object disappears.
 
 #### Composition
 
@@ -245,7 +244,7 @@ It is represented by a line with a black diamond.
 Class composition is an even stricter relation than aggregation. Occurs when a class contains references to another class, but the lifetime of the contained instances is tied to the lifetime of the containing instance. In other words, if the composite class disappears, so will the contained classes.
 
 ```java
-public class University{
+public class Un.listadoDepartamentos = new ArrayList<iversity{
    private String universityName;
    private ArrayList<Department> listDepartments;
  
@@ -329,9 +328,6 @@ There are different tools to obtain the class diagram from an already created so
 
 - [Wikipedia](https://es.wikipedia.org)
 - [Uml Diagrams](https://www.uml-diagrams.org/)
-- [Uso de *argoUML* para diseño de aplicaciones](http://jbgarcia.webs.uvigo.es/asignaturas/TO/usoArgoUML/index.html)
-- file:///media/DADES/NextCloud/DOCENCIA/ED_2122/4_IOC/web/WebContent/u3/a1/continguts.html
-- 
 - [Code&Coke (Fernando Valdeón)](http://entornos.codeandcoke.com/doku.php?id=start)
 - Apuntes IES El Grao (Mª Isabel Barquilla?)
 - [Apuntes IOC (Marcel García)](https://ioc.xtec.cat/materials/FP/Recursos/fp_dam_m05_/web/fp_dam_m05_htmlindex/index.html)
