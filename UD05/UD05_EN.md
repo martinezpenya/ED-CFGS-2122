@@ -60,7 +60,7 @@ UML defines a system as a collection of models that describe its different persp
 ```
 An UML diagram is made up of four types of elements:
 
-- **Structures**: These are the s nodes of the graph and define the type of diagram.
+- **Structures**: These are the nodes of the graph and define the type of diagram.
 - **Relationships**: These are the arcs of the graph that are established between the structural elements.
 - **Notes**: They are represented as a box where we can write comments that help us understand some concept that we want to represent.
 - **Groups**: They are used when we model large systems to facilitate their development by blocks.

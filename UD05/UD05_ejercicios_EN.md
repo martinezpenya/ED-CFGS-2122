@@ -111,7 +111,7 @@ Add attributes for each class, take care of selecting correct visibility for eac
 
 ![](assets/ArgoUML_step2.png)
 
-### `>` class
+### `ClientData` class
 
 As said by the problem: "*Customer data, which is the NIF and name, and must be found in a separate class.*", so let's add as an Aggregation, because the client only has sense with an invoice. You need to select the correct button in the toolbar and then click and drag from one class (`Invoices`) to the other (`ClientData`)
 
@@ -133,16 +133,36 @@ Last line says: "*Product invoices must include a description, unit price, and q
 
 ## Argo_01
 
- Download `ArgoUML` for your Operating System and follow this step by step guite until point 3 (included) and send through AULES the `YOURNAME.zargo` file with this project.
+ Download `ArgoUML` for your Operating System and follow this step by step guide until point 3 (included) and send through AULES the `YOURNAME.zargo` file with this project. 
+
+> **AULES** does not allow you to send *.zargo* file so, you have to compress to a zip file and send that file.
 
 ## Argo_02
 
-Following point 4 of this guide generate the souces for the project in Java and send it through AULES site.
+Complete the example on the youtube video from AULES about `Case Use Diagram` ("Empresa  pedidos") completing it with the following instructions:
+
+1. Draw the context diagram of the system.
+2. Generate 3 case use description templates (different of the example).
+3. Complete the final diagram.
+
+Also, you have to add:
+
+1. At least two hierarchy examples for actors.
+2. A relationship with actors/systems outside our system.
+
+Use your knowledge about real system to complete the case uses that are not visible on the youtube video.
+
+Send through AULES the `YOURNAME.zargo` file with this project. 
+
+> You could use this link as a guide: https://docplayer.es/90376253-Desarrollo-de-un-diagrama-de-casos-de-uso-mediante-el-software-argouml.html
 
 ## Argo_03
 
-\**TODO*\* Generate diagram from souce code
+Following point 4 of this guide generate the sources for the project in exercise `Argo_01` in Java and send it through AULES site.
 
+## Argo_04
+
+Generate an UML class diagram from sources of the project that you choose from Unit05 of development (`gestionEmpleados`, `gestionHospital`, `contrarreloj`, `reservasLibreria`, `gestorCorreoElectronico`, `juegoDeCartas`). Explain how you do it with a memory in `pdf`, and send then `pdf` and `.zargo` file together in a zip through AULES.
 # Fuentes de información
 
 - [Apuntes IOC (Marcel García)](https://ioc.xtec.cat/materials/FP/Recursos/fp_dam_m05_/web/fp_dam_m05_htmlindex/index.html)

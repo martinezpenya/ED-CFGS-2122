@@ -60,7 +60,7 @@ UML define un sistema como una colección de modelos que describen sus diferente
 ```
 Un diagrama UML se compone de cuatro tipos de elementos:
 
-- **Estructuras**: Son los s nodos del grafo y definen el tipo de diagrama.
+- **Estructuras**: Son los nodos del grafo y definen el tipo de diagrama.
 - **Relaciones**: Son los arcos del grafo que se establecen entre los elementos estructurales.
 - **Notas**: Se representan como un cuadro donde podemos escribir comentarios que nos ayuden a entender algún concepto que queramos representar.
 - **Agrupaciones**: Se utilizan cuando modelamos sistemas grandes para facilitar su desarrolllo por bloquess.
