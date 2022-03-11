@@ -129,6 +129,24 @@ Last line says: "*Product invoices must include a description, unit price, and q
 
 ![](assets/ArgoUML_step5.png)
 
+# Generate source from ArgoUML project
+
+Once we have our class Diagram in `ArgoUML` we can generate source code for `c` or `java` languages as described below:
+
+Go to the menu `Generation/Generate Code from current Diagram` or press de `F7` key.
+
+![](/assets/ArgoUML_generateCode.png)
+
+Then you must select destination language (c++, c#, java, PHP4, PHP5, SQL) and the classes you want to generate source code. You need also to specify the destination folder for the code:
+
+![](/assets/ArgoUML_sourceCode.png)
+
+Then just click `Generate` button and you get the folder with sources:
+
+![](/assets/ArgoUML_folder.png)
+
+And if you open some of them you can see all the code automatically generated.
+
 # Exercises
 
 ## Argo_01
@@ -158,7 +176,7 @@ Send through AULES the `YOURNAME.zargo` file with this project.
 
 ## Argo_03
 
-Following point 4 of this guide generate the sources for the project in exercise `Argo_01` in Java and send it through AULES site.
+Following point 4 of this guide generate the sources for the project in exercise `Argo_01` in `Java` and send the folder compressed in `zip` through AULES site.
 
 ## Argo_04
 
