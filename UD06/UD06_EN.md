@@ -53,13 +53,13 @@ In Java we have three notations to introduce comments:
 
 **Multi-line comments:**
 
-- They begin with the characters "/*" and end with the characters "*/".
+- They begin with the characters "`/*`" and end with the characters "`*/`".
 - Often used to remove code. It is common that obsolete code does not want it to disappear and we keep it "just in case". So that it does not run, it is commented.
   (In English it is usually called "comment out")
 
 **Javadoc comments:**
 
-- They begin with the characters "/**", can be extended along several lines (which probably begin with the character "*") and end with the characters "*/".
+- They begin with the characters "`/**`", can be extended along several lines (which probably begin with the character "*") and end with the characters "`*/`".
 - They are used to generate external documentation.
 
 # When should I put a comment?
@@ -79,7 +79,7 @@ The Java development package includes a tool, javadoc, to generate a set of web 
 
 Although javadoc does not help the understanding of the details of code, it does help the understanding of the architecture of the solution, which is not little. Javadoc is said to focus on the interface (API - Application Programming Interface) of Java classes and packages.
 
-Javadoc highlights some comments, of which it requires a special syntax. They should start with "/**" and end with "*/", including a description and some special tags:
+Javadoc highlights some comments, of which it requires a special syntax. They should start with "`/**`" and end with "`*/`", including a description and some special tags:
 
 ```java
 /**
@@ -96,15 +96,15 @@ As a general rule, it should be noted that the first sentence (the text up to th
 
 | Label | Where to use | Objective |
 | --------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
-| '@autor' name | Classes, interfaces, | Indicate the author of the code. A label is put on each author |
-| '@version' VersionIdentifier |Classes, interfaces, | Information about version |
-| '@since' | Classes, methods | From which version it is. Ex: from JDK 1.1 |
-| '@deprecated' | Classes, methods | To indicate that something should not be used anymore, it has become obsolete, even if it is maintained for compatibility. It is usually accompanied by what is to be used in your place. |
-| '@see ClassName' | Classes, interfaces, methods, and attributes. | You will put the address to connect to this class in the documentation |
-| '@see' ClassName#MethodName | Classes, interfaces, methods, and attributes. | You will put the address to connect with this method in the documentation. |
-| '@return' description | Methods | To describe the values returned by each method and its type. |
-| '@exception' name description | Methods | Exceptions that the method can raise. A label is put on each possible exception. They are usually sorted alphabetically. |
-| '@param' name description | Methods | To describe the parameters, their use and their type. A label is put for each parameter |
+| `@autor` name | Classes, interfaces, | Indicate the author of the code. A label is put on each author |
+| `@version` VersionIdentifier |Classes, interfaces, | Information about version |
+| `@since` | Classes, methods | From which version it is. Ex: from JDK 1.1 |
+| `@deprecated` | Classes, methods | To indicate that something should not be used anymore, it has become obsolete, even if it is maintained for compatibility. It is usually accompanied by what is to be used in your place. |
+| `@see` ClassName | Classes, interfaces, methods, and attributes. | You will put the address to connect to this class in the documentation |
+| `@see` ClassName#MethodName | Classes, interfaces, methods, and attributes. | You will put the address to connect with this method in the documentation. |
+| `@return` description | Methods | To describe the values returned by each method and its type. |
+| `@exception` name description | Methods | Exceptions that the method can raise. A label is put on each possible exception. They are usually sorted alphabetically. |
+| `@param` name description | Methods | To describe the parameters, their use and their type. A label is put for each parameter |
 
 # JavaDoc generation in NetBeans
 
@@ -112,7 +112,7 @@ Javadoc is a tool that processes documentation declarations and comments in a se
 
 Here is an example of the documentation generated:
 
-CAPTURE JAVA API ONLINE
+![Java 18 API](/assets/Screenshot_20220426_180214.png)
 
 As you can see, the java documentation itself is created with the javadoc tool (the capture is the java API documentation). Some of the great advantages of this documentation is that:
 
@@ -122,7 +122,15 @@ As you can see, the java documentation itself is created with the javadoc tool (
 
 Most current IDEs have the API integrated into the help system of the environment, so while we write the code we are already shown related information:
 
-CAPTURE NETBEANS
+![NetBeans JavaDoc](/assets/image-20220426181246718.png)
+
+You could generate Javadoc right-clicking on your project and selecting `Generate Javadoc`:
+
+![image-20220426182227709](/assets/generateJavaDoc.png)
+
+This would create a structure folder inside your project folder `projectFolder\dist\javadoc\packageName\` with all the files needed to show documentation.
+
+![folder](/assets/Screenshot_20220426_185229.png)
 
 ## Comment Editing
 
@@ -130,7 +138,34 @@ Comments written by the programmer are considered as text. However it is also op
 
 On the comments, it is also important to note that the main purpose of the documentation is to make it useful. The documentation of an API is used to learn (or remember) what and how a set of classes work. Therefore, when documenting it is sought that the information is practical, we must tell what is important and the more summarized it is the better.
 
-CAPTURE HTML COMMENTS
+HTML comments:
+
+```java
+[...]
+//Metodos privados
+    /**
+     * Comprueba que el nombre no este vacio
+     * @return <ul>
+     *  <li>true: el nombre es una cadena vacia</li>
+     *  <li>false: el nombre no es una cadena vacia</li>
+     *  </ul>
+     */
+    private boolean compruebaNombre(){
+        if(nombre.equals("")){
+            return false;
+        }
+        return true;
+    }
+[...]
+```
+
+Will be shown like this:
+
+![HTML comments](/assets/Screenshot_20220426_181722.png)
+
+
+
+
 
 # JavaDoc Sample
 
