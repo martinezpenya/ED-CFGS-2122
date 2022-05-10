@@ -116,9 +116,9 @@ Here is an example of the documentation generated:
 
 As you can see, the java documentation itself is created with the javadoc tool (the capture is the java API documentation). Some of the great advantages of this documentation is that:
 
-- it is navigable: having a web format, you can click on the classes and navigate. In general it is more comfortable than a printed document because it avoids having to search pages
-- it is generated automatically: it costs less to update, it does not generate formatting problems, it can be centralized...
-- it is very easy to create: the programmer has to write, but with basically the same comments that he already adds to the code. The special javadoc language is very, very simple.
+- **it is navigable**: having a web format, you can click on the classes and navigate. In general it is more comfortable than a printed document because it avoids having to search pages
+- **it is generated automatically**: it costs less to update, it does not generate formatting problems, it can be centralized...
+- **it is very easy to create**: the programmer has to write, but with basically the same comments that he already adds to the code. The special javadoc language is very, very simple.
 
 Most current IDEs have the API integrated into the help system of the environment, so while we write the code we are already shown related information:
 

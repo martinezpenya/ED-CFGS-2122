@@ -78,7 +78,7 @@ public class Empleado {
     /**
      * Constructor con 4 parametros
      * @param nombre nombre del empleado
-     * @param apellido nombre del empleado
+     * @param apellido apellido del empleado
      * @param edad edad del empleado
      * @param salario salario del empleado
      */
@@ -87,5 +87,9 @@ public class Empleado {
         this.apellido=apellido;
         this.edad=edad;
         this.salario=salario;
+    }
+    public static void main(String[] args) {
+        Empleado e1 = new Empleado();
+        System.out.println(e1);
     }
 }
