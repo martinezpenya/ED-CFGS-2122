@@ -1,15 +1,14 @@
 ---
     title: Anexo UD03: Control de versiones con Git
-    language: ES
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Entornos de desarrollo
-    keywords: [EED, 2021, Entornos, Desarrollo]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver: ${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
+language: ES
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Entornos de desarrollo
+keywords: [EED, 2021, Entornos, Desarrollo]
+IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
 # Git

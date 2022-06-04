@@ -1,15 +1,14 @@
 ---
-    title: Annex UD03: Version control with Git
-    language: EN
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Develoment Enviroment
-    keywords: [EED, 2021, Develoment, ENviroment]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver: ${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
+title: Annex UD03: Version control with Git
+language: EN
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Development Environments
+keywords: [EED, 2022, Environments, Development]
+IES:IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
 # Git
@@ -155,7 +154,9 @@ Initially any repository has a single branch called master where they go. all co
 
 ###  Creating branches (`git branch`)
 
-`git branch <branch>` creates a new branch with the name `<branch>`  in the repository from the last commit, that is, where HEAD points. When creating a branch from a commit, the stream of commits forks into two so that they can develop two versions of the project in parallel.![Screenshot_20211024_130745](assets/04_branch.png)
+`git branch <branch>` creates a new branch with the name `<branch>`  in the repository from the last commit, that is, where HEAD points. When creating a branch from a commit, the stream of commits forks into two so that they can develop two versions of the project in parallel.
+
+![Screenshot_20211024_130745](assets/04_branch.png)
 
 ### Branch listing (`git log`)
 

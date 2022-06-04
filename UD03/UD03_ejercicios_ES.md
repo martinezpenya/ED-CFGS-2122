@@ -1,14 +1,14 @@
 ---
-    title: UD03: Ejercicios GIT
-    language: ES
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Entornos de desarrollo
-    keywords: [EED, 2021, Entornos, Desarrollo]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver:${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
+title: UD03: Ejercicios GIT
+language: ES
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Entornos de desarrollo
+keywords: [EED, 2021, Entornos, Desarrollo]
+IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
 # Áreas de un repositorio GIT
@@ -37,8 +37,8 @@ Seguiremos el siguiente proceso:
 Por ejemplo podemos hacer (poner vuestro nombre)
 
 ```sh
-mkdir  pruebas-david
-cd  pruebas-david
+mkdir pruebas-david
+cd pruebas-david
 ```
 
 ## Comprobamos que tenemos la carpeta vacía
@@ -58,7 +58,7 @@ git init
 Ésta es la carpeta donde se registrarán todos los cambios que vayamos realizando.
 
 ```sh
-ls  -la
+ls -la
 ```
 
 Comprueba el contenido de esta nueva carpeta, porqué tiene un punto delante?
@@ -777,7 +777,7 @@ Este método evita que nuestro usuario y contraseña de GitHub se guarde en un a
 
 Vamos a seguir los siguientes pasos:
 
-## 1. Generamos un par de claves SSH
+## Generamos un par de claves SSH
 
 Es muy sencillo. Como usuario normal (sin ser root) ejecutamos el comando
 
@@ -804,7 +804,7 @@ Debe copiarse  *ssh-rsa  ....  jose@lenovo*
 
 En vuestro caso, en lugar de jose@lenovo aparecerá otro usuario y pc.
 
-## 2. Añadimos clave ssh pública a github.
+## Añadimos clave ssh pública a github.
 
 Iniciamos sesión de GitHub y en el menú general (esquina superior derecha) seleccionamos la opción **Settings**.
 
@@ -826,14 +826,14 @@ Luego ponemos un nombre a la clave, por ejemplo pc-casa. Y copiamos el contenido
 La clave anterior puede usarse para cualquiera de nuestros repositorios. Para hacer uso de ella, lo único que necesitamos es la URL en formato SSH de cada repositorio.
 
 
-## 3. Comprobamos que se ha creado bien
+## Comprobamos que se ha creado bien
 
 Si, por cualquier motivo, alguien accediera a nuestro PC y cogiera la clave privada, bastaría con eliminar esta clave pública de GitHub y al ladrón no le serviría de nada nuestra clave privada.
 
 ![github list ssh keys](assets/github-list-ssh-keys.png)
 
 
-## 4. Obteniendo URL SSH del repositorio
+## Obteniendo URL SSH del repositorio
 
 Botón **Clone or download**, **Use SSH**
 
@@ -843,7 +843,7 @@ Copiamos URL en formato SSH. Su formato es relativamente fácil de memorizar. Si
 
 ![github use ssh 2](assets/github-use-ssh2.png)
 
-## 5. Asociando nuestro repositorio local mediante SSH
+## Asociando nuestro repositorio local mediante SSH
 
 Nuestro repositorio local estaba asociado a origin mediante HTTPS. Debemos dar de baja dicho enlace y crear uno nuevo que haga uso del protocolo SSH.
 
@@ -856,7 +856,7 @@ git  remote  add  origin   git@github.com:tu_usuario/tu_repositorio
 ![git remote remove add](assets/git-remote-remove-add.png)
 
 
-## 6. Creamos un commit y subimos a GitHub.
+## Creamos un commit y subimos a GitHub.
 
 Para comprobar que no nos pide usuario y contraseña cuando hagamos git push, vamos a modificar el archivo README.md , crear un commit y subir a GitHub.
 
@@ -897,7 +897,7 @@ Siempre que realicemos cambios (es decir commits) en el mismo archivo en las mis
 
 Para ver esto, vamos a hacer un commit en nuestro repositorio en GitHub, y luego haremos un commit en nuestro repositorio local. Trabajaremos con el archivo `README.md` únicamente.
 
-## 1. Modificamos archivo README.md remoto
+## Modificamos archivo README.md remoto
 
 En GitHub vamos a modificar el archivo `README.md` y registrar el cambio (commit).
 
@@ -905,7 +905,7 @@ Para ello, entramos en nuestro repositorio remoto, pulsamos sobre el archivo `RE
 y luego pulsamos sobre el lápiz para editar.
 ![readme edit](assets/readme-edit.png)
 
-> Recientemente (mediados de agosto de 2021) gitHub añadió una funcionalidad interesante a todos sus repositorios, y es la posibilidad de abrir el editor vsCode online para cualquier repositorio simplemente usando la `hotkey` ".".
+> Recientemente (mediados de agosto de 2021) gitHub añadió una funcionalidad interesante a todos sus repositorios, y es la posibilidad de abrir el editor vsCode online para cualquier repositorio simplemente usando la `hotkey` "`.`".
 >
 > Por tanto podemos hacer esta modificación tal y como se muestra en las capturas, o pulsar la tecla "." (punto) y usar vsCode Online para hacer la modificación.
 
@@ -924,7 +924,7 @@ GitHub pone una por defecto.
 
 
 
-## 2. Modificamos archivo README.md local
+## Modificamos archivo README.md local
 
 En nuestro repositorio local, también vamos a modificar el archivo README.md.
 
@@ -960,7 +960,7 @@ Simplemente nos dice que debemos actualizar antes nuestro repositorio local con 
 
 Si hemos realizado cambios en nuestro repositorio remoto, deberemos integrarlos en nuestro repositorio local antes de poder subir nuevos cambios locales.
 
-## 4. Se produce conflicto
+## Se produce conflicto
 
 Así que hacemos
 
@@ -1260,13 +1260,13 @@ Vamos a integrar en la rama `master` los cambios realizados en `rama1`, `licenci
 
 Procederemos de la siguiente forma:
 
-1. Cambiamos a rama master
-2. Fusionamos rama licencia
-3. Fusionamos rama autor
-4. Fusionamos rama rama1
+1. Cambiamos a rama `master`
+2. Fusionamos rama `licencia`
+3. Fusionamos rama `autor`
+4. Fusionamos rama `rama1`
 
 
-### Cambiamos a rama master
+### Cambiamos a rama `master`
 
 Es **MUY IMPORTANTE** cambiar a la rama `master`. Si no hacemos el cambio, todas las fusiones se realizarían sobre la rama `autor` (la rama en la que actualmente estamos).
 
@@ -1276,7 +1276,7 @@ git  checkout master
 ```
 
 
-### Fusionamos rama licencia
+### Fusionamos rama `licencia`
 
 Antes, fijémonos en la estructura de las ramas. Hacemos 
 ```sh
@@ -1304,9 +1304,7 @@ Observa como queda tras la fusión. Únicamente se han movido los apuntadores `H
 
 ### Fusionamos rama autor
 
-Si en lugar de fusionar una rama que está adelantada respecto a `master`, 
-lo que hacemos es fusionar una rama que está en paralelo con la rama `master`, 
-entonces realizaremos una **fusión de 3 vías** (**3-way merge**)
+Si en lugar de fusionar una rama que está adelantada respecto a `master`,  lo que hacemos es fusionar una rama que está en paralelo con la rama `master`,  entonces realizaremos una **fusión de 3 vías** (**3-way merge**)
 
 Este tipo de fusión puede provocar conflictos. Si ambas ramas contienen modificaciones en las mismas líneas 
 en los mismos archivos puede producirse un conflicto.

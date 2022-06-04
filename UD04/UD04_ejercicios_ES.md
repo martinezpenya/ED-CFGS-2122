@@ -1,15 +1,14 @@
 ---
-    title: UD04: Junit en Netbeans (Ejercicios)
-    language: ES
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Entornos de desarrollo
-    keywords: [EED, 2022, Entornos, Desarrollo]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver:${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD04/assets/cover.png
+title: UD04: Junit en Netbeans (Ejercicios)
+language: ES
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Entornos de desarrollo
+keywords: [EED, 2022, Entornos, Desarrollo]
+IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
 # Introducción.

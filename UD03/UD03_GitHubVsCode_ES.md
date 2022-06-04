@@ -1,28 +1,27 @@
 ---
-    title: Como usar el VSCode integrado en GitHub
-    language: ES
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Entornos de desarrollo
-    keywords: [EED, 2021, Entornos, Desarrollo]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver: ${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD03/assets/cover.png
+title: Como usar el VSCode integrado en GitHub
+language: ES
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Entornos de desarrollo
+keywords: [EED, 2021, Entornos, Desarrollo]
+IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
-# VsCode integrado en GitHub
+# `VsCode` integrado en `GitHub`
 
 ## Localizar repositorio.
 
 Primero localizamos el repositorio con el que queremos colaborar:
 
-1. Buscamos al usuario (En todo GitHub):
+1. Buscamos al usuario (En todo `GitHub`):
 
 <img src="assets/vscode_01_localizar_repositorio.png" alt="Localizar repositorio" style="zoom:50%;" />
 
-2. Elegimos sus repositorios:
+2. Elegimos la pestaña `Repositorios`:
 
 <img src="assets/vscode_02_localizar_repositorio.png" alt="Localizar repositorio 2" style="zoom:50%;" />
 
@@ -32,9 +31,9 @@ Primero localizamos el repositorio con el que queremos colaborar:
 
 
 
-## Abrir VSCode integrado.
+## Abrir `VSCode` integrado.
 
-Github cuenta con un editor online muy potente basado en VSCode.
+Github cuenta con un editor online muy potente basado en `VSCode`.
 
 Una vez visualizamos el código del repositorio en cuestión:
 
@@ -44,7 +43,7 @@ para abrir el editor solo debemos pulsar la tecla "." (punto) de nuestro teclado
 
 <img src="assets/vscode_05_vscode1.png" alt="editor VSCode" style="zoom:50%;" />
 
-Visualizaremos la estructura de carpetas y archivos en un editor VSCode integrado en el navegador Web.
+Visualizaremos la estructura de carpetas y archivos en un editor `VSCode` integrado en el navegador Web.
 
 ## Modificar un archivo.
 

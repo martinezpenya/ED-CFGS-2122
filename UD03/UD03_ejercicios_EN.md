@@ -1,14 +1,14 @@
 ---
-    title: UD03: Exercises GIT
-    language: EN
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Develoment Enviroment
-    keywords: [EED, 2021, Develoment, Enviroment]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver:${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
+title: UD03: Git Exercises
+language: EN
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Development Environments
+keywords: [EED, 2022, Environments, Development]
+IES:IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
 # Areas of a Git repository
@@ -17,7 +17,7 @@ In this activity you will have to search for information and explain the 3 areas
 
 - **Working directory**
 - **Staging area**
-- **Directory .git**
+- **Repository** (**.git folder)**
 
 ![GIT Areas](assets/git-areas.png)
 
@@ -37,8 +37,8 @@ We will follow the following process:
 For example we can do (put yor name).
 
 ```sh
-mkdir  tests-david
-cd  tests-david
+mkdir pruebas-david
+cd pruebas-david
 ```
 
 ## We check that we have the empty folder
@@ -83,7 +83,7 @@ To do this we must perform 2 steps:
 
   2. Add to repository:  
 
-    git commit -m "First registered change David"
+    git commit -m "Primer cambio registrado David"
 
 The first command (`git add`) ads the `README.md` file to the staging area. And the second command (`git commit ...`) adds it to the local repository.
 
@@ -321,7 +321,7 @@ To go back to the last commit do
 git checkout master
 ```
 
-## Examined changes of a commit with respect to the previous one.
+## Examined changes of a commit against the previous one.
 
 ![git log](assets/git-log-tags.png)
 
@@ -344,9 +344,9 @@ git show v2
 
 As we can see, a line was added, the one that contains the IES.
 
-**Added lines appear in green with a `+`** sign.
+**Added lines appear in green with a `+`** **sign**.
 
-**Deleted lines appear in red and with a `-`** sign.
+**Deleted lines appear in red and with a `-`** **sign**.
 
 In this case we have only performed addition operations.
 
@@ -482,7 +482,7 @@ It's a widely followed convention, so stick to it.
 
 > If we have correctly configured git on our PC, the changes from our PC should be sent to the remote repository without asking for a password since we are using the key that we have configured in our system.
 
-## Checking the rise.
+## Checking the upload.
 
 We go back to the GitHub page and update it. Something similar to this will appear:
 
@@ -631,7 +631,7 @@ git reset --hard HEAD~1
 
 **Upload to the AULES platform a PDF document with the relevant screenshots and explanations.**
 
-# Archive `.gitignore`
+# `.gitignore` file
 
 In this activity we will start working with something more real. For example, a simple Java application. This activity is also practical.
 
@@ -778,7 +778,7 @@ This method prevents our GitHub username and password from being saved to a disk
 
 We will follow the following steps:
 
-## 1. We generate a pair of SSH keys
+## We generate a pair of SSH keys
 
 It is very simple. As a normal user (without being root) we execute the command
 
@@ -805,7 +805,7 @@ We copy the content of the public key into a text editor. We will need it later.
 
 In your case, instead of jose@lenovo another user and pc will appear.
 
-## 2. We add public ssh key to github.
+## We add public ssh key to github.
 
 We log in to GitHub and in the general menu (upper right corner) we select the **Settings** option.
 
@@ -826,14 +826,14 @@ Then we put a name to the key, for example pc-house. And we copy the content of 
 The above key can be used for any of our repositories. To make use of it, all we need is the URL in SSH format of each repository.
 
 
-## 3. We check that it has been created correctly
+## We check that it has been created correctly
 
 If, for any reason, someone accessed our PC and took the private key, it would be enough to delete this public key from GitHub and the thief would not use our private key at all.
 
 ![github list ssh keys](assets/github-list-ssh-keys.png)
 
 
-## 4. Getting repository SSH URL
+## Getting repository SSH URL
 
 **Clone or download** button, **Use SSH**
 
@@ -843,7 +843,7 @@ We copy URL in SSH format. Its format is relatively easy to memorize. Always git
 
 ![github use ssh 2](assets/github-use-ssh2.png)
 
-## 5. Associating our local repository via SSH
+## Associating our local repository via SSH
 
 Our local repository was associated with origin via HTTPS. We must unsubscribe said link and create a new one that makes use of the SSH protocol.
 
@@ -856,7 +856,7 @@ git  remote  add  origin   git@github.com:your_user/your_repository
 ![git remote remove add](assets/git-remote-remove-add.png)
 
 
-## 6. We create a commit and push it to GitHub.
+## We create a commit and push it to GitHub.
 
 To verify that we are not prompted for a username and password when we do a git push, we are going to modify the README.md file, create a commit, and upload it to GitHub.
 
@@ -897,34 +897,32 @@ Whenever we make changes (ie commits) to the same file on the same lines but on 
 
 To see this, we're going to commit to our repository on GitHub, and then commit to our local repository. We will work with the `README.md` file only.
 
-## 1. We modify remote README.md file
+## We modify remote README.md file
 
 On GitHub we are going to modify the `README.md` file and register the change (commit).
 
-To do this, we enter our remote repository, click on the `README.md` file
-and then click on the pencil to edit.
+To do this, we enter our remote repository, click on the `README.md` file and then click on the pencil to edit.
 ![readme edit](assets/readme-edit.png)
 
-> Recently (mid-August 2021) gitHub added an interesting functionality to all of its repositories, and that is the ability to open the online vsCode editor for any repository simply by using the "." hotkey.
+> Recently (mid-August 2021) gitHub added an interesting functionality to all of its repositories, and that is the ability to open the online vsCode editor for any repository simply by using the "`.`" `hotkey`.
 >
-> Therefore we can make this modification as shown in the screenshots, or press the "." (period) and use vsCode Online to make the modification.
+> Therefore we can make this modification as shown in the screenshots, or press the "`.`" (period) and use vsCode Online to make the modification.
 
 **We insert a first line with title # and modify the date line**.
 
 ![github readme](assets/github-readme.png)
 
 
-We record commit. To do this, click on **Commit changes**
+We register the commit. To do this, click on **Commit changes**
 
-If we wish, we can put a message to the commit and a description, although it is not mandatory.
-GitHub sets one by default.
+If we wish, we can put a message to the commit and a description, although it is not mandatory. GitHub sets one by default.
 
 
 ![github commit changes](assets/github-commit-changes.png)
 
 
 
-## 2. We modify local README.md file
+## We modify local README.md file
 
 In our local repository, we are also going to modify the README.md file.
 
@@ -959,9 +957,9 @@ It simply tells us that we must first update our local repository with the conte
 
 If we have made changes to our remote repository, we will need to integrate them into our local repository before we can upload new local changes.
 
-## 4. Conflict occurs
+## Conflict occurs
 
-so we do
+So we do
 
 ```sh
 git  pull
@@ -970,14 +968,13 @@ git  pull
 to **download commits from the remote repository** that we don't have locally.
 
 **This should not cause a conflict.
-But in this case it does occur, because we have modified the same file (`README.md`)
-and also on the same line (the date line)**.
+But in this case it does occur, because we have modified the same file (`README.md`) and also on the same line (the date line)** 
 
 So the merge is done, but it warns us that there is a conflict in that file. We will have to solve it manually.
 
 ![git pull conflicto](assets/git-pull-conflicto.png)
 
-## 5. We fix conflict
+## We fix the conflict
 
 To fix the conflict, we open the file in question and in the line or lines where the conflict has occurred we will see some marks like the following:
 
@@ -1258,13 +1255,13 @@ We are going to integrate the changes made in `branch1`, `license` and `author` 
 
 We will proceed as follows:
 
-1. We switch to the master branch
-2. We merge license branch
-3. We merge author branch
-4. We merge branch branch1
+1. We switch to the `master` branch
+2. We merge `licencia` branch
+3. We merge `autor` branch
+4. We merge branch `rama1`
 
 
-### Switch to master branch
+### Switch to `master` branch
 
 It is **VERY IMPORTANT** to switch to the `master` branch. If we don't make the change, all merges would be done on the `author` branch (the branch we're currently on).
 
@@ -1274,7 +1271,7 @@ git  checkout master
 ```
 
 
-### We merge license branch
+### We merge `licencia` branch
 
 First, let's look at the structure of the branches. We make
 ```sh
@@ -1289,7 +1286,7 @@ This type of merger is the simplest and never gives rise to conflicts. It is kno
 
 To merge this branch we do
 ```sh
-git merge license
+git merge licencia
 ```
 
 ![fast-forward](assets/ff.png)	
@@ -1300,17 +1297,13 @@ Observe how it is after the fusion. Only the `HEAD` and `master` pointers have b
 
 > **NOTE: Don't worry right now about the remote pointers (the ones that appear in red). Later we will synchronize them with the remote repository.**
 
-### Merge author branch
+### Merge `autor` branch
 
-If instead of merging a branch that is ahead of `master`,
-what we do is merge a branch that is in parallel with the `master` branch,
-then we will perform a **3-way merge**
+If instead of merging a branch that is ahead of `master`, what we do is merge a branch that is in parallel with the `master` branch, then we will perform a **3-way merge**
 
-This type of merging can cause conflicts. If both branches contain modifications on the same lines
-in the same files a conflict may occur.
+This type of merging can cause conflicts. If both branches contain modifications on the same lines in the same files a conflict may occur.
 
-In this case, the `README.md` file has a line with the author's name,
-but with separate lines in the `master` and `author` branches (all caps).
+In this case, the `README.md` file has a line with the author's name, but with separate lines in the `master` and `author` branches (all caps).
 
 To perform the merge we run
 
@@ -1401,7 +1394,7 @@ To see a graph of the branches in the remote repository, click on **Insights**, 
 
 As a task, it is proposed
 
-- go back to the `license` branch, add content to the `LICENSE` file and commit.
+- go back to the `licencia` branch, add content to the `LICENSE` file and commit.
 - go back to the `author` branch, add content to the `AUTHOR` file and commit.
 - integrate changes from both branches into the `master` branch.
 

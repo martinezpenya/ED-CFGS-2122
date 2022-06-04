@@ -1,15 +1,15 @@
 ---
-    title: UD04: Junit en Netbeans (Exercise)
-    language: EN
-    author: David Martínez Peña [www.martinezpenya.es]
-    subject: Develoument Enviroment
-    keywords: [EED, 2022, Develoument, Enviroment]
-    IES: IES Mestre Ramón Esteve (Catadau) [iesmre.es]
-    header: ${title} - ${subject} (ver:${today}) 
-    footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-    typora-root-url:${filename}/../
-    typora-copy-images-to:${filename}/../assets
-    imgcover:/media/DADES/NextCloud/DOCENCIA/ED_2122/ED-CFGS-2122/UD04/assets/cover.png
+title: UD04: Junit in Netbeans (Exercises)
+language: EN
+language: EN
+author: David Martínez Peña [www.martinezpenya.es]
+subject: Development Environments
+keywords: [EED, 2022, Environments, Development]
+IES:IES Mestre Ramón Esteve (Catadau) [iesmre.es]
+header: ${title} - ${subject} (ver: ${today})
+footer: ${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
+typora-root-url: ${filename}/../
+typora-copy-images-to: ${filename}/../assets
 ---
 [toc]
 # Introduction.
@@ -34,7 +34,7 @@ Once we have designed our application, and we have debugged it, we proceed to te
 
 The objective is going to be the design and execution of some test cases.
 
-# Junit start
+# Junit init
 
 To start Junit, select the class to test in the project window, open the context menu and select  `Tools` > `Create/Update Tests`.
 
@@ -86,12 +86,6 @@ And finally, you need to know the assertions. The `assertXXX()` methods are used
 At this point, we are ready to design the methods we need for the test cases.
 
 ```java
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -103,338 +97,336 @@ import org.junit.BeforeClass;
  *
  * @author David Martínez (wwww.martinezpenya.es|iesmre.com)
  */
-public class CCountTest {
+public class CCuentaTest {
 
-    //the variables we use to do the tests are static!.
-    static CCount countNoParmeters;
-    static CCount countDavid;
-    static CCount countPepe;
-    static CCount countNobalance;
-    static CCount countThousandBalance;
+    //Las variables que usaremos para hacer los tests, ojo! son static!.
+    static CCuenta cuentaSinParmetros;
+    static CCuenta cuentaDavid;
+    static CCuenta cuentaPepe;
+    static CCuenta cuentaSinSaldo;
+    static CCuenta cuentaSaldoMil;
 
-    //Although the constructor is not required, Junit adds it, note that it does not 
-    //has no annotation.
-    public CCountTest() {
+    //Aunque el constructor no es obligatorio, Junit lo añade, observa que no 
+    //tiene ninguna anotación.
+    public CCuentaTest() {
     }
 
     @BeforeClass
     public static void setUpClass() throws Exception {
-        //This method will be executed only once before all tests
-        
-        //in our case we print the beginning of the TEST.
-        System.out.println("TEST START");
+        //Este método se ejecutará una sola vez antes de todos los tests
+        //en nuestro caso imprimimos el comienzo del TEST.
+        System.out.println("INICIO TEST");
     }
 
     @AfterClass
     public static void tearDownClass() throws Exception {
-        //This method will be executed only once after finishing all the tests
-        //in our case we do not use it.
+        //Este método se ejecutará una sola vez al terminar todos los tests
+        //en nuestro caso no lo usamos.
     }
 
     @Before
     public void setUp() {
-        //This method will be executed at the beginning of each Test
-       //in our case we will print the comment that the test begins
-        
-         //and we will create here the objects that we are going to need to make tests.
-        System.out.print("We start the test");
-        countNoParmeters = new CCount();
-        countDavid = new CCount("David", "1234", 50, 0.5);
-        countPepe = new CCount("Pepe", "5678", 200, 1);
+        //Este método se ejecutará al comienzo de cada Test
+        //en nuestro caso imprimiremos el comentario de que comienza la prueba
+        //y crearemos aquí los objetos que vamos a necesitar para hacer pruebas.
+        System.out.print("Comienza la prueba ");
+        cuentaSinParmetros = new CCuenta();
+        cuentaDavid = new CCuenta("David", "1234", 50, 0.5);
+        cuentaPepe = new CCuenta("Pepe", "5678", 200, 1);
     }
 
     @After
     public void tearDown() {
-       //This method will be executed at the end of each Test
-         //in our case we will print the comment that the test has finished
-         //We add the end variable and the calculation with respect to the beginning to know
-         //the most used in the test.
-        System.out.println("End of test \n");
+        //Este método se ejecutará al finalizar cada Test
+        //en nuestro caso imprimiremos el comentario de que ha terminado la prueba
+        //Añadimos la variable fin y el calculo respecto al comienzo para saber
+        //los ms empleados en la prueba.
+        System.out.println("Fin de la prueba\n");
     }
 
-    //We start with the tests or tests.
+    //Comenzamos con los tests o pruebas.
     /**
-     * Test of getNombre method, of class CCount.
+     * Test of getNombre method, of class CCuenta.
      */
     @Test
-    public void testGetName() {
-        System.out.println("getName");
-        //CCount instance = new CCount();
+    public void testGetNombre() {
+        System.out.println("getNombre");
+        //CCuenta instance = new CCuenta();
         //String expResult = "";
-        //String result = instance.getName();
+        //String result = instance.getNombre();
         //assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
 
-       //As the WHERE indicates, we must modify the code and replace it
-         //for our tests in this case we can define two test cases:
-        //null name
-        assertNull(countNoParmeters.getName());
+        //Tal y como indica el TODO, debemos modificar el código y sustituirlo
+        //por nuestros tests en este caso podemos definir dos casos de prueba:
+        //nombre nulo
+        assertNull(cuentaSinParmetros.getNombre());
 
-        //name "David"
-        assertEquals("David", countDavid.getName());
+        //nombre "David"
+        assertEquals("David", cuentaDavid.getNombre());
 
-        //name "Pepe"
-        assertEquals("Pepe", countPepe.getName());
+        //nombre "Pepe"
+        assertEquals("Pepe", cuentaPepe.getNombre());
     }
 
     /**
-     * Test of setName method, of class CCount.
+     * Test of setNombre method, of class CCuenta.
      */
     @Test
-    public void testSetName() {
-        System.out.println("setName");
+    public void testSetNombre() {
+        System.out.println("setNombre");
 
-        //We changed the name to the account David
-        countDavid.setNombre("David2");
-        assertEquals("David2", countaDavid.getName());
+        //Cambiamos el nombre a la cuenta David
+        cuentaDavid.setNombre("David2");
+        assertEquals("David2", cuentaDavid.getNombre());
 
-        //We change the name to the account without parameters
-        countNoParmeters.setName("Anonymous");
-        assertEquals("Anonymous", countNoParmeters.getName());
+        //Cambiamos el nombre a la cuenta sin parámetros
+        cuentaSinParmetros.setNombre("Anonimo");
+        assertEquals("Anonimo", cuentaSinParmetros.getNombre());
     }
 
     /**
-     * Test of getCount method, of class CCount.
+     * Test of getCuenta method, of class CCuenta.
      */
     @Test
-    public void testGetCount() {
-        System.out.println("getCount");
+    public void testGetCuenta() {
+        System.out.println("getCuenta");
 
-        //count null
-        assertNull(countNoParameters.getCount());
+        //cuenta nulo
+        assertNull(cuentaSinParmetros.getCuenta());
 
-        //count "1234" David
-        assertEquals("1234", countDavid.getCount());
+        //cuenta "1234" David
+        assertEquals("1234", cuentaDavid.getCuenta());
 
         //saldo 200 Pepe
-        assertEquals("5678", countPepe.getCount());
+        assertEquals("5678", cuentaPepe.getCuenta());
     }
 
     /**
-     * Test of setCount method, of class CCount.
+     * Test of setCuenta method, of class CCuenta.
      */
     @Test
-    public void testSetCount() {
-        System.out.println("setCount");
+    public void testSetCuenta() {
+        System.out.println("setCuenta");
 
-        //We changed the account to david
-        countDavid.setCount("0000");
-        assertEquals("0000", countDavid.getCount());
+        //Cambiamos la cuenta David
+        cuentaDavid.setCuenta("0000");
+        assertEquals("0000", cuentaDavid.getCuenta());
 
-        //We change the account without parameters
-        countNoParameters.setCount("4321");
-        assertEquals("4321", countNoParameters.getCount());
+        //Cambiamos la cuenta sin parámetros
+        cuentaSinParmetros.setCuenta("4321");
+        assertEquals("4321", cuentaSinParmetros.getCuenta());
     }
 
     /**
-     * Test of getBalance method, of class CCount.
+     * Test of getSaldo method, of class CCuenta.
      */
     @Test
-    public void testGetBalance() {
-        System.out.println("getBalance");
+    public void testGetSaldo() {
+        System.out.println("getSaldo");
 
-        //count zero
-        assertEquals(0, countNoParameters.getBalance(), 0);
+        //cuenta cero
+        assertEquals(0, cuentaSinParmetros.getSaldo(), 0);
 
-        //balance 50
-        assertEquals(50, countaDavid.getBalance(), 0);
+        //saldo 50
+        assertEquals(50, cuentaDavid.getSaldo(), 0);
 
-        //name 200
-        assertEquals(200, countPepe.getBalance(), 0);
+        //nombre 200
+        assertEquals(200, cuentaPepe.getSaldo(), 0);
 
-       /*
-          * When you want to compare floating point types (double or float),
-          * needs an additional parameter to avoid rounding errors.
-          * The claim is evaluated as follows:
-          * Math.abs (expected – actual) <= delta
-          * For example:
-          * assertEquals( oneDoubleValue, anotherDoubleValue, 0.001 )
-          */
-     }
-
-    /**
-     * Test of setBalance method, of class CCount.
-     */
-    @Test
-    public void testSetBalance() {
-        System.out.println("setBalance");
-
-       // We change the balance to the David account
-        countDavid.setBalance(0);
-        assertEquals(0, countDavid.getBalance(), 0);
-
-        //We change the balance to the account without parameters
-        countNoParmeters.setBalance(1000.0001);
-        assertEquals(1000.0001,  countNoParmeters.getBalance(), 0);
+        /*
+         * Cuando desea comparar tipos de punto flotante (double o float),
+         * necesita un parámetro adicional para evitar errores de redondeo.
+         * La afirmación se evalúa como se indica a continuación:
+         * 	Math.abs (esperado – real) <= delta
+         * Por ejemplo:
+         * 	afirmarEquals( unValorDoble, otroValorDoble, 0.001 )
+         */
     }
 
     /**
-     * Test of getInteres method, of class CCount.
+     * Test of setSaldo method, of class CCuenta.
      */
     @Test
-    public void testGetInterests() {
-        System.out.println("getInterests");
+    public void testSetSaldo() {
+        System.out.println("setSaldo");
 
-        //zero interest
-        assertEquals(0, countNoParameters.getInterest(), 0);
+        //Cambiamos el saldo a la cuenta David
+        cuentaDavid.setSaldo(0);
+        assertEquals(0, cuentaDavid.getSaldo(), 0);
 
-        //interest 0.5
-        assertEquals(0.5, countDavid.getInterests(), 0);
-
-        //interest 1
-        assertEquals(1, countPepe.getInterests(), 0);
+        //Cambiamos el saldo a la cuenta sin parámetros
+        cuentaSinParmetros.setSaldo(1000.0001);
+        assertEquals(1000.0001, cuentaSinParmetros.getSaldo(), 0);
     }
 
     /**
-     * Test of setInteres method, of class CCount.
+     * Test of getInteres method, of class CCuenta.
      */
     @Test
-    public void testSetInterests() {
-        System.out.println("setInterests");
+    public void testGetInteres() {
+        System.out.println("getInteres");
 
-        //We change the interest to the david account
-        counteDavid.setInterests(0);
-        assertEquals(0, countDavid.getInterests(), 0);
+        //interes cero
+        assertEquals(0, cuentaSinParmetros.getInteres(), 0);
 
-        //We change the interest to the account without parameters
-        countNoParameters.setInterests(10.01);
-        assertEquals(10.01, countNoParameters.getInterests(), 0);
+        //interes 0.5
+        assertEquals(0.5, cuentaDavid.getInteres(), 0);
+
+        //interes 1
+        assertEquals(1, cuentaPepe.getInteres(), 0);
     }
 
     /**
-     * Test of PayIn method, of class CCount.
+     * Test of setInteres method, of class CCuenta.
      */
     @Test
-    public void testPayIn() throws Exception {
-        System.out.println("Pay in ");
+    public void testSetInteres() {
+        System.out.println("setInteres");
 
-        //we entered 100 to the one that was empty
-        countNoParameters.PayIn(100);
-        assertEquals(100, countNoParameters.getBalance(), 0);
+        //Cambiamos el interes a la cuenta David
+        cuentaDavid.setInteres(0);
+        assertEquals(0, cuentaDavid.getInteres(), 0);
 
-        //we entered 0 to the one that had 50
-        countDavid.PayIn(0);
-        assertEquals(50, countDavid.getBalance(), 0);
+        //Cambiamos el interes a la cuenta sin parámetros
+        cuentaSinParmetros.setInteres(10.01);
+        assertEquals(10.01, cuentaSinParmetros.getInteres(), 0);
     }
 
-    //The Enter case is a bit special, because it can throw an exception
-     //when the amount is negative, we treat those cases with an annotation
-     //special where you identify the type of exception expected.
+    /**
+     * Test of ingresar method, of class CCuenta.
+     */
+    @Test
+    public void testIngresar() throws Exception {
+        System.out.println("ingresar");
+
+        //ingresamos 100 a la que estaba vacia
+        cuentaSinParmetros.ingresar(100);
+        assertEquals(100, cuentaSinParmetros.getSaldo(), 0);
+
+        //ingresamos 0 a la que tenia 50
+        cuentaDavid.ingresar(0);
+        assertEquals(50, cuentaDavid.getSaldo(), 0);
+    }
+
+    //El caso de Ingresar es un poco especial, porque puede lanzar una excepción
+    //cuando la cantidad es negativa, esos casos lo tratamos con una anotación 
+    //especial donde identificas el tipo de excepcion esperada.
     @Test(expected = Exception.class)
-    public void testPayInExcepcion() throws Exception {
-        System.out.println("enter exception");
-       // try to enter a negative amount
-        countPepe.PayIn(-200);
+    public void testIngresaExcepcion() throws Exception {
+        System.out.println("Excepción ingresar");
+        //intentamos ingresar una cantidad negativa
+        cuentaPepe.ingresar(-200);
     }
 
     /**
-     * Test of retirar method, of class CCpunt.
+     * Test of retirar method, of class CCuenta.
      */
     @Test
-    public void testWithdraw() throws Exception {
-        System.out.println("Withdraw");
+    public void testRetirar() throws Exception {
+        System.out.println("retirar");
 
-        //Remove 0 from the one that had 50
-        countDavid.Withdraw(0);
-        assertEquals(50, countDavid.getBalance(), 0);
+        //retiramos 0 a la que tenia 50
+        cuentaDavid.retirar(0);
+        assertEquals(50, cuentaDavid.getSaldo(), 0);
 
-       //We withdraw 50 from the one who had 200
-        countPepe.Withdraw(50);
-        assertEquals(150, countPepe.getBalance(), 0);
+        //retiramos 50 a la que tenia 200
+        cuentaPepe.retirar(50);
+        assertEquals(150, cuentaPepe.getSaldo(), 0);
     }
 
-   //Same for the exception when trying to withdraw an amount greater than the balance
+    //Lo mismo para la excepción al intentar retirar una cantidad mayor que el saldo
     @Test(expected = Exception.class)
-    public void testWithdrawExcepcion() throws Exception {
-        System.out.println("withdraw Excepción");
-        // try to withdraw when there is no balance
-        countNoParameters.Withdraw(200);
+    public void testRetirarExcepcion() throws Exception {
+        System.out.println("Excepción retirar");
+        //intentamos retirar cuando no hay saldo
+        cuentaSinParmetros.retirar(200);
     }
 }
 ```
 
-These methods try to test the methods of the class`Ccount`. To do this, having the project selected, we will access the context menu and press the option `Test`.
+These methods try to test the methods of the class `Ccuenta`. To do this, having the project selected, we will access the context menu and press the option `Test`.
 
 As can be seen, the test on the withdraw method has failed, but the rest of the tests on the methods have been successful. With this information, we must verify that the test case is correctly designed, in which case, what has been found is an error in the design of the method `withdraw`,and it must be corrected. The advantage of using automated tools is that regression is facilitated, since we have designed the test case for the method, so once the withdraw method has been recoded, we can retest all the methods automatically.
 
-# Class `Ccount`
+# Class `Ccuenta`
 
 ```java
 /**
  *
  * @author David Martínez (wwww.martinezpenya.es|iesmre.com)
  */
-public class CCount {
+public class CCuenta {
 
-    // Account class properties
-    private String name;
-    private String count;
-    private double balance;
-    private double interests;
+    // Propiedades de la Clase Cuenta
+    private String nombre;
+    private String cuenta;
+    private double saldo;
+    private double interes;
 
-    // Constructor with no arguments
-    public CCount() {
+    // Constructor sin argumentos
+    public CCuenta() {
     }
 
-    // Constructor with parameter to initialize all properties of the class
-    public CCount(String name, String count, double bal, double type) {
-        name = nom;
-        count = cue;
-        blance = bal;
-        interests = type;
+    // Constructor con parámetro para iniciar todas las propiedades de la clase
+    public CCuenta(String nom, String cue, double sal, double tipo) {
+        nombre = nom;
+        cuenta = cue;
+        saldo = sal;
+        interes = tipo;
     }
 
     //getters & setters
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getCount() {
-        return count;
+    public String getCuenta() {
+        return cuenta;
     }
 
-    public void setCount(String count) {
-        this.count = count;
+    public void setCuenta(String cuenta) {
+        this.cuenta = cuenta;
     }
 
-    public double getBalance() {
-        return balance;
+    public double getSaldo() {
+        return saldo;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
-    public double getInterests() {
-        return interests;
+    public double getInteres() {
+        return interes;
     }
 
-    public void setInterests(double interests) {
-        this.interests = interests;
+    public void setInteres(double interes) {
+        this.interes = interes;
     }
 
-    //Method for entering amounts into the account. Modify the balance.
-    public void (double quantity) throws Exception {
-        if (quantity < 0) {
-            throw new Exception("A negative amount cannot be entered");
+    //Método para ingresar cantidades en la cuenta. Modifica el saldo.
+    public void ingresar(double cantidad) throws Exception {
+        if (cantidad < 0) {
+            throw new Exception("No se puede ingresar una cantidad negativa");
         }
-        balance += quantity;
+        saldo += cantidad;
     }
 
-    // Method for withdrawing amounts in the account. Modify the balance.
-    public void payIn(double quantity) throws Exception {
-        if (quantity < 0) {
-            throw new Exception("A negative amount cannot be withdrawn");
+    // Método para retirar cantidades en la cuenta. Modifica el saldo.
+    public void retirar(double cantidad) throws Exception {
+        if (cantidad < 0) {
+            throw new Exception("No se puede retirar una cantidad negativa");
         }
-        if (getBalance()< quantity) {
-            throw new Exception("Not enough balance");
+        if (getSaldo()< cantidad) {
+            throw new Exception("No hay suficiente saldo");
         }
-        balance = quantity;
+        saldo = cantidad;
     }
 }
 ```
@@ -443,7 +435,7 @@ public class CCount {
 
 ## Junit_1
 
-As we have right now the class `Ccount` i `CcountTest`, we have discovered a problem in the method`Withdraw`. Explain how tests are launched from Netbeans (where you see the test that is not satisfactory), justifies if the problem is in the Test or in the method `withdraw`.Make the appropriate modifications (in the test or in the method `Withdraw`) so that the test is satisfactory, explaining step by step and with screenshots how to perform the tests and they are all satisfactory.
+As we have right now the class `Ccuenta` i `CcuentaTest`, we have discovered a problem in the method`retirar`. Explain how tests are launched from Netbeans (where you see the test that is not satisfactory), justifies if the problem is in the Test or in the method `retirar`.Make the appropriate modifications (in the test or in the method `retirar`) so that the test is satisfactory, explaining step by step and with screenshots how to perform the tests and they are all satisfactory.
 
 Send the memory in PDF to the corresponding task of AULES.
 
