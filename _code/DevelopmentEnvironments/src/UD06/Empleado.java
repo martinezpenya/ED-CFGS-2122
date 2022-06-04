@@ -88,8 +88,4 @@ public class Empleado {
         this.edad=edad;
         this.salario=salario;
     }
-    public static void main(String[] args) {
-        Empleado e1 = new Empleado();
-        System.out.println(e1);
-    }
 }

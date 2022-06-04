@@ -1,4 +1,4 @@
-﻿---
+---
 title: UD05: UML Language
 language: EN
 author: David Martínez Peña [www.martinezpenya.es]
@@ -153,7 +153,7 @@ One of the following symbols is placed before the name of the class member (attr
 
 ### Other considerations
 
-**Static elements:** Both attributes and static methods are represented underlined.
+**Static elements:** Both attributes and static methods are represented <u>underlined</u>.
 
 **Class types:** If the class is an **abstract** class or an **interface** (pure abstract class), it is indicated above the class name with `<<` `>>`.
 
@@ -185,7 +185,7 @@ It represents the *connections* between the different classes or objects of a pr
    1. Aggregation
    2. Composition
 
-#### Inheritance
+### Inheritance
 
 It is represented by a line with an arrow at the end of the superclass.
 
@@ -195,7 +195,7 @@ Indicates that a class can be of different class types: several subclasses *exte
 
 <img src="assets/herencia2.jpg" alt="img" style="zoom:65%;" />
 
-#### Association
+### Association
 
 It is represented by an open arrow.
 
@@ -211,7 +211,7 @@ There are two more restrictive association types that specify the type of associ
 
 To explain the concept we are going to consider the following example: *A university has several departments, and each department has a number of professors. If the university closes, the departments cease to exist forever, but the professors in those departments will continue to exist. A University is a composition of Departments, and a Department is an aggregation of Professors. In addition, a Professor can work in more than one Department, but a Department can only belong to one University.*
 
-#### Aggregation
+### Aggregation
 
 <img src="assets/agregacion.png" alt="img" style="zoom:65%;" />
 
@@ -235,7 +235,7 @@ public class Department{
 
 Teachers do not disappear because the Department object disappears.
 
-#### Composition
+### Composition
 
 <img src="assets/composicion.png" alt="img" style="zoom:65%;" />
 
