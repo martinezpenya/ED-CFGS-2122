@@ -1,4 +1,4 @@
-![header](file:///media/DADES/NextCloud/DOCENCIA/ED_2122/_disseny/capED.png)
+![header](capED.png)
 
 # Developing Environments
 
