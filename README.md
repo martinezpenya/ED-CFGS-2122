@@ -4,7 +4,7 @@
 
 ## 1st course CFGS DAW (2021-2022)
 
-[README_EN.md (english content)](README_EN.md) :uk:
+[README_EN.md (english content)](README_EN.md) :uk: (recommended version)
 
 
 
