@@ -112,5 +112,4 @@ Una empresa quiere hacer una gestión informatizada básica de sus empleados. Pa
 - [Apuntes José Luis Comesaña](https://www.sitiolibre.com/)
 - [Apuntes IES Luis Vélez de Guevara 17-18 (José Antonio Muñoz Jiménez)](http://jamj2000.github.io/slides/2017/09/05/entornosdesarrollo/)
 
-- Oracle provides material on how to document program interfaces:
-  ([How to write doc comments for the javadoc tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html))
+- Oracle provides material on how to document program interfaces: ([How to write doc comments for the javadoc tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html))

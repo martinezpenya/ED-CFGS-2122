@@ -1,18 +1,33 @@
-Apuntes de teoria y ejercicios para la asignatura de Entornos de desarrollo (en inglés) de 1º de DAW del curso 21-22. IES Mestre Ramón Esteve (Catadau)
+![header](file:///media/DADES/NextCloud/DOCENCIA/ED_2122/_disseny/capED.png)
 
-# UD01: Developing Software
-## Content
-  - [![Video UD01](https://img.youtube.com/vi/BKorP55Aqvg/0.jpg)](https://www.youtube.com/watch?v=BKorP55Aqvg)
-  - [UD01_EN.pdf](https://raw.githubusercontent.com/martinezpenya/ED-CFGS-2122/master/UD01/UD01_EN.pdf)
-  - [UD01_ejercicios_EN.pdf](https://raw.githubusercontent.com/martinezpenya/ED-CFGS-2122/master/UD01/UD06_ejercicios_EN.pdf)
-## Activities
-  - `UD01_Vocabulary`
-  - `UD01_Exercises_01`: From the Excercises document do the next:
-      1. Exercises: 1, 2
-      3. Activities: 3.1 Introduction
-  - `UD01_Exercises_02`: From the [UD01_ejercicios_EN.pdf](https://raw.githubusercontent.com/martinezpenya/ED-CFGS-2122/master/UD01/UD06_ejercicios_EN.pdf) document do the next: Comic point.
-  - `UD01_Exercises_03`: From the [UD01_ejercicios_EN.pdf](https://raw.githubusercontent.com/martinezpenya/ED-CFGS-2122/master/UD01/UD06_ejercicios_EN.pdf) document point `1.Excercises` do the next: from 3 to 9.
-  - `UD01_Presentation`: Select one of the Agile Developing (Kanban, SCRUM, XP) and confirm your selection with your teacher. Do a presentation (in english) about that agile technique in ["Pecha Kucha" format](https://es.wikipedia.org/wiki/PechaKucha). Attach your presentation in pdf format. Some of this presentations will be presented to your class.
+# Developing Environments
 
-# UD02: Installing and using development environments
-## Content
+## 1st course CFGS DAW (2021-2022)
+
+## [IES Mestre Ramón Esteve](www.iesmre.com) (Catadau)
+
+[Readme_EN.md (english content)](Readme_EN.md) :uk:
+
+# Entornos de Desarrollo
+
+## 1r curso CFGS DAW (2021-2022)
+
+## [IES Mestre Ramón Esteve](www.iesmre.com) (Catadau)
+
+[Readme_ES.md (contenido en Español)](Readme_ES.md) :es:
+
+# Sources of Information
+
+- [Wikipedia](https://es.wikipedia.org)
+- [Code&Coke (Fernando Valdeón)](http://entornos.codeandcoke.com/doku.php?id=start)
+- Apuntes IES El Grao (Mª Isabel Barquilla?)
+- [Apuntes IOC (Marcel García)](https://ioc.xtec.cat/materials/FP/Recursos/fp_dam_m05_/web/fp_dam_m05_htmlindex/index.html)
+- [Apuntes José Luis Comesaña](https://www.sitiolibre.com/)
+- [Apuntes IES Luis Vélez de Guevara 17-18 (José Antonio Muñoz Jiménez)](http://jamj2000.github.io/slides/2017/09/05/entornosdesarrollo/)
+- Introductor a Git (Alfredo Sánchez)
+- [Using Git in Apache NetBeans](https://netbeans.apache.org/kb/docs/ide/git.html)
+- https://netbeans.apache.org/kb/docs/java/junit-intro.html
+- https://www.discoduroderoer.es/como-hacer-una-aplicacion-de-prueba-con-junit/
+- [Uml Diagrams](https://www.uml-diagrams.org/)
+- [Uso de *argoUML* para diseño de aplicaciones](http://jbgarcia.webs.uvigo.es/asignaturas/TO/usoArgoUML/index.html)
+- Oracle provides material on how to document program interfaces: ([How to write doc comments for the javadoc tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html))
