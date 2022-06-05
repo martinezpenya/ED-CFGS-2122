@@ -12,12 +12,12 @@
 
 ### Actividades
   - `UD01_Vocabulary`
-  - `UD01_Ejercicios_01`: From the [UD01_ejercicios_ES.pdf](UD01/UD01_ejercicios_ES.pdf) document do the next:
+  - `UD01_Ejercicios_01`: Del documento [UD01_ejercicios_ES.pdf](UD01/UD01_ejercicios_ES.pdf) realiza:
       - `1. Ejercicios`: 1, 2
       - `2. Actividades` : 3.1 Introduction
-  - `UD01_Ejercicios_02`: From the [UD01_ejercicios_ES.pdf](UD01/UD01_ejercicios_ES.pdf) document do the next: Comic point.
-  - `UD01_Ejercicios_03`: From the [UD01_ejercicios_ES.pdf](UD01/UD01_ejercicios_ES.pdf) document point `1.Excercises` do from 3 to 9 points.
-  - `UD01_Presentation`: Elige uno de los Desarrollos Agiles (Kanban, SCRUM, XP) y confirma tu selección con el profesor. Realiza una presentación sobre dicha técnica ágil en fomato ["Pecha Kucha"](https://es.wikipedia.org/wiki/PechaKucha). Adjunta tu presentación en formato pdf. Las presentaciones seran presentadas en clase.
+  - `UD01_Ejercicios_02`: Del documento [UD01_ejercicios_ES.pdf](UD01/UD01_ejercicios_ES.pdf) realiza: el punto del Comic.
+  - `UD01_Ejercicios_03`: Del documento [UD01_ejercicios_ES.pdf](UD01/UD01_ejercicios_ES.pdf) dentro del apartado `1.Excercises` realiza desde el punto 3 al 9.
+  - `UD01_Presentation`: Elige uno de los Desarrollos Agiles (Kanban, SCRUM, XP) y confirma tu selección con el profesor. Realiza una presentación sobre dicha técnica ágil en fomato ["Pecha Kucha"](https://es.wikipedia.org/wiki/PechaKucha). Adjunta tu presentación en formato pdf. Las presentaciones serán presentadas en clase.
 
 ## UD02: Instalando y usando un IDE
 ### Contenido
@@ -96,9 +96,9 @@
 ### Actividades
 
   - `UD04_Vocabulary` 
-  - `UD04_JUnit_1`: Activity 1 de [UD04_ejercicios_ES.pdf](UD04/UD04_ejercicios_ES.pdf) 
+  - `UD04_JUnit_1`: Actividad 1 de [UD04_ejercicios_ES.pdf](UD04/UD04_ejercicios_ES.pdf) 
 
-  - `UD04_JUnit_2`:  Activity 2 de [UD04_ejercicios_ES.pdf](UD04/UD04_ejercicios_ES.pdf) 
+  - `UD04_JUnit_2`:  Actividad 2 de [UD04_ejercicios_ES.pdf](UD04/UD04_ejercicios_ES.pdf) 
 
   - `UD04_JUnit_3`: A partir del ejercicio 1.1. Paquete: `UD05._1.gestionEmpleados` de la UD05 de la asignatura de Programación, elimine las clases `TestEmpleado` y `TestEmpresa` y sustituyelas por test `JUnit` para cada uno de los métodos de la clase.
 
