@@ -16,7 +16,7 @@
 
 
 
-# [IES Mestre Ramón Esteve](www.iesmre.com) (Catadau)
+# [IES Mestre Ramón Esteve](http://www.iesmre.com) (Catadau)
 
 
 
@@ -41,3 +41,9 @@
 # TAGS:
 
 #fpinfor #ED #entornos #CFGS #DAW #DAM #INFORMATICA #UML #GIT
+
+
+
+# Converting from `MD` (MarkDown) to `PDF`
+
+More info in fromMD2PDF repository.
