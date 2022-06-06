@@ -46,4 +46,4 @@
 
 # Converting from `MD` (MarkDown) to `PDF`
 
-More info in fromMD2PDF repository.
+More info in [fromMD2PDF](https://github.com/martinezpenya/fromMD2PDF) repository.
