@@ -45,6 +45,7 @@ para abrir el editor solo debemos pulsar la tecla "." (punto) de nuestro teclado
 
 Visualizaremos la estructura de carpetas y archivos en un editor `VSCode` integrado en el navegador Web.
 
+
 ## Modificar un archivo.
 
 Una vez detectada la errata dentro del código [markdown](https://markdown.es/) que es muy fácil de interpretar (a poco que le dediquéis unos minutos) podemos modificar el archivo en cuestión, y a su lado aparecerá una **M** porqué el archivo está modificado.
@@ -61,11 +62,11 @@ VSCode lleva integrado un gestor de GIT, el tercer icono de la barra lateral: ![
 2. Los pasamos al area "staged" con el símbolo "+":
 <img src="assets/vscode_07_git2.png" alt="pasar a staged" style="zoom:80%;" />
 
-4. Añadimos el comentario del commit:
+3. Añadimos el comentario del commit:
 <img src="assets/vscode_07_git3.png" alt="comentario commit" style="zoom:80%;" />
 
 4. Realizamos el commit:
-    <img src="assets/vscode_07_git4.png" alt="Screenshot_20220106_173720" style="zoom:80%;" />
+<img src="assets/vscode_07_git4.png" alt="Screenshot_20220106_173720" style="zoom:80%;" />
 
 Como el repositorio no es nuestro mostrará este mensaje:
 
