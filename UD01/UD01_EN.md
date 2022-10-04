@@ -52,15 +52,15 @@ Nowadays, with modern processors, the operation, although very similar in essenc
 
 Let's look at other parts of the von Newmann machine:
 
-**Central Process Unit **, known as **CPU **(**Central Process Unit **) or processor. It is the main element of the computer, its job is to coordinate and execute all the instructions that are read from RAM.
+**Central Process Unit**, known as **CPU** (**Central Process Unit**) or processor. It is the main element of the computer, its job is to coordinate and execute all the instructions that are read from RAM.
 
 It's main elements are:
 
-- **ALU **(**Arithmetic-Logical Unit **). A component of the CPU that performs all elementary arithmetic operations (addition, subtraction, multiplication, division) and logical operations (for example, comparing two values).
+- **ALU**(Arithmetic-Logical Unit). A component of the CPU that performs all elementary arithmetic operations (addition, subtraction, multiplication, division) and logical operations (for example, comparing two values).
   
 - **CU** (**Control Unit **). Component of the **CPU **in charge of controlling the actions of the rest of the units, interpreting and executing the instructions in the proper sequence.
 
-- **Microprocessor registers **. They are highly specialized high-speed memory banks, where some data and instructions of a program are stored while it is running.
+- **Microprocessor registers**. They are highly specialized high-speed memory banks, where some data and instructions of a program are stored while it is running.
 
 Generally, the ALU has general-purpose registers, which are used for tasks such as accumulation processes, loop index counting, data transfers, or bit manipulation.
 
