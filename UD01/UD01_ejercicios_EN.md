@@ -138,18 +138,18 @@
 
 7. Give an example of language of the following types:
 
-   - Low level.
-   - Medium level.
-   - High level.
+   - *Low level.*
+   - *Medium level.*
+   - *High level.*
 
 8. What programming paradigm do the following languages follow?
-   - C
-   - C++
-   - SQL
-   - Java
-   - Javascript
-   - Lisp
-   - Prolog
+   - *C*
+   - *C++*
+   - *SQL*
+   - *Java*
+   - *Javascript*
+   - *Lisp*
+   - *Prolog*
 
    You can check the following link:
    https://es.wikipedia.org/wiki/Paradigma_de_programaci%C3%B3n
