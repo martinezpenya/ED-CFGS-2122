@@ -348,8 +348,8 @@ The main classification that can be established is based on the storage of the c
 All version control systems are based on having a repository, which is the set of information managed by the system. East
 repository contains version history of all managed items. Each user can create a local copy by duplicating the content of the repository to allow its use. It is possible to duplicate the latest version or any version stored in history. This process is often known as check out or unprotect. To modify the local copy there are two basic semantics:
 
-- **Exclusive**: to be able to make a change, it is necessary to mark the element to be modified in the repository and the system will take care of preventing another user from modifying said element. 
-- **Collaborative**: in which each user downloads the copy, modifies it, and the system automatically combines the various modifications. The main problem is the possible appearance of conflicts that must be solved manually or the possible inconsistencies that arise when modifying the same file by several uncoordinated people. Also, this semantics is not appropriate for binary files.
+- Exclusive: to be able to make a change, it is necessary to mark the element to be modified in the repository and the system will take care of preventing another user from modifying said element. 
+- Collaborative: in which each user downloads the copy, modifies it, and the system automatically combines the various modifications. The main problem is the possible appearance of conflicts that must be solved manually or the possible inconsistencies that arise when modifying the same file by several uncoordinated people. Also, this semantics is not appropriate for binary files.
 
 After making the modification, it is necessary to update the repository with the changes made. Usually this process is called publish, commit, check in, or protect.
 
