@@ -29,18 +29,18 @@
 
 1. Ejecuta el programa "Hola mundo" en los siguientes lenguajes:
 
-   - bash
-   - python
-   - php
-   - javascript (nodejs)
-   - c
-   - c++
-   - java
-   - ruby
-   - go
-   - rust
-   - lisp
-   - ensamblador (nasm)
+   - ***bash***
+   - ***python***
+   - ***php***
+   - ***javascript (nodejs)***
+   - ***c***
+   - ***c++***
+   - ***java***
+   -***ruby***
+   - ***go***
+   - ***rust***
+   - ***lisp***
+   - ***ensamblador (nasm)***
 
    Los paquetes a instalar en Ubuntu son: python, php, nodejs, gcc, g++, openjdk-8-jdk, ruby, golang, rustc , clisp y nasm.
 
