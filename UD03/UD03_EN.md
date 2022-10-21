@@ -71,7 +71,7 @@ int edad;
 int cantidad; 
 ```
 
-- Local variables must be initialized at the time of declaration or just after. They are declared just before use, to reduce their scope.
+- Local variables must be initialized at the time of declaration or just after. They are declared just before they are use, in order to reduce their scope.
 - Class or instance variables are declared at the beginning of the class definition.
 - Arrays can be initialized en bloc:
 
