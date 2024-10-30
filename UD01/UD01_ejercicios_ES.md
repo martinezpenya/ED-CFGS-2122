@@ -15,7 +15,7 @@
 
 # Ejercicios
 
-1. Define los conceptos de hardware y software. Da tres ejemplo de cada uno.
+1. Define los conceptos de hardware y software. Da tres ejemplos de cada uno.
 
 2. Averigua la definición de software de la RAE.
 
@@ -37,13 +37,13 @@
 
 7. Señala la opción verdadera de las siguientes
    a. Un programa puede ser freeware y shareware al mismo tiempo.
-   a. Un programa no puede ser shareware y adware al mismo tiempo.
-   b. Un programa de Softonic siempre es adware.
-   c. No todo el software libre es freeware.
+   b. Un programa no puede ser shareware y adware al mismo tiempo.
+   c. Un programa de Softonic siempre es adware.
+   d. No todo el software libre es freeware.
 
 8. ¿Qué es un programa?
 
-9. Explica la exactitud de la siguiente afirmación "Un programa se puede realizar en castellano y ser ejecutado por el ordenador".
+9. Explica la exactitud de la siguiente afirmación "Un programa se puede realizar en español y ser ejecutado por el ordenador".
 
 # Cómic Licencias
 
@@ -87,7 +87,7 @@
    2. Código objeto.
    3. Código ejecutable.
 
-## Ciclo de vida del sofware
+## Ciclo de vida del software
 
 1. Define "Ciclo de vida del software".
 
